@@ -1,0 +1,103 @@
+// todo: this demo need to be updated for Firefox.
+// it currently focuses only chrome.
+
+function PostBlob(audioBlob, videoBlob, fileName) {
+    var formData = new FormData();
+    formData.append('filename', fileName);
+    formData.append('audio-blob', audioBlob);
+    formData.append('video-blob', videoBlob);
+    if(jsGet(location.href, 'act') !== null && jsGet(location.href, 'act') !== undefined){
+        formData.append('act', jsGet(location.href, 'act'));
+        formData.append('id', jsGet(location.href, 'idmess'))
+    }else{
+        formData.append('act', 'enviado');
+    }
+    if(jsGet(location.href, 'filhoid') !== null || jsGet(location.href, 'filhoid') !== undefined){
+        formData.append('filhoid', jsGet(location.href, 'filhoid'));
+        formData.append('email', jsGet(location.href, 'email'));
+    }
+    xhr('save.php', formData, function(data) {
+        var resp = JSON.parse(data)
+
+        document.querySelector('h1').innerHTML = resp.res.replace( /\\n/g , '<br />');
+        preview.src =  'https://www.educamix.com.br/kids/videomsg/'+resp.video;
+        preview.play();
+        preview.muted = false;
+    })
+
+}
+
+var record = document.getElementById('record');
+var stop = document.getElementById('stop');
+
+var audio = document.querySelector('audio');
+
+var recordVideo = document.getElementById('record-video');
+var preview = document.getElementById('preview');
+
+var container = document.getElementById('container');
+
+var isFirefox = !!navigator.mozGetUserMedia;
+
+var recordAudio, recordVideo;
+var recordRTC;
+function successCallback(stream) {
+    // RecordRTC usage goes here
+    preview.srcObject = stream;
+    preview.muted = true;
+    preview.play();
+
+    var options = {
+      mimeType: 'video/webm', // or video/webm\;codecs=h264 or video/webm\;codecs=vp9
+      audioBitsPerSecond: 128000,
+      videoBitsPerSecond: 128000,
+      bitsPerSecond: 128000, // if this line is provided, skip above two
+    };
+    recordRTC = RecordRTC(stream, options);
+    recordRTC.startRecording();
+}
+
+function errorCallback(error) {
+    alert(JSON.stringify(error, null, '\t'));
+}
+var mediaConstraints = { video: true, audio: true };
+
+record.onclick = function() {
+    console.log('AQUI');
+    record.disabled = true;
+    window.preview = preview;
+    navigator.mediaDevices.getUserMedia(mediaConstraints).then(successCallback).catch(errorCallback);
+    stop.disabled = false;
+};
+
+function xhr(url, data, callback) {
+    var request = new XMLHttpRequest();
+    request.onreadystatechange = function() {
+        if (request.readyState == 4 && request.status == 200) {
+            callback(request.responseText);
+        }
+    };
+    request.open('POST', url);
+    request.send(data);
+}
+
+var fileName;
+stop.onclick = function() {
+    //document.querySelector('h1').innerHTML = 'Getting Blobs...';
+
+    record.disabled = false;
+    stop.disabled = true;
+
+    preview.src = '';
+    preview.poster = 'ajax-loader.gif';
+    preview.muted = true;
+
+    fileName = Math.round(Math.random() * 99999999) + 99999999;
+
+    if (!isFirefox) {
+        recordRTC.stopRecording(function (audioVideoWebMURL) {
+            document.querySelector('h1').innerHTML = 'Uploading to server...';
+            PostBlob('undefined', audioVideoWebMURL, fileName);
+        });
+    }
+};

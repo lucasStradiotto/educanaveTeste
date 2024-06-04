@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+||| Instructions XML FlapCat Steampunk |||
+
+ID
+You need to create an app on Facebook. No need to create a complete app, just the name, so you get an ID. All instructions have details. 
+Example: 637119926359209 (my ID)
+
+TXT RECORD
+This is a text that you can edit. He appears before the value of the record.
+
+NAME
+This space is ideal for you to put the name of your game. It will appear soon after the record.
+
+LINK
+The page link that will get your game. Can be any link.
+
+CAPTION
+Put this space the subtitle of his game.
+
+PICTURE
+Write a very beautiful image of your game, and put it on your server in your site. Grab the URL of the image, only the image, and put in this space.
+
+DESCRIPTION
+Write a brief summary of your game, show how it is fun.
+
+TXT RECORD 2
+This is the text for Twitter. Place a text that will appear before the record.
+
+MSG
+This is the text that will appear after the record. Also put the URL of your game!
+
+-->
+
+<your_game>
+
+	<!--Facebook-->
+	<id>637119926359209</id>
+
+	<txt_record>My record is </txt_record>
+
+	<name>. FlapCat Steampunk</name>
+	
+	<link>http://codecanyon.net/item/game-flapcat-steampunk/7152642</link>
+	
+	<caption>That cat is crazy! Very fun!</caption>
+	
+	<picture>http://filippileonardo.com/_temp/envato/flapcat_01/fc_share_01.png</picture>
+	
+	<description>FlapCat Steampunk's newest game based on the blockbuster games flap. Help the cat FlapCat to go through challenges that are super difficult. The game has steampunk setting, vibrant colors and counting score. What is his record?</description>
+	
+	<!--Twitter-->
+	<txt_record2>My record is </txt_record2>
+	
+	<msg>. Play now FlapCat Steampunk! http://codecanyon.net/item/game-flapcat-steampunk/7152642</msg>
+	
+</your_game>
