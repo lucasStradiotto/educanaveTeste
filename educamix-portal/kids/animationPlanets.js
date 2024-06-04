@@ -103,7 +103,7 @@ function verifyScreenWidth() {
                 pasta = '1440';
                 return pasta;
             case 1366:
-                pasta = '1366';
+                pasta = '1440';
                 return pasta;
             case 768:
                 pasta = 'Tablet';
