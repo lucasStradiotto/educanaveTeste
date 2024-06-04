@@ -11,8 +11,8 @@
     <title>Educanave - Cittius</title>
     <link href='https://fonts.googleapis.com/css?family=Signika+Negative:400,600|Nunito:400,700,300' rel='stylesheet'
         type='text/css'>
-    <link rel="shortcut icon" href="images/favicon.ico">
-
+    <link rel="https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css">
+    <link rel="shortcut icon" href="./assets/favicons/educanaveFavicon.ico">
     <link href="index.css" rel="stylesheet">
     <!-- main JS libs  -->
     <script src="js/libs/modernizr.min.js"></script>
@@ -24,185 +24,380 @@
     <script src="js/general.js"></script>
     <script src="js/hoverIntent.js"></script>
     <script src="js/form.js"></script>
-
 </head>
 <body>
     <main>
-        <div class="topDiv"></div>
-        <img class="educanaveLogo" src="./assets/Logo_Nave.png" alt="educanave logo">
-        <div class="topLogos">
-            <a href="#"><img class="botaoLogin" src="./assets/Login.png" alt="botão login"></a>
-        </div>
-        <div class="deadBackground"></div>
-        <div class="infoMesa">
-            <div class="firstStar">
-                <img src="./assets/Estrela1.png">
-                <span class="info">A Mesa Interativa Digital é um recurso tecnológico e pedagógico em ambiente educativo.</span>
+        <div class="header">
+            <div class="topBar"></div>
+            <div class="topIconsContainer">
+                <div class="divLogoEducanave">
+                    <img id="logoEducanave" alt="Logo Educanave">
+                </div>
+                <div class="divLogoCittius">
+                    <img id="logoCittius" alt="Logo Cittius">
+                </div>
+                <div class="divBtnLogin">
+                    <a href="#"><img id="botaoLogin" alt="Botão Login"></a>
+                </div>
             </div>
-            <div class="secondStar">
-                <img src="./assets/Estrela1.png">
-                <span class="info">A NAVE é desenvolvida para crianças de 4 a 8 anos,
-                    envolvendo as que estão tanto na Educação Infantil
-                    quanto no Ensino Fundamental.</span>
-            </div>
-        </div>
-        <div class="deadBackground2"></div>
-        <div class="titleNave">
-            <img class="imgTitulo1" src="./assets/Titulo1.png" alt="Titulo Nave">
-        </div>
-        <div class="infoNave">
-            <img class="drAna" src="./assets/DrAna.png" alt="Doutora Ana">
-            <div class="textNave">
-                <p class="text" id="text1">
-                    Além de ser um recurso tecnológico que desperta o interesse dos
-                    estudantes, a <strong>Mesa Interativa Digital Educa NAVE</strong> é um instrumento
-                    pedagógico eficiente, que, de forma simples e intuitiva, mobiliza o aprendizado
-                    integral de crianças de 4 a 8 anos.
-                </p>
-                <p class="text" id="text2">
-                    A <strong>Educa NAVE</strong> apresenta jogos, atividades e histórias digitais e interativas, que estão
-                    em consonância com as habilidades e competências descritas na Base Nacional Comum
-                    Curricular (BNCC) para Educação Infantil e os Anos Iniciais do Ensino Fundamental,
-                    abordando conceitos multidisciplinares que desafiam os estudantes de forma individual ou
-                    coletiva.
-                </p>
-                <p class="text" id="text3">
-                    Ao explorar a <strong>Mesa Interativa Digital Educa NAVE</strong> os estudantes terão acesso a vivências
-                    educativas que promovem a ludicidade e aprendizagem significativa. O objetivo é utilizar a
-                    tecnologia para oferecer diferentes formas de aprendizado às crianças, oferecendo um conjunto de
-                    desafios que envolvem os estudantes na resolução de problemas.
-                </p>
-                
+            <div class="middleTopContainer">
+                <div class="divNuvem">
+                    <img id="nuvem" alt="Nuvem">
+                </div>
+                <div class="divDecolar">
+                    <div class="divTituloDecolar">
+                        <img id="decolar" alt="Decolar">
+                    </div>
+                    <div class="divDecolarTexts">
+                        <div class="divDecolarText1">
+                            <img src="./assets/Estrela1.png" alt="Estrela">
+                            <p class="textDecolar">
+                                A <strong>Mesa Interativa Digital</strong> é um recurso tecnológico e pedagógico em ambiente educativo.
+                            </p>
+                        </div>
+                        <div class="divDecolarText2">
+                            <img src="./assets/Estrela1.png" alt="Estrela">
+                            <p class="textDecolar" id="textDesktop">
+                                A NAVE é desenvolvida para crianças de 4 a 8 anos, envolvendo as que estão tanto na Educação Infantil quanto no Ensino Fundamental.
+                            </p>
+                            <p class="textDecolar" id="textMobile">
+                                A NAVE é desenvolvida para crianças de 4 a 8 anos.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="divMesaSolContainer">
+                    <div class="divSol">
+                        <img id="sol" alt="Sol">
+                    </div>
+                    <div class="divMesa">
+                        <img id="mesa1" alt="Mesa 1">
+                    </div>
+                </div>
             </div>
         </div>
     </main>
-    <div class="ambientes">
-        <div class="ambienteContent">
-            <img class="titleAmbientes" src="./assets/Titulo2.png" alt="Ambientes">
-            <div class="planetsNGames">
-                <div class="planets">
-                    <div class="planetLeft">
-                        <img class="planetas" src="./assets/CARROSEL_PLANETAS/PLANETA VIDA.png" alt="">
+    <div class="tituloNave">
+        <div class="divTituloNave">
+            <img id="tituloNave" alt="Titulo Nave">
+        </div>
+        <div class="divNaveContainer">
+            <div class="divDrAna">
+                <img id="drAna" alt="Doutora Ana">
+            </div>
+            <div class="divTextoIcones">
+                <div class="divTextoNave">
+                    <div class="divTextNave1">
+                        <p class="textNave" id="textNave1">
+                            Além de ser um recurso tecnológico que desperta o interesse dos estudantes, a <strong>Mesa Interativa Digital Educa NAVE</strong> é um instrumento pedagógico eficiente. De forma simples e intuitiva, mobiliza o aprendizado integral de crianças de 4 a 8 anos.
+                        </p>
+                        <div class="textNaveMobile1">
+                            <p class="textNaveMob" id="textNave1Line1">Além de ser um recurso</p>
+                            <p class="textNaveMob" id="textNave1Line2">tecnológico que desperta o</p>
+                            <p class="textNaveMob" id="textNave1Line3">interesse dos estudantes, a</p>
+                            <p class="textNaveMob" id="textNave1Line4"><strong>Mesa Interativa Digital Educa</strong></p>
+                            <p class="textNaveMob" id="textNave1Line5"><strong>NAVE</strong> é um instrumento</p>
+                            <p class="textNaveMob" id="textNave1Line6">pedagógico eficiente, que, de</p>
+                            <p class="textNaveMob" id="textNave1Line7">forma simples e intuitiva, mobiliza</p>
+                            <p class="textNaveMob" id="textNave1Line8">o aprendizado integral de crianças</p>
+                            <p class="textNaveMob" id="textNave1Line9">de 4 a 8 anos.</p>
+                        </div>
                     </div>
-                    <div class="planetCenter">
-                        <img class="planetaCentral grande" src="./assets/CARROSEL_PLANETAS/PLANETA ABC.png" alt="">
+                    <div class="divTextNave2">
+                        <p class="textNave" id="textNave2">
+                            A <strong>Educa NAVE</strong> apresenta jogos, atividades e histórias digitais e interativas que estão em consonância com as habilidades e competências descritas na Base Nacional Comum Curricular (BNCC) para Educação Infantil e os Anos Iniciais do Ensino Fundamental. O recurso aborda conceitos multidisciplinares que desafiam os estudantes de forma individual ou coletiva.
+                        </p>
                     </div>
-                    <div class="planetRight1">
-                        <img class="planetas" src="./assets/CARROSEL_PLANETAS/PLANETA DIGITAL.png" alt="">
-                    </div>
-                    <div class="planetRight2">
-                        <img class="planetas" src="./assets/CARROSEL_PLANETAS/PLANETA EMOÇÕES.png" alt="">
+                    <div class="divTextNave3">
+                        <p class="textNave" id="textNave3">
+                            Ao explorar a <strong>Mesa Interativa Digital Educa NAVE</strong>, os estudantes terão acesso a vivências educativas que promovem a ludicidade e aprendizagem significativa. O objetivo é utilizar a tecnologia para proporcionar diferentes formas de aprendizado às crianças, oferecendo um conjunto de desafios que envolvem os estudantes na resolução de problemas.
+                        </p>
                     </div>
                 </div>
-                <div class="games">
-                    <div class="gridGames">
-                        <img src="./assets/cada um com seu par.png" alt="cada um com seu par">
-                        <img src="./assets/brincar e rimar.png" alt="brincar e rimar">
-                        <img src="./assets/escutar e identificar.png" alt="escutar e identificar">
-                        <img src="./assets/turma aventureira.png" alt="turma aventureira">
+                <div class="divIconesNave">
+                    <div class="divIconsNave1">
+                        <div class="iconsNaveContainer">
+                            <div class="iconNave"><img id="livre" alt="livre"></div>
+                            <div class="textinNave">Jogos de classificação livre</div>
+                        </div>
+                        <div class="iconsNaveContainer">
+                            <div class="iconNave"><img id="interface" alt="interface"></div>
+                            <div class="textinNave">Interface intuitiva</div>
+                        </div>
+                        <div class="iconsNaveContainer">
+                            <div class="iconNave"><img id="audioDescricao" alt="audioDescricao"></div>
+                            <div class="textinNave">Áudio descrição</div>
+                        </div>
+                    </div>
+                    <div class="divIconsNave2">
+                        <div class="iconsNaveContainer">
+                            <div class="iconNave"><img id="limpeza" alt="limpeza"></div>
+                            <div class="textinNave">Limpeza Fácil</div>
+                        </div>
+                        <div class="iconsNaveContainer">
+                            <div class="iconNave"><img id="offline" alt="offline"></div>
+                            <div class="textinNave">Jogos Offline</div>
+                        </div>
+                        <div class="iconsNaveContainer">
+                            <div class="iconNave"><img id="braile" alt="braile"></div>
+                            <div class="textinNave">Linguagem braile</div>
+                        </div>
+                    </div>
+                    <div class="divIconsNave3">
+                        <div class="iconsNaveContainer">
+                            <div class="iconNave"><img id="resistencia" alt="resistencia"></div>
+                            <div class="textinNave">Vidro resistente ao impacto e à água</div>
+                        </div>
+                        <div class="iconsNaveContainer">
+                            <div class="iconNave"><img id="garantia" alt="garantia"></div>
+                            <div class="textinNave">Garantia de 1 Ano</div>
+                        </div>
+                        <div class="iconsNaveContainer">
+                            <div class="iconNave"><img id="libras" alt="libras"></div>
+                            <div class="textinNave">Tradução em LIBRAS</div>
+                        </div>
+                    </div>
+                    <div class="divIconsNave4">
+                        <div class="iconsNaveContainer">
+                            <div class="iconNave"><img id="touch" alt="touch"></div>
+                            <div class="textinNave">Tela Multi Touch</div>
+                        </div>
+                        <div class="iconsNaveContainer">
+                            <div class="iconNave"><img id="ampliacao" alt="ampliacao"></div>
+                            <div class="textinNave">Ampliação para baixa visão</div>
+                        </div>
+                        <div class="iconsNaveContainer">
+                            <div class="iconNave"><img id="naoToxico" alt="naoToxico"></div>
+                            <div class="textinNave">Plástico de alta resistência não tóxico</div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="planetsInfo">
-                <div class="anterior">
-                    <img src="./assets/Seta.png" alt="anterior">
+        </div>
+    </div>
+    <div class="ambientes">
+        <div class="divTituloAmbientes">
+            <img id="tituloAmbientes" alt="Título Ambientes">
+        </div>
+        <div class="planetasContainer">
+            <div class="divPlanetas">
+                <img class="planetas resize" id="planetDigital" src="./assets/CARROSEL_PLANETAS/gif0.gif">
+                <img class="planetas" id="planetAbc" src="./assets/CARROSEL_PLANETAS/gif1.gif">
+                <img class="planetas" id="planetGente" src="./assets/CARROSEL_PLANETAS/gif2.gif">
+                <img class="planetas" id="planetMovimento" src="./assets/CARROSEL_PLANETAS/gif3.gif">
+                <img class="planetas" id="planetNumeros" src="./assets/CARROSEL_PLANETAS/gif4.gif">
+                <img class="planetas" id="planetImagincao" src="./assets/CARROSEL_PLANETAS/gif5.gif">
+                <img class="planetas" id="planetVida" src="./assets/CARROSEL_PLANETAS/gif6.gif">
+                <img class="planetas" id="planetHistorias" src="./assets/CARROSEL_PLANETAS/gif7.gif">
+                <img class="planetas" id="planetEmocoes" src="./assets/CARROSEL_PLANETAS/gif8.gif">
+            </div>
+            <div class="divPrints">
+                <img class="prints" src="./assets/Prints Conteudo Educanave/0/0.png">
+                <img class="prints" src="./assets/Prints Conteudo Educanave/0/1.png">
+                <img class="prints" src="./assets/Prints Conteudo Educanave/0/2.png">
+                <img class="prints" src="./assets/Prints Conteudo Educanave/0/3.png">
+            </div>
+        </div>
+        <div class="divSetasAmbientes">
+            <div class="divTituloPlanetas">
+                <div class="setaEsquerda">
+                    <img id="setaEsquerda" alt="Seta Esquerda">
                 </div>
-                <div class="planetasInfo">
-                    <img src="./assets/planeta ABC.png" alt="informação do planeta">
+                <div class="titulo" id="tituloPlanet">
+                    <img id="tituloPlaneta">
+                    <p id="textoAmbiente"></p>
                 </div>
-                <div class="proximo">
-                    <img src="./assets/Seta.png" alt="proximo">
+                <div class="setaDireita">
+                    <img id="setaDireita" alt="Seta Direita">
                 </div>
+            </div>
+            <div class="divSelo">
+                <img id="selo" alt="Selo">
             </div>
         </div>
     </div>
     <div class="acessibilidade">
-        <img class="selo" src="./assets/Selo.png" alt="selo">
-        <div class="mesaInterativa">
-            <img class="acessibilidadeLogo" src="./assets/Titulo3.png" alt="Acessibilidade">
-            <div class="AcessibilidadeContainer">
-                <div class="AcessibilidadeInfo">
-                    <p class="infoAcessibilidade">
-                        A <strong>Mesa Interativa Digital Educa NAVE</strong> oferece recursos pedagógico digitais com foco
-                        na inclusão, como áudio descrição, guias em alto-relevo e tradução simultânea em
-                        Língua Brasileira de Sinais (LIBRAS) em conteúdos selecionados, promovendo
-                        acessibilidade a alunos com deficiência.
+        <div class="divAcessibilidadeContainer">
+            <div class="divTituloAcessibilidade">
+                <img id="acessibilidade" alt="">
+            </div>
+            <div class="divTextAcessibilidadeCometa">
+                <div class="textoAcessibilidade">
+                    <p class="textAcessibilidade">
+                        A <strong>Mesa Interativa Digital</strong> também oferece recursos pedagógicos com foco na inclusão, como audiodescrição, guias em alto-relevo e tradução simultânea das histórias digitais em Língua Brasileira de Sinais (Libras).
                     </p>
-                    <img class="cometa" src="./assets/Cometa.png" alt="Cometa">
                 </div>
-                <img class="tituloGuia" src="./assets/Titulo4.png" alt="Guias em alto relevo">
-                <div class="video">
-                    <img class="videoMoldura" src="./assets/GuiaAcessibilidade.png" alt="Video">
+                <div class="divCometa">
+                    <img id="cometa" alt="">
                 </div>
-                <video class="videoPlay" autoplay loop width="800">
-                    <source src="./assets/maozinha.mp4" type="video/mp4">
-                    Seu navegador não suporta vídeos HTML5.
-                </video>
+            </div>
+        </div>
+        <div class="divVideoContainer">
+            <div class="divTituloVideo">
+                <img id="tituloVideo" alt="">
+            </div>
+            <div class="divMolduraVideo">
+                <img id="molduraVideo" alt="">
+                <div class="divVideo">
+                    <video class="videoPlay" autoplay muted loop>
+                        <source src="./assets/maozinha.mp4" type="video/mp4">
+                        Seu navegador não suporta vídeos HTML5.
+                    </video>
+                </div>
             </div>
         </div>
     </div>
     <div class="sensorRfid">
-        <div class="sensorTitle">
-            <img src="./assets/Titulo5.png" alt="Sensor Rfid">
-            <p class="sensorInfo">
-                A tecnologia de Identificação por Radiofrequência (RFID), que faz parte da Mesa Interativa Digital Educa NAVE, se baseia na exploração
-                de conjuntos de cartas interativas, utilizando o método de aproximação das cartas junto a um sensor.
+        <div class="divTituloSensor">
+            <img id="tituloSensor" alt="">
+        </div>
+        <div class="divP1Sensor">
+            <p class="textSensor">
+                A tecnologia de Identificação por Radiofrequência (RFID), que faz parte da Mesa Interativa Digital Educa NAVE, baseia-se na exploração de conjuntos de cartas interativas. É utilizado o método de aproximação das peças ao sensor. 
             </p>
         </div>
-        <div class="infoCard">
-            <div class="sensorInfo2">
-                <p class="sensorInfo">
-                    Por meio da manipulação dessas cartas, as
-                    crianças serão incentivadas a aprender e
-                    interagir com as imagens, construindo
-                    memórias e promovendo a troca de
-                    experiências com outros ambientes
-                    educacionais. A interface é intuitiva e seu
-                    design promove o trabalho coletivo,
-                    incentivando a interação social e o
-                    desenvolvimento de atividades em grupos
-                </p>
-            </div>
-            <div class="cards">
-                <div class="cardGrid">
+        <div class="divTextCardContainerMobile">
+            <div class="divCardSensor">
+                <div class="cards1">
                     <div class="cardItem">
-                        <label class="lblCardItem">Cores</label>
-                        <img class="cartas" src="./assets/Cores.png" alt="Carta Cores">
+                        <label class="lblCardItem" id="lblCartaCores">Cores</label>
+                        <img id="cartaCores" alt="Carta Cores">
                     </div>
-                    <div class="cardItem"></div>
                     <div class="cardItem">
-                        <label class="lblCardItem">Letras</label>
-                        <img class="cartas" src="./assets/Letras.png" alt="Carta Letras">
+                        <label class="lblCardItem" id="lblCartaLetras">Letras</label>
+                        <img id="cartaLetras" alt="Carta Letras">
                     </div>
-                    <div class="cardItem"></div>
                     <div class="cardItem">
-                        <label class="lblCardItem">Números</label>
-                        <img class="cartas" src="./assets/Numeros.png" alt="Carta Números">
+                        <label class="lblCardItem" id="lblCartaNumeros">Números</label>
+                        <img id="cartaNumeros" alt="Carta Números">
                     </div>
-                    <div class="cardItem"></div>
                     <div class="cardItem">
                         <label class="lblCardItem">Esquerda</label>
-                        <img class="cartas" src="./assets/Direcoes.png" alt="Carta Direções">
+                        <img id="cartaEsquerda" alt="Carta Direções">
                     </div>
-                    <div class="cardItem"></div>
+                </div>
+                <div class="cards2">
                     <div class="cardItem">
                         <label class="lblCardItem">Notas</label>
-                        <img class="cartas" src="./assets/Notas.png" alt="Carta Notas">
+                        <img id="cartaNotas" alt="Carta Notas">
                     </div>
-                    <div class="cardItem"></div>
                     <div class="cardItem">
                         <label class="lblCardItem">Instrumentos</label>
-                        <img class="cartas" src="./assets/Instrumentos.png" alt="Carta Instrumentos">
+                        <img id="cartaInsturmentos" alt="Carta Instrumentos">
                     </div>
-                    <div class="cardItem"></div>
                     <div class="cardItem">
                         <label class="lblCardItem">Emoções</label>
-                        <img class="cartas" src="./assets/Emocoes.png" alt="Carta Emoções">
+                        <img id="cartaEmocoes" alt="Carta Emoções">
                     </div>
-                    <div class="cardItem"></div>
+                </div>
+            </div>
+            <div class="divTextSensor">
+                <p class="textSensor2">
+                    Por meio da manipulação dessas cartas, as crianças são incentivadas a aprender e interagir com as imagens, construindo memórias e promovendo a troca de experiências com outros ambientes educacionais. A interface é intuitiva, e o design promove o trabalho coletivo, incentivando a interação social e o desenvolvimento de atividades em grupos.
+                </p>
+            </div>
+        </div>
+        <div class="divTextCardContainer">
+            <div class="divTextSensor">
+                <p class="textSensor2">
+                    Por meio da manipulação dessas cartas, as crianças são incentivadas a aprender e interagir com as imagens, construindo memórias e promovendo a troca de experiências com outros ambientes educacionais. A interface é intuitiva, e o design promove o trabalho coletivo, incentivando a interação social e o desenvolvimento de atividades em grupos.
+                </p>
+            </div>
+            <div class="divCardSensor">
+                <div class="cards1">
+                    <div class="cardItem">
+                        <label class="lblCardItem" id="lblCartaCores">Cores</label>
+                        <img id="cartaCores" alt="Carta Cores">
+                    </div>
+                    <div class="cardItem">
+                        <label class="lblCardItem" id="lblCartaLetras">Letras</label>
+                        <img id="cartaLetras" alt="Carta Letras">
+                    </div>
+                    <div class="cardItem">
+                        <label class="lblCardItem" id="lblCartaNumeros">Números</label>
+                        <img id="cartaNumeros" alt="Carta Números">
+                    </div>
+                    <div class="cardItem">
+                        <label class="lblCardItem">Esquerda</label>
+                        <img id="cartaEsquerda" alt="Carta Direções">
+                    </div>
+                </div>
+                <div class="cards2">
+                    <div class="cardItem">
+                        <label class="lblCardItem">Notas</label>
+                        <img id="cartaNotas" alt="Carta Notas">
+                    </div>
+                    <div class="cardItem">
+                        <label class="lblCardItem">Instrumentos</label>
+                        <img id="cartaInsturmentos" alt="Carta Instrumentos">
+                    </div>
+                    <div class="cardItem">
+                        <label class="lblCardItem">Emoções</label>
+                        <img id="cartaEmocoes" alt="Carta Emoções">
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="divFooterSensor">
+            <div class="divMesaSensor">
+                <img id="mesaSensor" alt="Mesa Sensor">
+            </div>
+            <div class="divCartaSensor">
+                <img id="cartaSensor" alt="Carta Sensor">
+            </div>
+        </div>
     </div>
+    <div class="formacaoProfessores">
+        <div class="tituloFormacao">
+            <img id="formacaoProfessores" alt="">
+        </div>
+        <div class="divTexto">
+            <p class="textoFormacao">
+                A formação docente, como apoio aos professores, acontecerá de forma online e presencial, totalizando 16 horas de estudos técnicos e pedagógicos. A assessoria pedagógica continuada acontecerá por meio de acesso ao Portal Educa NAVE, que contemplará: 
+            </p>
+        </div>
+        <div class="divOpcoesFormacao">
+            <ul class="listaFormacao">
+                <li class="textoFormacao">Sugestões de planejamento de aulas orientadas a partir dos jogos, que podem ser realizados antes, durante ou após o uso do conteúdo da mesa;</li>
+                <li class="textoFormacao">Objetos digitais (vídeos, áudios, tutoriais), que fundamentarão o trabalho pedagógico com os ambientes e seus recursos;</li>
+                <li class="textoFormacao">Orientação por intermédio de textos e indicações sobre a aplicação das atividades oferecidas.</li>
+            </ul>
+        </div>
+        <div class="divLivros">
+            <div class="divCatalogoJogos">
+                <img id="catalogosJogos" alt="Catálogo de Jogos">
+            </div>
+            <div class="divCatalogoTecnico">
+                <img id="catalogoTecnico" alt="Catálogo Técnico">
+            </div>
+        </div>
+    </div>
+    <div class="contato">
+        <div class="divContainerContato">
+            <div class="divFormulario">
+                <div class="divLogoCittiusForm">
+                    <img id="logoCittiusForm" alt="logo Cittius">
+                </div>
+                <p class="textoForm">
+                    Preencha as informações abaixo, para mais informações.
+                </p>
+                <form id="contactForm" action="" method="POST" class="formContato">
+                    <input class="inputContato" id="inputNome" placeholder="Nome" type="text">
+                    <input class="inputContato" id="inputEmail" placeholder="E-mail" type="text">
+                    <input class="inputContato" id="inputCelular" placeholder="Celular" type="text">
+                    <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Mensagem"></textarea>
+                    <div class="btnEnviar">
+                        <img id="enviar" alt="">
+                    </div>
+                </form>
+            </div>
+            <div class="divMiguel">
+                <img id="miguel" alt="Miguel">
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script src="animationPlanets.js"></script>
 </body>
 </html>

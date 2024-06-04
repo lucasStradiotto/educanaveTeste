@@ -1,0 +1,525 @@
+@media (max-width: 2560px){
+
+    main {
+        height: 2000px;
+    }
+
+    .topBar {
+        width: 100%;
+        height: 174px;
+        background-image: url("./assets/4K/Barra.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 2;
+    }
+
+    /* Logo Educanave */
+    #logoEducanave {
+        content: url("./assets/4K/nave.png");
+        position: relative;
+        left: 100px;
+    }
+
+    /* Logo Cittius */
+    #logoCittius {
+        content: url("./assets/4K/Cittius.png");
+        position: relative;
+        top: 40px;
+    }
+
+    /* Botão Login */
+    #botaoLogin {
+        content: url("./assets/4K/Login.png");
+        position: relative;
+        top: 35px;
+        z-index: 3;
+    }
+
+    /* Nuvem */
+    #nuvem {
+        content: url("./assets/4K/Nuvens1.png");
+        position: relative;
+        top: 20px;
+    }
+
+    /* Título Decolar */
+    #decolar {
+        content: url("./assets/4K/Decolar.png");
+        position: relative;
+    }
+
+    /* Decolar Text 1 */
+    .divDecolarText1 {
+        left: 300px;
+    }
+
+    #textMobile {
+        display: none;
+    }
+
+    /* Decolar Text 2 */
+    .divDecolarText2 {
+        left: 100px;
+        width: 50%;
+    }
+
+    /* Decolar Texts */
+    .textDecolar {
+        padding-left: 20px;
+        font-family: 'Gotham-medium';
+        font-size: 40px;
+        color: white;
+    }
+
+    /* Sol */
+    #sol {
+        content: url("./assets/4k/Sol_2.png");
+        position: relative;
+        top: -150px;
+        left: 130px;
+        z-index: 1;
+        animation: float 5s ease-in-out infinite;
+    }
+
+    /* Mesa 1 */
+    #mesa1 {
+        content: url("./assets/4K/Mesa.png");
+        position: relative;
+        top: 350px;
+        left: -368px;
+    }
+
+    /* Título Nave */
+    #tituloNave {
+        content: url("./assets/4K/TituloNave.png");
+        width: 70%;
+        padding-left: 200px;
+        margin-top: 50px;
+    }
+
+    /* Dra. Ana */
+    #drAna {
+        content: url("./assets/4K/DrAna_1.png");
+        animation: float 5s ease-in-out infinite;
+    }
+
+    /* Texto Nave */
+    .textNave {
+        width: 90%;
+        font-family: 'Gotham-book';
+        font-size: 35px;
+        margin-top: 50px;
+    }
+
+    .textinNave {
+        font-family: 'Gotham-book';
+        font-size: 30px;
+        width: 500px;
+        margin-bottom: 50px;
+    }
+
+    .iconNave {
+        margin-bottom: 50px;
+    }
+
+    .iconsNaveContainer {
+        gap: 20px;
+    }
+
+    /* Icons Nave */
+    #livre {
+        content: url("./assets/4K/Icone-Livre.png");
+    }
+
+    #interface {
+        content: url("./assets/4K/Icone-Interface.png");
+    }
+
+    #audioDescricao {
+        content: url("./assets/4K/Icone-AudioDescricao.png");
+    }
+
+    #limpeza {
+        content: url("./assets/4K/Icone-Limpeza.png");
+    }
+
+    #offline {
+        content: url("./assets/4K/Icone-Offline.png");
+    }
+
+    #braile {
+        content: url("./assets/4K/Icone-brile.png");
+    }
+
+    #resistencia {
+        content: url("./assets/4K/Icone-Resistencia.png");
+    }
+
+    #garantia {
+        content: url("./assets/4K/Icone-Garantia.png");
+    }
+
+    #libras {
+        content: url("./assets/4K/Icone_LIBRAS.png");
+    }
+
+    #touch {
+        content: url("./assets/4K/Icone-Touch.png");
+    }
+
+    #ampliacao {
+        content: url("./assets/4K/Icone-Ampliacao.png");
+    }
+
+    #naoToxico {
+        content: url("./assets/4K/Icone-Nao\ Toxico.png");
+    }
+
+    .ambientes, .sensorRfid {
+        background: url("./assets/4K/Fundo1.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /* Título Ambietnes */
+    #tituloAmbientes {
+        content: url("./assets/4K/TituloAmb.png");
+        padding: 50px;
+    }
+
+    .textNaveMobile1 {
+        display: none;
+    }
+
+    .divSetasAmbientes {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .divSetasAmbientesMobile {
+        display: none;
+    }
+
+    .divSelo {
+        position: relative;
+        left: -900px;
+    }
+
+    .divPrintsMobile {
+        display: none;
+    }
+
+    /* Selo */
+    #selo {
+        content: url("./assets/4K/Selo.png");
+        position: relative;
+        top: 200px;
+        animation: float 5s ease-in-out infinite;
+    }
+
+    /* Seta Esquerda */
+    #setaEsquerda {
+        content: url("./assets/4K/setaE.png");
+        cursor: pointer;
+    }
+
+    /* Seta Direita */
+    #setaDireita {
+        content: url("./assets/4K/SetaD.png");
+        cursor: pointer;
+    }
+
+    /* Título Acessibilidade */
+    #acessibilidade {
+        content: url("./assets/4k/Titulo2_4.png");
+    }
+
+    /* Texto Acessibilidade */
+    .textAcessibilidade {
+        font-family: 'Gotham-book';
+        font-size: 35px;
+    }
+
+    /* Cometa */
+    #cometa {
+        content: url("./assets/4K/Cometa.png");
+        position: relative;
+        left: -200px;
+        animation: float 5s ease-in-out infinite;
+    }
+
+    /* Titulo Vídeo */
+    #tituloVideo {
+        content: url("./assets/4K/TituloGuiasRelevo.png");
+        margin-left: 300px;
+    }
+
+    /* Moldura Video */
+    #molduraVideo {
+        content: url("./assets/4K/MolduraAcessibilidade.png");
+    }
+
+    /* Video */
+    .divVideo {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+    }
+
+    .divVideo video {
+        z-index: -1;
+        position: relative;
+        top: -1170px;
+        width: 1800px;
+    }
+
+    /* Titulo Sensor RFID */
+    #tituloSensor {
+        content: url("./assets/4K/TituloSensor.png");
+        padding: 50px;
+    }
+
+    .textSensor {
+        padding-left: 20px;
+        font-family: 'Gotham-book';
+        font-size: 35px;
+        color: white;
+    }
+
+    .textSensor2 {
+        padding: 50px 120px;
+        font-family: 'Gotham-book';
+        font-size: 35px;
+        color: white;
+    }
+
+    /* Sensor RFID */
+    .sensorRfid {
+        position: relative;
+        top: -1200px;
+    }
+
+    .divTextCardContainerMobile {
+        display: none;
+    }
+
+    .cards2 {
+        margin-top: 50px;
+        margin-left: 100px;
+    }
+
+    /* Cartas Sensor RFID */
+    #cartaCores {
+        content: url("./assets/4K/Cores.png");
+    }
+
+    #cartaLetras {
+        content: url("./assets/4K/Letra.png");
+    }
+
+    #cartaNumeros {
+        content: url("./assets/4K/Numeros.png");
+    }
+
+    #cartaEsquerda {
+        content: url("./assets/4K/Direcao.png");
+    }
+
+    #cartaNotas {
+        content: url("./assets/4K/Notas.png");
+    }
+
+    #cartaInsturmentos {
+        content: url("./assets/4K/Instrumento.png");
+    }
+
+    #cartaEmocoes {
+        content: url("./assets/4K/Emocao.png");
+    }
+
+    /* Nuvem footer sensor */
+    .divFooterSensor {
+        background: url("./assets/4K/Nuves2.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        top: 10px;
+    }
+
+    /* Mesa Sensor */
+    #mesaSensor {
+        content: url("./assets/4K/mesa2.png");
+        position: relative;
+        top: -400px;
+    }
+
+    /* Carta Sensor */
+    #cartaSensor {
+        content: url("./assets/4K/VersoCarta.png");
+        position: relative;
+        top: -400px;
+        left: 300px;
+        animation: float 5s ease-in-out infinite;
+    }
+
+    /* Titulo Formação de Professores */
+    #formacaoProfessores {
+        content: url("./assets/4K/TituloFormacao.png");
+    }
+
+    .formacaoProfessores {
+        position: relative;
+        top: -1500px;
+    }
+
+    /* Catálogo de Jogos */
+    #catalogosJogos {
+        content: url("./assets/4K/Livro1.png");
+    }
+
+    /* Catálogo Técnico */
+    #catalogoTecnico {
+        content: url("./assets/4K/Livro2.png");
+    }
+
+    .contato {
+        position: relative;
+        top: -1400px;
+    }
+
+    /* Logo Cittius Formulário */
+    #logoCittiusForm {
+        content: url("./assets/4K/Cittius.png");
+    }
+
+    /* Miguel */
+    #miguel {
+        content: url("./assets/4K/Miguel.png");
+        position: relative;
+        left: -300px;
+        animation: float 5s ease-in-out infinite;
+    }
+
+    /* Input Formulario */
+    .inputContato {
+        height: 100px;
+    }
+
+    /* Formulário */
+    .divFormulario {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 200px;
+    }
+
+    .formContato {
+        width: 70%;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .inputContato {
+        border-radius: 20px;
+        font-size: 50px;
+        font-family: 'Gotham-book';
+        padding-left: 20px;
+    }
+
+    .inputContato:focus {
+        outline: none;
+    }
+    
+    #mensagem {
+        font-size: 50px;
+        font-family: 'Gotham-book';
+        padding-left: 20px;
+        padding-top: 20px;
+        border-radius: 20px;
+        resize: none;
+    }
+
+    #mensagem:focus {
+        outline: none;
+    }
+
+    /* Botão Enviar Formulário */
+    #enviar {
+        content: url("./assets/4K/Botao2_4.png");
+        cursor: pointer;
+    }
+
+    /* Animação Planetas */
+    .active {
+        transform: scale(2.5);
+    }
+    
+    .planetsOffScreen {
+        display: none;
+    }
+    
+    .divPlaneta {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .planetas {
+        width: 11%;
+    }
+
+    @keyframes float {
+        0% {
+        transform: translateY(0);
+        }
+        50% {
+        transform: translateY(-20px);
+        }
+        100% {
+        transform: translateY(0);
+        }
+    }
+
+    .gifPlanet {
+        width: 50%;
+        cursor: pointer;
+    }
+    
+    .resize {
+        animation: resize 1s forwards;
+    }
+    
+    @keyframes resize {
+        0% {
+        transform: scale(1);
+        }
+        20% {
+            transform: scale(1.1);
+        }
+        40% {
+        transform: scale(1.2);
+        }
+        60% {
+            transform: scale(1.3);
+        }
+        80% {
+            transform: scale(1.4);
+        }
+        100% {
+        transform: scale(1.5);
+        }
+    }
+
+    #textoAmbiente {
+        color: white;
+        font-family: 'Gotham-book';
+        font-size: 35px;
+        margin-top: 10px;
+    }
+
+}

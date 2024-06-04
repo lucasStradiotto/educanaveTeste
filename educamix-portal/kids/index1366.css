@@ -1,0 +1,26 @@
+@media (max-width: 1366px) {
+
+
+     /* Decolar Texts */
+     .textDecolar {
+        padding-left: 20px;
+        font-family: sans-serif;
+        font-size: 28px;
+        color: white;
+    }
+
+    .iconsNaveContainer {
+        flex-direction: column;
+    }
+
+    .divIconesNave {
+        left: -370px;
+    }
+
+    #textoAmbiente {
+        color: white;
+        font-family: 'Gotham-book';
+        font-size: 25px;
+        margin-top: 10px;
+    }
+}

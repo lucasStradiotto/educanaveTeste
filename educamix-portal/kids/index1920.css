@@ -1,0 +1,359 @@
+@media (max-width: 1920px){
+
+    main {
+        height: 1500px;
+    }
+
+    /* Logo Educanave */
+    #logoEducanave {
+        content: url("./assets/1920/Logo_Nave.png");
+        position: relative;
+        top: 50px;
+        left: 100px;
+    }
+
+    /* Logo Cittius */
+    #logoCittius {
+        content: url("./assets/1920/Cittius_3.png");
+        position: relative;
+        top: 40px;
+    }
+
+    /* Botão Login */
+    #botaoLogin {
+        content: url("./assets/1920/Login.png");
+        position: relative;
+        top: 40px;
+    }
+
+    /* Nuvem */
+    #nuvem {
+        content: url("./assets/1920/Nuvem1.png");
+        position: relative;
+        top: 20px;
+    }
+
+    /* Título Decolar */
+    #decolar {
+        content: url("./assets/1920/Decolar.png");
+        position: relative;
+    }
+
+    /* Decolar Text 1 */
+    .divDecolarText1 {
+        top: -100px;
+        left: 300px;
+    }
+
+    /* Decolar Text 2 */
+    .divDecolarText2 {
+        top: -100px;
+        left: 100px;
+        width: 60%;
+    }
+
+    /* Sol */
+    #sol {
+        content: url("./assets/1920/sol.png");
+        position: relative;
+        top: -150px;
+        left: 100px;
+        z-index: 1;
+    }
+
+    /* Mesa 1 */
+    #mesa1 {
+        content: url("./assets/1920/Mesa1.png");
+        position: relative;
+        top: 100px;
+        left: -260px;
+    }
+
+    /* Título Nave */
+    #tituloNave {
+        content: url("./assets/1920/Titulo1.png");
+        width: 70%;
+        padding-left: 200px;
+        margin-top: 50px;
+    }
+
+    /* Dra. Ana */
+    #drAna {
+        content: url("./assets/1920/DrAna.png");
+        position: relative;
+        top: 175px;
+    }
+
+    /* Texto Nave */
+    .textNave {
+        width: 80%;
+        font-family: 'Gotham-book';
+        font-size: 35px;
+        margin-top: 50px;
+    }
+
+    .textinNave {
+        font-family: 'Gotham-book';
+        font-size: 30px;
+        width: 350px;
+        margin-bottom: 50px;
+    }
+
+    .divIconesNave {
+        margin-top: 150px;
+        position: relative;
+        left: 0px;
+    }
+
+    .divIconsNave2 {
+        position: relative;
+        left: 0px;
+    }
+
+    .divIconsNave3 {
+        position: relative;
+        left: 0px;
+    }
+
+    .divIconsNave4 {
+        position: relative;
+        left: 0px;
+    }
+
+    /* Icons Nave */
+    #livre {
+        content: url("./assets/1920/Icone-Livre.png");
+    }
+
+    #interface {
+        content: url("./assets/1920/Icone-Interface.png");
+    }
+
+    #audioDescricao {
+        content: url("./assets/1920/Icone-AudioDescricao.png");
+    }
+
+    #limpeza {
+        content: url("./assets/1920/Icone-Limpeza.png");
+    }
+
+    #offline {
+        content: url("./assets/1920/Icone-Offline.png");
+    }
+
+    #braile {
+        content: url("./assets/1920/Icone-brile.png");
+    }
+
+    #resistencia {
+        content: url("./assets/1920/Icone-Resistencia.png");
+    }
+
+    #garantia {
+        content: url("./assets/1920/Icone-Garantia.png");
+    }
+
+    #libras {
+        content: url("./assets/1920/Icone_LIBRAS.png");
+    }
+
+    #touch {
+        content: url("./assets/1920/Icone-Touch.png");
+    }
+
+    #ampliacao {
+        content: url("./assets/1920/Icone-Ampliacao.png");
+    }
+
+    #naoToxico {
+        content: url("./assets/1920/Icone-NaoToxico.png");
+    }
+    
+    /* Selo */
+    .divSelo {
+        position: relative;
+        left: -700px;
+    }
+
+    #selo {
+        content: url("./assets/1920/Selo.png");
+        position: relative;
+        top: 150px;
+    }
+
+    /* Seta Esquerda */
+    #setaEsquerda {
+        content: url("./assets/1920/Seta.png");
+        transform: rotate(180deg);
+        cursor: pointer;
+    }
+
+    /* Seta Direita */
+    #setaDireita {
+        content: url("./assets/1920/Seta.png");
+        cursor: pointer;
+    }
+
+    /* Cometa */
+    #cometa {
+        content: url("./assets/1920/Cometa.png");
+        position: relative;
+        left: -50px;
+    }
+
+    /* Titulo Vídeo */
+    #tituloVideo {
+        content: url("./assets/1920/Titulo4.png");
+    }
+
+    /* Moldura Video */
+    #molduraVideo {
+        content: url("./assets/1920/GuiaAcessibilidade.png");
+    }
+
+    /* Video */
+    .divVideo {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+    }
+
+    .divVideo video {
+        z-index: -1;
+        position: relative;
+        top: -850px;
+        width: 1300px;
+    }
+
+    /* Sensor RFID */
+    .sensorRfid {
+        position: relative;
+        top: -900px;
+    }
+
+    .textSensor {
+        padding-left: 20px;
+        font-family: 'Gotham-book';
+        font-size: 30px;
+        color: white;
+    }
+
+    .textSensor2 {
+        font-family: Gotham-book;
+        font-size: 30px;
+        color: white;
+        padding: 50px 120px;
+    }
+
+    /* Titulo Sensor RFID */
+    #tituloSensor {
+        content: url("./assets/1920/Titulo5.png");
+        padding: 50px;
+    }
+
+    .cards2 {
+        margin-top: 50px;
+        margin-left: 100px;
+    }
+
+    /* Cartas Sensor RFID */
+    #cartaCores {
+        content: url("./assets/1920/Cores.png");
+    }
+
+    #cartaLetras {
+        content: url("./assets/1920/Letras.png");
+    }
+
+    #cartaNumeros {
+        content: url("./assets/1920/Numeros.png");
+    }
+
+    #cartaEsquerda {
+        content: url("./assets/1920/Direcoes.png");
+    }
+
+    #cartaNotas {
+        content: url("./assets/1920/Notas.png");
+    }
+
+    #cartaInsturmentos {
+        content: url("./assets/1920/Instrumentos.png");
+    }
+
+    #cartaEmocoes {
+        content: url("./assets/1920/Emocoes.png");
+    }
+
+    /* Nuvem footer sensor */
+    .divFooterSensor {
+        background: url("./assets/4K/Nuves2.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        top: 10px;
+    }
+
+    /* Mesa Sensor */
+    #mesaSensor {
+        content: url("./assets/1920/Mesa.png");
+        position: relative;
+        top: -200px;
+    }
+
+    /* Carta Sensor */
+    #cartaSensor {
+        content: url("./assets/1920/Carta.png");
+        position: relative;
+        top: -300px;
+        left: 200px;
+    }
+
+    .formacaoProfessores {
+        position: relative;
+        top: -1100px;
+    }
+
+    /* Catálogo de Jogos */
+    #catalogosJogos {
+        content: url("./assets/1920/Livros1.png");
+    }
+
+    /* Catálogo Técnico */
+    #catalogoTecnico {
+        content: url("./assets/1920/Livros2.png");
+    }
+
+    .contato {
+        position: relative;
+        top: -1000px;
+    }
+
+    /* Miguel */
+    #miguel {
+        content: url("./assets/1920/Miguel.png");
+        position: relative;
+        left: -100px;
+    }
+
+    /* Formulário */
+    .divFormulario {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0px;
+    }
+
+     /* Botão Enviar Formulário */
+     #enviar {
+        content: url("./assets/1920/Botao2_3.png");
+    }
+
+    #textoAmbiente {
+        color: white;
+        font-family: 'Gotham-book';
+        font-size: 30px;
+        margin-top: 10px;
+    }
+}
