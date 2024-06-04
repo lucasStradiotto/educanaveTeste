@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background: url("./assets/Fundo1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.topDiv {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: url("./assets/Barra_Cima.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100px;
+}
+
+.topLogos {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.educanaveLogo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 50px;
+    width: 25%;
+}
+
+.cittiusLogo {
+    width: 25%;
+}
+
+.botaoLogin {
+    width: 60%;
+}
+
+.deadBackground {
+    position: relative;
+    width: 100%;
+    height: 470px;
+    background-color: transparent;
+}
+
+.deadBackground2 {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-color: transparent;
+}
+
+.infoMesa {
+    margin: 0 0 0 300px;
+}
+
+
+.info {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+.firstStar, .secondStar {
+    display: flex;
+    align-items: center;
+}
+
+.firstStar {
+    margin: 0 0 50px 100px;
+}
+
+.secondStar {
+    justify-content: center;
+    margin-right: 500px;
+}
+
+.titleNave {
+    width: 100%;
+}
+
+.imgTitulo1 {
+    width: 60%;
+    margin-left: 150px;
+}
+
+.infoNave {
+    display: flex;
+}
+
+.drAna {
+    width: 25%;
+}
+
+.textNave {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.text {
+    font-family: sans-serif;
+    font-size: 16px;
+    color: black;
+}
+
+#text1 {
+    width: 500px;
+}
+
+#text2 {
+    width: 650px;
+}
+
+#text3 {
+    width: 800px;
+}
+
+.ambientes, .sensorRfid {
+    background: url("./assets/Fundo2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ambienteContent {
+    padding: 50px;
+}
+
+.planetsNGames {
+    display: flex;
+}
+
+.planets {
+    display: flex;
+    padding: 50px;
+    width: 500px;
+    align-items: center;
+}
+
+.planetas {
+    width: 130%;
+}
+
+.planetaCentral {
+    width: 200%;
+}
+
+.grande {
+    transform: scale(1.7);
+}
+
+.planetLeft {
+    position: relative;
+    left: -100px;
+    z-index: 2;
+}
+
+.planetCenter {
+    position: relative;
+    left: -130px;
+    z-index: 3;
+}
+
+.planetRight1 {
+    position: relative;
+    left: -100px;
+    z-index: 2;
+}
+
+.planetRight2 {
+    position: relative;
+    left: -180px;
+    z-index: 1;
+}
+
+.games {
+    padding: 50px;
+}
+
+.gridGames {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.planetsInfo {
+    display: flex;
+    margin-left: 400px;
+    align-items: center;
+}
+
+.anterior {
+    transform: rotate(180deg);
+}
+
+.selo {
+    width: 25%;
+    position: relative;
+    top: -200px;
+}
+
+.mesaInterativa {
+    position: relative;
+    top: -150px;
+}
+
+.acessibilidadeLogo {
+    width: 25%;
+    margin-left: 100px;
+}
+
+.AcessibilidadeContainer {
+    margin-top: 50px;
+}
+
+.AcessibilidadeInfo {
+    display: flex;
+    margin-left: 100px;
+}
+
+.infoAcessibilidade {
+    width: 70%;
+    font-size: 20px;
+}
+
+.cometa {
+    width: 30%;
+    position: relative;
+    top: -60px;
+    z-index: 3;
+}
+
+.tituloGuia {
+    width: 30%;
+    position: relative;
+    top: -250px;
+    left: 100px;
+}
+
+.video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.videoMoldura {
+    width: 67%;
+    position: relative;
+    top: -200px;
+    z-index: 2;
+}
+
+.videoPlay {
+    position: relative;
+    top: -700px;
+    left: 280px;
+}
+
+.sensorRfid {
+    position: relative;
+    top: -700px;
+}
+
+.sensorTitle {
+    padding: 50px 50px 0 50px;
+}
+
+.sensorInfo {
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 16px;
+}
+
+.sensorInfo2 {
+    width: 30%;
+}
+
+.infoCard {
+    display: flex;
+    padding-left: 50px;
+}
+
+.cards {
+    padding: 20px;
+    width: 100%;
+}
+
+.cardGrid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.cardItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lblCardItem {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 16px;
+}
+
+.cartas {
+    width: 60%;
+}

@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>EducamixKids Gravação de Vídeo</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <link rel="author" type="text/html" href="https://plus.google.com/+MuazKhan">
+        <meta name="author" content="Muaz Khan">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <link href="css/index.css" rel="stylesheet" type="text/css">
+        <!-- script used for audio/video/gif recording -->
+        <!-- <script src="https://www.webrtc-experiment.com/RecordRTC.js"></script>
+        <script src="https://cdn.webrtc-experiment.com/gif-recorder.js"></script>
+        <script src="https://cdn.webrtc-experiment.com/getScreenId.js"></script>
+        <script src="https://cdn.webrtc-experiment.com/gumadapter.js"></script> -->
+
+	<script src="https://cdn.webrtc-experiment.com/RecordRTC.js"></script>
+    	<script src="https://cdn.webrtc-experiment.com/gif-recorder.js"></script>
+
+    	<!-- for Edge/FF/Chrome/Opera/etc. getUserMedia support -->
+    	<script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+    	<script src="https://cdn.webrtc-experiment.com/DetectRTC.js"></script>
+
+
+        <script src="js/helper.js"></script>
+    </head>
+
+    <body>
+        <section class="experiment">  
+            <div>
+                <h1>
+                </h1>
+                <video id="preview" controls autoplay ></video>
+            </div>
+
+
+            <div id="container" style="padding: 1em 2em;"></div>
+        </section>
+        <section id="buttons">
+            <div>
+                <button id="voltar" onclick="history.back()"></button>
+                <button id="record"></button>
+                <button id="stop" disabled></button>
+            </div>
+        </section>
+
+        <script src="js/index.js"></script>
+    </body>
+</html>

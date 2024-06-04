@@ -1,0 +1,2918 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik:700&display=swap");
+
+@keyframes rotateLoad {
+    0% {
+        transform: rotate(0deg);
+        scale: 1.2;
+    }
+    100% {
+        transform: rotate(360deg);
+        scale: 1.0;
+    }
+}
+
+body {
+    height: 100%;
+}
+
+.load {
+    z-index: 50;
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    position: absolute;
+    background-color: #767676bb;
+    user-select: none;
+}
+
+.iconLoading {
+    width: 10%;
+    animation: rotateLoad 3s linear infinite;
+}
+
+.navbarInicio {
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.navbarCapa {
+    height: 200px;
+    width: 100%;
+}
+
+.navbarLogo {
+    height: 200px;
+    position: absolute;
+    padding-left: 30px;
+}
+
+.subnavbarInicio {
+    background: #E6E6E6;
+    height: 20px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 255px;
+    align-items: center;
+}
+
+.bordaSubMenus {
+    background: #BFBFBF;
+    border: 10px solid #BFBFBF;
+    border-radius: 35px;
+    position: absolute;
+}
+
+.menus,
+.menusSelecionados {
+    cursor: pointer;
+}
+
+#menuEstrela-Selecionado,
+#menuTurma-Selecionado,
+#menuAtividades-Selecionado,
+#menuMensagem-Selecionado,
+#menuConfiguracao-Selecionado {
+    display: none;
+}
+
+.hrInicio {
+    background-color: #BFBFBF;
+    height: 8px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+label {
+    display: inline-block;
+    text-align: center;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#itemTurma {
+    display: flex;
+    flex-direction: column;
+}
+
+.labelaccordion {
+    font-size: 50px;
+    color: white;
+    position: relative;
+}
+
+#accordionTurma {
+    display: flex;
+    justify-content: center;
+}
+
+#btnTurma {
+    width: 1500px;
+    height: 20px;
+    border: none;
+    border-left: 5px solid darkgrey;
+    border-right: 5px solid darkgrey;
+    border-bottom: 5px solid lightgray;
+}
+
+#iconTurma {
+    position: relative;
+    top: -43px;
+    left: -250px;
+}
+
+#lblTurma {
+    left: -625px;
+    top: -36px;
+    cursor: pointer;
+}
+
+#accordionAluno {
+    display: flex;
+    justify-content: center;
+}
+
+#Alunos {
+    display: flex;
+    flex-direction: row;
+}
+
+#btnAluno {
+    width: 1500px;
+    height: 20px;
+    border: none;
+    border-left: 5px solid darkgrey;
+    border-right: 5px solid darkgrey;
+    border-bottom: 5px solid lightgray;
+}
+
+#iconAluno {
+    position: relative;
+    top: -43px;
+    left: -250px;
+}
+
+#lblAluno {
+    left: -625px;
+    top: -34px;
+    cursor: pointer;
+}
+
+#collapseTurma {
+    padding-top: 50px;
+    display: flex;
+    background: rgb(243, 243, 243);
+    justify-content: center;
+}
+
+#collapseAluno {
+    padding-top: 120px;
+    display: flex;
+    background: rgb(243, 243, 243);
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#conteudoTurma {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    grid-auto-rows: 200px;
+}
+
+#conteudoTurmaAdmin {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    grid-template-rows: 200px;
+}
+
+.itemTurma {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.collapse:not(.show) {
+    display: none !important;
+}
+
+#conteudoAluno {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    grid-auto-rows: 200px;
+}
+
+#conteudoAlunoAdmin {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    grid-auto-rows: 200px;
+}
+
+#pesquisar {
+    position: relative;
+    top: -40px;
+}
+
+#pesquisaAluno {
+    position: absolute;
+    left: 100px;
+    border: none;
+    width: 700px;
+    height: 48px;
+    padding-left: 10px;
+}
+
+.selecaoQuadro {
+    position: absolute;
+}
+
+.selecionarTurma {
+    position: relative;
+    top: 70px;
+    left: 150px;
+    width: 700px;
+    height: 50px;
+}
+
+#turmaVazia {
+    position: relative;
+    top: 70px;
+    left: 150px;
+    width: 700px;
+    height: 50px;
+}
+
+.ambientesAdmin {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.btnAdicionar {
+    padding: 50px;
+}
+
+#jogo1Vazio,
+#jogo2Vazio,
+#jogo3Vazio,
+#jogo4Vazio,
+#jogo5Vazio,
+#jogo6Vazio,
+#jogo7Vazio,
+#jogo8Vazio,
+#jogo9Vazio,
+#ebook1Vazio,
+#ebook2Vazio,
+#ebook3Vazio,
+#ebook4Vazio,
+#ebook5Vazio,
+#ebook6Vazio,
+#ebook7Vazio,
+#ebook8Vazio,
+#ebook9Vazio,
+#jogoRfid1Vazio,
+#jogoRfid2Vazio,
+#jogoRfid3Vazio,
+#jogoRfid4Vazio,
+#jogoRfid5Vazio,
+#jogoRfid6Vazio,
+#jogoRfid7Vazio,
+#jogoRfid8Vazio,
+#jogoRfid9Vazio {
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+#sitesVazio {
+    height: 100px;
+    width: 1000px;
+    position: relative;
+    top: 62px;
+    left: 139px;
+}
+
+#sitesVazioAdmin {
+    height: 100px;
+    width: 1000px;
+    position: relative;
+    top: -122px;
+    left: 139px;
+}
+
+#videosVazio {
+    height: 100px;
+    width: 1000px;
+    position: relative;
+    top: 108px;
+    left: 139px;
+}
+
+#videosVazioAdmin {
+    height: 100px;
+    width: 1000px;
+    position: relative;
+    top: -125px;
+    left: 139px;
+}
+
+#selecionarTurmaMusica {
+    position: relative;
+    top: 0px;
+    left: -91px;
+    width: 700px;
+    height: 50px;
+}
+
+hr {
+    height: 3px !important;
+    color: #292929;
+    margin: 20px;
+    width: 1200px;
+}
+
+.itemAluno {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#itemAluno {
+    display: flex;
+    flex-direction: column;
+}
+
+#accordionAmbiente {
+    display: flex;
+    justify-content: center;
+}
+
+#btnAmbiente {
+    width: 1500px;
+    height: 20px;
+    border: none;
+    border-left: 5px solid darkgrey;
+    border-right: 5px solid darkgrey;
+    border-bottom: 5px solid lightgray;
+}
+
+#iconAmbiente {
+    position: relative;
+    top: -45px;
+    left: -208px;
+}
+
+#lblAmbiente {
+    cursor: pointer;
+    top: -29px;
+    left: -627px;
+}
+
+#collapseAmbiente {
+    padding-top: 65px;
+    display: flex;
+    background: rgb(243, 243, 243);
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#itemAmbiente {
+    display: flex;
+    flex-direction: column;
+}
+
+#Ambientes {
+    width: 80%;
+}
+
+.checkPermission {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/*////////////////  Ambiente 1  //////////////////*/
+
+#btnAmbiente1 {
+    background: darkgrey;
+    border: 3px solid white;
+    border-radius: inherit;
+    font-size: 30px;
+    color: white;
+    width: 100%;
+}
+
+.lblMarcarTodos {
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.lblDesmarcarTodos {
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.checkItemPermission {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.tituloAmbiente {
+    width: 500px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/*  *** Jogos *** */
+
+#desmarcarJogos1 {
+    padding-left: 40px;
+}
+
+#cabecalhoJogosAmbiente1 {
+    display: flex;
+    padding: 15px;
+}
+
+#jogosAmbiente1 {
+    background-color: #AFAFAF;
+}
+
+#gridJogosAmbiente1 {
+    padding-top: 10px;
+    padding-left: 100px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    grid-auto-rows: 200px;
+}
+
+#gridJogosAmbiente1Admin {
+    padding-top: 10px;
+    padding-left: 100px;
+    display: none;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-auto-rows: 200px;
+}
+
+.itemJogo1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+.permissionConteudo {
+    z-index: 10;
+    position: absolute;
+    cursor: pointer;
+    padding-top: 100px;
+    padding-left: 66px;
+    display: none;
+}
+
+.imgJogo- {
+    width: 60%;
+    position: relative;
+    top: 50px;
+}
+
+.aContent {
+    z-index: 99;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    left: -35px;
+}
+
+.lblJogo- {
+    font-weight: bold;
+    color: white;
+    font-size: 19px;
+}
+
+/* *** Ebooks *** */
+
+#cabecalhoEbooksAmbinente1 {
+    display: flex;
+    padding: 15px;
+}
+
+#desmarcarEbooks1 {
+    padding-left: 40px;
+}
+
+#ebooksAmbiente1 {
+    background-color: #AFAFAF;
+}
+
+#gridEbooksAmbiente1,
+#gridEbooksAmbiente1Admin {
+    padding-top: 10px;
+    padding-left: 100px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-auto-rows: 200px;
+}
+
+.btnDelConteudo {
+    width: 24%;
+    position: relative;
+    top: -120px;
+    left: 34px;
+    cursor: pointer;
+    margin-bottom: -30px;
+}
+
+.btnDelMusic {
+    margin-left: 15px;
+    width: 7%;
+    cursor: pointer;
+}
+
+.btnDelVideo {
+    width: 12%;
+    position: relative;
+    top: -20px;
+    left: 126px;
+    cursor: pointer;
+}
+
+.permissionEbook1 {
+    position: relative;
+    top: -35px;
+    left: 27px;
+}
+
+.itemEbook1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+.imgEbook- {
+    width: 60%;
+    position: relative;
+    top: 50px;
+}
+
+.lblEbook- {
+    font-weight: bold;
+    color: white;
+    font-size: 19px;
+}
+
+/* *** Jogos Híbridos *** */
+
+#cabecalhoJogoHibridoAmbiente1 {
+    display: flex;
+    padding: 15px;
+}
+
+#desmarcarJogoHibrido1 {
+    padding-left: 40px;
+}
+
+#hibridosAmbiente1 {
+    background-color: #AFAFAF;
+}
+
+#gridJogoHibridoAmbiente1,
+#gridJogoHibridoAmbiente1Admin {
+    padding-top: 10px;
+    padding-left: 100px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    grid-auto-rows: 200px;
+}
+
+.imgJogoHibrido- {
+    width: 60%;
+    position: relative;
+    top: 50px;
+}
+
+.permissionJogoHibrido1 {
+    position: relative;
+    top: -35px;
+    left: 27px;
+}
+
+.lblJogoHibrido- {
+    font-weight: bold;
+    color: white;
+    font-size: 19px;
+}
+
+.itemJogoHibrido1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+/* ////////// Ambiente 2 ////////// */
+
+#btnAmbiente2 {
+    background: darkgrey;
+    border: 3px solid white;
+    border-radius: inherit;
+    font-size: 30px;
+    color: white;
+    width: 100%;
+}
+
+/* *** Jogos *** */
+
+#cabecalhoJogosAmbiente2 {
+    display: flex;
+    padding: 15px;
+}
+
+#desmarcarJogos2 {
+    padding-left: 40px;
+}
+
+#jogosAmbiente2 {
+    background-color: #AFAFAF;
+}
+
+#gridJogosAmbiente2 {
+    padding-top: 10px;
+    padding-left: 100px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    grid-auto-rows: 200px;
+}
+
+#gridJogosAmbiente2Admin {
+    padding-top: 10px;
+    padding-left: 100px;
+    display: none;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-auto-rows: 200px;
+}
+
+.itemJogo2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+.permissionJogo2 {
+    position: relative;
+    top: -35px;
+    left: 27px;
+}
+
+/*  *** Ebooks *** */
+
+#cabecalhoEbooksAmbinente2 {
+    display: flex;
+    padding: 15px;
+}
+
+#desmarcarEbooks2 {
+    padding-left: 40px;
+}
+
+#ebooksAmbiente2 {
+    background-color: #AFAFAF;
+}
+
+#gridEbooksAmbiente2,
+#gridEbooksAmbiente2Admin {
+    padding-top: 10px;
+    padding-left: 100px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-auto-rows: 200px;
+}
+
+.permissionEbook2 {
+    position: relative;
+    top: -35px;
+    left: 27px;
+}
+
+.itemEbook2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+/* *** Jogo Híbrido *** */
+
+#cabecalhoJogoHibridoAmbiente2 {
+    display: flex;
+    padding: 15px;
+}
+
+#desmarcarJogoHibrido2 {
+    padding-left: 40px;
+}
+
+#hibridosAmbiente2 {
+    background-color: #AFAFAF;
+}
+
+#gridJogoHibridoAmbiente2,
+#gridJogoHibridoAmbiente2Admin {
+    padding-top: 10px;
+    padding-left: 100px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    grid-auto-rows: 200px;
+}
+
+.permissionJogoHibrido2 {
+    position: relative;
+    top: -35px;
+    left: 27px;
+}
+
+.itemJogoHibrido2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+/* ////////// Aambiente 3 ////////// */
+
+#btnAmbiente3 {
+    background: darkgrey;
+    border: 3px solid white;
+    border-radius: inherit;
+    font-size: 30px;
+    color: white;
+    width: 100%;
+}
+
+/* *** Jogos *** */
+
+#cabecalhoJogosAmbiente3 {
+    display: flex;
+    padding: 15px;
+}
+
+#desmarcarJogos3 {
+    padding-left: 40px;
+}
+
+#jogosAmbiente3 {
+    background-color: #AFAFAF;
+}
+
+#gridJogosAmbiente3 {
+    padding-top: 10px;
+    padding-left: 100px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    grid-auto-rows: 200px;
+}
+
+#gridJogosAmbiente3Admin {
+    padding-top: 10px;
+    padding-left: 100px;
+    display: none;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-auto-rows: 200px;
+}
+
+.itemJogo3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+.permissionJogo3 {
+    position: relative;
+    top: -35px;
+    left: 27px;
+}
+
+/* *** Ebooks *** */
+
+#cabecalhoEbooksAmbinente3 {
+    display: flex;
+    padding: 15px;
+}
+
+#desmarcarEbooks3 {
+    padding-left: 40px;
+}
+
+#ebooksAmbiente3 {
+    background-color: #AFAFAF;
+}
+
+#gridEbooksAmbiente3,
+#gridEbooksAmbiente3Admin {
+    padding-top: 10px;
+    padding-left: 100px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-auto-rows: 200px;
+}
+
+.permissionEbook3 {
+    position: relative;
+    top: -35px;
+    left: 27px;
+}
+
+.itemEbook3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+/* *** jogo Híbrido *** */
+
+#cabecalhoJogoHibridoAmbiente3 {
+    display: flex;
+    padding: 15px;
+}
+
+#desmarcarJogoHibrido3 {
+    padding-left: 40px;
+}
+
+#hibridosAmbiente3 {
+    background-color: #AFAFAF;
+}
+
+#gridJogoHibridoAmbiente3,
+#gridJogoHibridoAmbiente3Admin {
+    padding-top: 10px;
+    padding-left: 100px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    grid-auto-rows: 200px;
+}
+
+.permissionJogoHibrido3 {
+    position: relative;
+    top: -35px;
+    left: 27px;
+}
+
+.itemJogoHibrido3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+/*  ////////// Ambiente 4 ////////// */
+
+#btnAmbiente4 {
+    background: darkgrey;
+    border: 3px solid white;
+    border-radius: inherit;
+    font-size: 30px;
+    color: white;
+    width: 100%;
+}
+
+/* *** Jogos *** */
+
+#cabecalhoJogosAmbiente4 {
+    display: flex;
+    padding: 15px;
+}
+
+#desmarcarJogos4 {
+    padding-left: 40px;
+}
+
+#jogosAmbiente4 {
+    background-color: #AFAFAF;
+}
+
+#gridJogosAmbiente4 {
+    padding-top: 10px;
+    padding-left: 100px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    grid-auto-rows: 200px;
+}
+
+#gridJogosAmbiente4Admin {
+    padding-top: 10px;
+    padding-left: 100px;
+    display: none;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-auto-rows: 200px;
+}
+
+.itemJogo4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+.permissionJogo4 {
+    position: relative;
+    top: -35px;
+    left: 27px;
+}
+
+/* *** Ebooks *** */
+
+#cabecalhoEbooksAmbinente4 {
+    display: flex;
+    padding: 15px;
+}
+
+#desmarcarEbooks4 {
+    padding-left: 40px;
+}
+
+#ebooksAmbiente4 {
+    background-color: #AFAFAF;
+}
+
+#gridEbooksAmbiente4 {
+    padding-top: 10px;
+    padding-left: 100px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-auto-rows: 200px;
+}
+
+#gridEbooksAmbiente4Admin {
+    padding-top: 10px;
+    padding-left: 100px;
+    display: none;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-auto-rows: 200px;
+}
+
+.permissionEbook4 {
+    position: relative;
+    top: -35px;
+    left: 27px;
+}
+
+.itemEbook4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+/* *** jogo Híbrido *** */
+
+#cabecalhoJogoHibridoAmbiente4 {
+    display: flex;
+    padding: 15px;
+}
+
+#desmarcarJogoHibrido4 {
+    padding-left: 40px;
+}
+
+#hibridosAmbiente4 {
+    background-color: #AFAFAF;
+}
+
+#gridJogoHibridoAmbiente4,
+#gridJogoHibridoAmbiente4Admin {
+    padding-top: 10px;
+    padding-left: 100px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    grid-auto-rows: 200px;
+}
+
+.permissionJogoHibrido4 {
+    position: relative;
+    top: -35px;
+    left: 27px;
+}
+
+.itemJogoHibrido4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+/*  ////////// Ambiente 5 ////////// */
+
+#btnAmbiente5 {
+    background: darkgrey;
+    border: 3px solid white;
+    border-radius: inherit;
+    font-size: 30px;
+    color: white;
+    width: 100%;
+}
+
+/* *** Jogos *** */
+
+#cabecalhoJogosAmbiente5 {
+    display: flex;
+    padding: 15px;
+}
+
+#desmarcarJogos5 {
+    padding-left: 40px;
+}
+
+#jogosAmbiente5 {
+    background-color: #AFAFAF;
+}
+
+#gridJogosAmbiente5 {
+    padding-top: 10px;
+    padding-left: 100px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    grid-auto-rows: 200px;
+}
+
+#gridJogosAmbiente5Admin {
+    padding-top: 10px;
+    padding-left: 100px;
+    display: none;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-auto-rows: 200px;
+}
+
+.itemJogo5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+.permissionJogo5 {
+    position: relative;
+    top: -35px;
+    left: 27px;
+}
+
+/* *** Ebooks *** */
+
+#cabecalhoEbooksAmbinente5 {
+    display: flex;
+    padding: 15px;
+}
+
+#desmarcarEbooks5 {
+    padding-left: 40px;
+}
+
+#ebooksAmbiente5 {
+    background-color: #AFAFAF;
+}
+
+#gridEbooksAmbiente5,
+#gridEbooksAmbiente5Admin {
+    padding-top: 10px;
+    padding-left: 100px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-auto-rows: 200px;
+}
+
+.permissionEbook5 {
+    position: relative;
+    top: -35px;
+    left: 27px;
+}
+
+.itemEbook5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+/* *** jogo Híbrido *** */
+
+#cabecalhoJogoHibridoAmbiente5 {
+    display: flex;
+    padding: 15px;
+}
+
+#desmarcarJogoHibrido5 {
+    padding-left: 40px;
+}
+
+#hibridosAmbiente5 {
+    background-color: #AFAFAF;
+}
+
+#gridJogoHibridoAmbiente5,
+#gridJogoHibridoAmbiente5Admin {
+    padding-top: 10px;
+    padding-left: 100px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    grid-auto-rows: 200px;
+}
+
+.permissionJogoHibrido5 {
+    position: relative;
+    top: -35px;
+    left: 27px;
+}
+
+.itemJogoHibrido5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+/*  ////////// Ambiente 6 ////////// */
+
+#btnAmbiente6 {
+    background: darkgrey;
+    border: 3px solid white;
+    border-radius: inherit;
+    font-size: 30px;
+    color: white;
+    width: 100%;
+}
+
+/* *** Jogos *** */
+
+#cabecalhoJogosAmbiente6 {
+    display: flex;
+    padding: 15px;
+}
+
+#desmarcarJogos6 {
+    padding-left: 40px;
+}
+
+#jogosAmbiente6 {
+    background-color: #AFAFAF;
+}
+
+#gridJogosAmbiente6 {
+    padding-top: 10px;
+    padding-left: 100px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    grid-auto-rows: 200px;
+}
+
+#gridJogosAmbiente6Admin {
+    padding-top: 10px;
+    padding-left: 100px;
+    display: none;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-auto-rows: 200px;
+}
+
+.itemJogo6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+.permissionJogo6 {
+    position: relative;
+    top: -35px;
+    left: 27px;
+}
+
+/* *** Ebooks *** */
+
+#cabecalhoEbooksAmbinente6 {
+    display: flex;
+    padding: 15px;
+}
+
+#desmarcarEbooks6 {
+    padding-left: 40px;
+}
+
+#ebooksAmbiente6 {
+    background-color: #AFAFAF;
+}
+
+#gridEbooksAmbiente6,
+#gridEbooksAmbiente6Admin {
+    padding-top: 10px;
+    padding-left: 100px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-auto-rows: 200px;
+}
+
+.permissionEbook6 {
+    position: relative;
+    top: -35px;
+    left: 27px;
+}
+
+.itemEbook6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+/* *** jogo Híbrido *** */
+
+#cabecalhoJogoHibridoAmbiente6 {
+    display: flex;
+    padding: 15px;
+}
+
+#desmarcarJogoHibrido6 {
+    padding-left: 40px;
+}
+
+#hibridosAmbiente6 {
+    background-color: #AFAFAF;
+}
+
+#gridJogoHibridoAmbiente6,
+#gridJogoHibridoAmbiente6Admin {
+    padding-top: 10px;
+    padding-left: 100px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    grid-auto-rows: 200px;
+}
+
+.permissionJogoHibrido6 {
+    position: relative;
+    top: -35px;
+    left: 27px;
+}
+
+.itemJogoHibrido6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+/*  ////////// Ambiente 7 ////////// */
+
+#btnAmbiente7 {
+    background: darkgrey;
+    border: 3px solid white;
+    border-radius: inherit;
+    font-size: 30px;
+    color: white;
+    width: 100%;
+}
+
+/* *** Jogos *** */
+
+#cabecalhoJogosAmbiente7 {
+    display: flex;
+    padding: 15px;
+}
+
+#desmarcarJogos7 {
+    padding-left: 40px;
+}
+
+#jogosAmbiente7 {
+    background-color: #AFAFAF;
+}
+
+#gridJogosAmbiente7 {
+    padding-top: 10px;
+    padding-left: 100px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    grid-auto-rows: 200px;
+}
+
+#gridJogosAmbiente7Admin {
+    padding-top: 10px;
+    padding-left: 100px;
+    display: none;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-auto-rows: 200px;
+}
+
+.itemJogo7 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+.permissionJogo7 {
+    position: relative;
+    top: -35px;
+    left: 27px;
+}
+
+/* *** Ebooks *** */
+
+#cabecalhoEbooksAmbinente7 {
+    display: flex;
+    padding: 15px;
+}
+
+#desmarcarEbooks7 {
+    padding-left: 40px;
+}
+
+#ebooksAmbiente7 {
+    background-color: #AFAFAF;
+}
+
+#gridEbooksAmbiente7,
+#gridEbooksAmbiente7Admin {
+    padding-top: 10px;
+    padding-left: 100px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-auto-rows: 200px;
+}
+
+.permissionEbook7 {
+    position: relative;
+    top: -35px;
+    left: 27px;
+}
+
+.itemEbook7 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+/* *** jogo Híbrido *** */
+
+#cabecalhoJogoHibridoAmbiente7 {
+    display: flex;
+    padding: 15px;
+}
+
+#desmarcarJogoHibrido7 {
+    padding-left: 40px;
+}
+
+#hibridosAmbiente7 {
+    background-color: #AFAFAF;
+}
+
+#gridJogoHibridoAmbiente7,
+#gridJogoHibridoAmbiente7Admin {
+    padding-top: 10px;
+    padding-left: 100px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    grid-auto-rows: 200px;
+}
+
+.permissionJogoHibrido7 {
+    position: relative;
+    top: -35px;
+    left: 27px;
+}
+
+.itemJogoHibrido7 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+/*  ////////// Ambiente 8 ////////// */
+
+#btnAmbiente8 {
+    background: darkgrey;
+    border: 3px solid white;
+    border-radius: inherit;
+    font-size: 30px;
+    color: white;
+    width: 100%;
+}
+
+/* *** Jogos *** */
+
+#cabecalhoJogosAmbiente8 {
+    display: flex;
+    padding: 15px;
+}
+
+#desmarcarJogos8 {
+    padding-left: 40px;
+}
+
+#jogosAmbiente8 {
+    background-color: #AFAFAF;
+}
+
+#gridJogosAmbiente8 {
+    padding-top: 10px;
+    padding-left: 100px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    grid-auto-rows: 200px;
+}
+
+#gridJogosAmbiente8Admin {
+    padding-top: 10px;
+    padding-left: 100px;
+    display: none;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-auto-rows: 200px;
+}
+
+.itemJogo8 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+.permissionJogo8 {
+    position: relative;
+    top: -35px;
+    left: 27px;
+}
+
+/* *** Ebooks *** */
+
+#cabecalhoEbooksAmbinente8 {
+    display: flex;
+    padding: 15px;
+}
+
+#desmarcarEbooks8 {
+    padding-left: 40px;
+}
+
+#ebooksAmbiente8 {
+    background-color: #AFAFAF;
+}
+
+#gridEbooksAmbiente8,
+#gridEbooksAmbiente8Admin {
+    padding-top: 10px;
+    padding-left: 100px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-auto-rows: 200px;
+}
+
+.permissionEbook8 {
+    position: relative;
+    top: -35px;
+    left: 27px;
+}
+
+.itemEbook8 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+/* *** jogo Híbrido *** */
+
+#cabecalhoJogoHibridoAmbiente8 {
+    display: flex;
+    padding: 15px;
+}
+
+#desmarcarJogoHibrido8 {
+    padding-left: 40px;
+}
+
+#hibridosAmbiente8 {
+    background-color: #AFAFAF;
+}
+
+#gridJogoHibridoAmbiente8,
+#gridJogoHibridoAmbiente8Admin {
+    padding-top: 10px;
+    padding-left: 100px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    grid-auto-rows: 200px;
+}
+
+.permissionJogoHibrido8 {
+    position: relative;
+    top: -35px;
+    left: 27px;
+}
+
+.itemJogoHibrido8 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+/*  ////////// Ambiente 9 ////////// */
+
+#btnAmbiente9 {
+    background: darkgrey;
+    border: 3px solid white;
+    border-radius: inherit;
+    font-size: 30px;
+    color: white;
+    width: 100%;
+}
+
+/* *** Jogos *** */
+
+#cabecalhoJogosAmbiente9 {
+    display: flex;
+    padding: 15px;
+}
+
+#desmarcarJogos9 {
+    padding-left: 40px;
+}
+
+#jogosAmbiente9 {
+    background-color: #AFAFAF;
+}
+
+#gridJogosAmbiente9 {
+    padding-top: 10px;
+    padding-left: 100px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    grid-auto-rows: 200px;
+}
+
+#gridJogosAmbiente9Admin {
+    padding-top: 10px;
+    padding-left: 100px;
+    display: none;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-auto-rows: 200px;
+}
+
+.itemJogo9 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+.permissionJogo9 {
+    position: relative;
+    top: -35px;
+    left: 27px;
+}
+
+/* *** Ebooks *** */
+
+#cabecalhoEbooksAmbinente9 {
+    display: flex;
+    padding: 15px;
+}
+
+#desmarcarEbooks9 {
+    padding-left: 40px;
+}
+
+#ebooksAmbiente9 {
+    background-color: #AFAFAF;
+}
+
+#gridEbooksAmbiente9,
+#gridEbooksAmbiente9Admin {
+    padding-top: 10px;
+    padding-left: 100px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-auto-rows: 200px;
+}
+
+.permissionEbook9 {
+    position: relative;
+    top: -35px;
+    left: 27px;
+}
+
+.itemEbook9 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+/* *** jogo Híbrido *** */
+
+#cabecalhoJogoHibridoAmbiente9 {
+    display: flex;
+    padding: 15px;
+}
+
+#desmarcarJogoHibrido9 {
+    padding-left: 40px;
+}
+
+#hibridosAmbiente9 {
+    background-color: #AFAFAF;
+}
+
+#gridJogoHibridoAmbiente9,
+#gridJogoHibridoAmbiente9Admin {
+    padding-top: 10px;
+    padding-left: 100px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    grid-auto-rows: 200px;
+}
+
+.permissionJogoHibrido9 {
+    position: relative;
+    top: -35px;
+    left: 27px;
+}
+
+.itemJogoHibrido9 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+/*  ////////// Músicas ////////// */
+
+#addMusica {
+    cursor: pointer;
+}
+
+#pesquisarMusicas {
+    position: relative;
+    top: -12px;
+}
+
+#pesquisaMusicas {
+    position: absolute;
+    left: 100px;
+    border: none;
+    width: 700px;
+    height: 48px;
+    padding-left: 10px;
+}
+
+#desmarcarMusicas {
+    padding-left: 40px;
+}
+
+#accordionMusicas {
+    display: flex;
+    justify-content: center;
+}
+
+#itemMusicas {
+    display: flex;
+    flex-direction: column;
+}
+
+#btnMusicas {
+    width: 1500px;
+    height: 20px;
+    border: none;
+    border-left: 5px solid darkgrey;
+    border-right: 5px solid darkgrey;
+    border-bottom: 5px solid lightgray;
+}
+
+#iconMusicas {
+    position: relative;
+    top: -43px;
+    left: -238px;
+}
+
+#lblMusicas {
+    cursor: pointer;
+    top: -35px;
+    left: -628px;
+}
+
+#collapseMusicas {
+    padding-top: 65px;
+    display: flex;
+    background: rgb(243, 243, 243);
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#musicContent {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#conteudoMusicasAdmin {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 500px;
+}
+
+.itemMusica {
+    display: flex;
+    flex-direction: row;
+    background: #9999;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    border: 1px solid white;
+}
+
+.checkMusic {
+    height: inherit;
+    display: flex;
+    align-items: center;
+    background: #767676;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.checkMusicaRed {
+    cursor: pointer;
+}
+
+.checkMusicaGreen {
+    cursor: pointer;
+}
+
+.audio-player-container {
+    width: 100%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+}
+
+#btnPlaySong {
+    color: #FFF;
+    font-size: 20px;
+}
+
+.play {
+    width: 30px;
+    height: inherit;
+    background: #767676;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.name {
+    width: 90%;
+    padding-left: 10px;
+    font-size: 20px;
+    color: #ffff;
+}
+
+.time {
+    padding-left: 10px;
+    font-size: 20px;
+    color: #ffff;
+    display: flex;
+}
+
+#musicPlayerAdmin {
+    flex-direction: column !important;
+    position: relative;
+    left: -500px;
+}
+
+.item-Music {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.permission-item-music {
+    background: #000000ad;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-pause-music {
+    background: #000000ad;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid black;
+}
+
+.btnPlay-music {
+    width: 70%;
+    cursor: pointer;
+}
+
+.invert {
+    filter: invert(100%);
+}
+
+.player-progress {
+    background: #0000006b;
+    height: 50px;
+    width: 900px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.name-music {
+    height: 50px;
+    width: 900px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.time-music {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name-track {
+    font-family: inherit;
+    font-size: 25px;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.current-time,
+.div-time,
+.total-time {
+    font-family: inherit;
+    font-size: 25px;
+    color: white;
+    padding-right: 10px;
+}
+
+.volume-music {
+    background: #000000ad;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.player-volume {
+    height: 28px;
+    -webkit-appearance: none;
+    margin: 10px 0;
+    width: 100%;
+    background: transparent;
+}
+
+.player-volume:focus {
+    outline: none;
+}
+
+.player-volume::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 6px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: whitesmoke;
+    border-radius: 10px;
+}
+
+.player-volume::-webkit-slider-thumb {
+    height: 16px;
+    width: 16px;
+    border-radius: 100px;
+    border: none;
+    background: #0e0e0e;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -4px;
+}
+
+.player-volume:focus::-webkit-slider-runnable-track {
+    background: whitesmoke;
+}
+
+.player-volume::-moz-range-track {
+    width: 100%;
+    height: 6px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: #0e0e0e;
+    border-radius: 10px;
+}
+
+.player-volume::-moz-range-thumb {
+    height: 16px;
+    width: 16px;
+    border-radius: 100px;
+    border: none;
+    background: #0e0e0e;
+    cursor: pointer;
+    margin-top: -4px;
+}
+
+.player-volume::-ms-track {
+    width: 100%;
+    height: 6px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: #0e0e0e;
+    border-radius: 10px;
+}
+
+.player-volume::-ms-fill-lower {
+    background: #0e0e0e;
+    border-radius: 10px;
+}
+
+.player-volume::-ms-fill-upper {
+    background: #0e0e0e;
+    border-radius: 10px;
+}
+
+.player-volume::-ms-thumb {
+    margin-top: 1px;
+    height: 15px;
+    width: 15px;
+    border-radius: 5px;
+    border: none;
+    background: #0e0e0e;
+    cursor: pointer;
+}
+
+.player-volume:focus::-ms-fill-lower {
+    background: #38bdf8;
+}
+
+.player-volume:focus::-ms-fill-upper {
+    background: #38bdf8;
+}
+
+.remove-music {
+    background: #000000ad;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.LixeiraMusic {
+    cursor: pointer;
+}
+
+#musicasVazio {
+    position: relative;
+    top: 0px;
+}
+
+#musicasVazioAdmin {
+    position: relative;
+    top: -123px;
+}
+
+/*  ////////// Vídeos ////////// */
+
+.videosAdmin {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#pesquisarVideos {
+    position: relative;
+    top: -12px;
+}
+
+#pesquisaVideos {
+    position: absolute;
+    left: 100px;
+    border: none;
+    width: 700px;
+    height: 48px;
+    padding-left: 10px;
+}
+
+#desmarcarVideos {
+    padding-left: 40px;
+}
+
+#accordionVideos {
+    display: flex;
+    justify-content: center;
+}
+
+#itemVideos {
+    display: flex;
+    flex-direction: column;
+}
+
+#btnVideos {
+    width: 1500px;
+    height: 20px;
+    border: none;
+    border-left: 5px solid darkgrey;
+    border-right: 5px solid darkgrey;
+    border-bottom: 5px solid lightgray;
+}
+
+#iconVideos {
+    position: relative;
+    top: -43px;
+    left: -250px;
+}
+
+#lblVideos {
+    cursor: pointer;
+    top: -33px;
+    left: -635px;
+}
+
+#collapseVideos {
+    padding-top: 65px;
+    display: flex;
+    background: rgb(243, 243, 243);
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#conteudoVideos,
+#conteudoVideosAdmin {
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-auto-rows: 275px;
+}
+
+.itemVideo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.permissionVideo {
+    position: relative;
+    top: -209px;
+    left: 125px;
+}
+
+#addVideo {
+    cursor: pointer;
+}
+
+.iconVideo {
+    width: 50%;
+}
+
+.tituloVideo {
+    font-size: 20px;
+}
+
+.checkVideoRed {
+    position: relative;
+    top: -214px;
+    left: 127px;
+    cursor: pointer;
+}
+
+.checkVideoGreen {
+    position: relative;
+    top: -214px;
+    left: 127px;
+    cursor: pointer;
+}
+
+/*  ////////// Sites ////////// */
+
+.sitesAdmin {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#pesquisarSites {
+    position: relative;
+    top: -12px;
+}
+
+#pesquisaSites {
+    position: absolute;
+    left: 100px;
+    border: none;
+    width: 700px;
+    height: 48px;
+    padding-left: 10px;
+}
+
+#desmarcarSites {
+    padding-left: 40px;
+}
+
+#accordionSites {
+    display: flex;
+    justify-content: center;
+}
+
+#itemSites {
+    display: flex;
+    flex-direction: column;
+}
+
+#btnSites {
+    width: 1500px;
+    height: 20px;
+    border: none;
+    border-left: 5px solid darkgrey;
+    border-right: 5px solid darkgrey;
+    border-bottom: 5px solid lightgray;
+}
+
+#iconSites {
+    position: relative;
+    top: -43px;
+    left: -272px;
+}
+
+#lblSites {
+    cursor: pointer;
+    top: -33px;
+    left: -635px;
+}
+
+#collapseSites {
+    padding-top: 65px;
+    display: flex;
+    background: rgb(243, 243, 243);
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.itemSite {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.imgSite {
+    width: 300px;
+}
+
+.site- {
+    position: relative;
+    top: 15px;
+    left: 150px;
+}
+
+#conteudoSites,
+#conteudoSitesAdmin {
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-auto-rows: 200px;
+}
+
+.lblSite {
+    color: black;
+    cursor: pointer;
+}
+
+#addSite {
+    cursor: pointer;
+}
+
+.siteContent {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+.formSite {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputsFormSite {
+    width: inherit;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+
+.lblAddSite {
+    font-size: 25px;
+    width: 25%;
+}
+
+.inputSite {
+    width: 50%;
+    margin-right: 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+#btnSalvarSite {
+    position: relative !important;
+    left: 3px !important;
+}
+
+.pagIcon {
+    width: 40%;
+}
+
+.linkSite  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+.checkSiteRed, .checkSiteGreen {
+    position: relative;
+    top: -160px;
+    left: 59px;
+    cursor: pointer;
+}
+
+.PermissionIconSite {
+    position: relative;
+    top: -157px;
+    left: 55px;
+}
+
+.btnDelSite {
+    width: 13%;
+    position: relative;
+    top: -56px;
+    left: 51px;
+    cursor: pointer;
+}
+
+/*  ////////// Horário ////////// */
+
+#accordionHorario {
+    display: none;
+    justify-content: center;
+}
+
+#itemHorario {
+    display: flex;
+    flex-direction: column;
+}
+
+#btnHorario {
+    width: 1500px;
+    height: 20px;
+    border: none;
+    border-left: 5px solid darkgrey;
+    border-right: 5px solid darkgrey;
+    border-bottom: 5px solid lightgray;
+}
+
+#horarioLabel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 573px;
+    position: relative;
+    left: 128px;
+}
+
+#iconHorario {
+    position: relative;
+    top: -43px;
+}
+
+#lblHorario {
+    cursor: pointer;
+    top: -135px;
+}
+
+#collapseHorario {
+    padding-top: 65px;
+    display: flex;
+    background: rgb(243, 243, 243);
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#conteudoHorario {
+    width: 98%;
+    padding: 30px;
+}
+
+.diaSemana {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+}
+
+.lblRange {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.verticalRow {
+    background: black;
+    height: 15px;
+    width: 3px;
+}
+
+.inicioHour {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.horaInicial {
+    padding-left: 10px;
+}
+
+.almocoHour {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.horaAlmoco {
+    padding-left: 10px;
+}
+
+.finalHour {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.horaFinal {
+    padding-left: 10px;
+}
+
+#domingo,
+#segunda,
+#terca,
+#quarta,
+#quinta,
+#sexta,
+#sabado {
+    padding: 30px;
+    margin-bottom: 10px;
+    border: outset #dddbdb;
+    border-radius: 5px;
+    background-color: #dddbdb;
+}
+
+.cabecalhoHorario {
+    padding-bottom: 20px;
+}
+
+.inputHora {
+    width: 200px;
+    border: none;
+    padding-left: 5px;
+    border-radius: 5px;
+}
+
+.ui-slider-range {
+    background: #78CE4A;
+}
+
+.ui-slider-handle {
+    border-radius: 20px !important;
+    width: 1.5em !important;
+    height: 1.5em !important;
+    top: -8px !important;
+}
+
+.ui-state-hover {
+    background: #78CE4A !important;
+    border: 1px solid #579933 !important;
+}
+
+.ui-state-active {
+    background: #FFF !important;
+    border: 2px solid black !important;
+}
+
+.ui-state-focus {
+    background: #FFF !important;
+    border: 2px solid black !important;
+}
+
+.btnAttHoras {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.btnAtualizarHoras {
+    border: outset 3px #78CE4A;
+    width: 200px;
+    height: 50px;
+    background: #78CE4A;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.btnAtualizarHoras:active {
+    border: solid 3px #78CE4A;
+    position: relative;
+    top: 2px;
+    left: 2px;
+}
+
+/* ///// Modal Ambientes ///// */
+
+#fundoModalJogo1,
+#fundoModalJogo2,
+#fundoModalJogo3,
+#fundoModalJogo4,
+#fundoModalJogo5,
+#fundoModalJogo6,
+#fundoModalJogo7,
+#fundoModalJogo8,
+#fundoModalJogo9,
+#fundoModalEbook1,
+#fundoModalEbook2,
+#fundoModalEbook3,
+#fundoModalEbook4,
+#fundoModalEbook5,
+#fundoModalEbook6,
+#fundoModalEbook7,
+#fundoModalEbook8,
+#fundoModalEbook9,
+#fundoModalHibrido1,
+#fundoModalHibrido2,
+#fundoModalHibrido3,
+#fundoModalHibrido4,
+#fundoModalHibrido5,
+#fundoModalHibrido6,
+#fundoModalHibrido7,
+#fundoModalHibrido8,
+#fundoModalHibrido9,
+#fundoModalMusica,
+#fundoModalVideo,
+#fundoModalSite {
+    background-color: #fff0;
+    border: none;
+    width: 200%;
+    height: 600px;
+    left: -60%;
+}
+
+.fundoTitulo {
+    width: 65%;
+    position: absolute;
+    left: 175px;
+}
+
+#tituloModalEbook1,
+#tituloModalEbook2,
+#tituloModalEbook3,
+#tituloModalEbook4,
+#tituloModalEbook5,
+#tituloModalEbook6,
+#tituloModalEbook7,
+#tituloModalEbook8,
+#tituloModalEbook9,
+#tituloModalHibrido1,
+#tituloModalHibrido2,
+#tituloModalHibrido3,
+#tituloModalHibrido4,
+#tituloModalHibrido5,
+#tituloModalHibrido6,
+#tituloModalHibrido7,
+#tituloModalHibrido8,
+#tituloModalHibrido9,
+#tituloModalMusica,
+#tituloModalVideo,
+#tituloModalSite {
+    border: none;
+    padding: 0;
+    position: relative;
+    top: -591px;
+    left: 258px;
+    width: 49%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#tituloModalJogo1,
+#tituloModalJogo2,
+#tituloModalJogo3,
+#tituloModalJogo4,
+#tituloModalJogo5,
+#tituloModalJogo6,
+#tituloModalJogo7,
+#tituloModalJogo8,
+#tituloModalJogo9 {
+    border: none;
+    padding: 0;
+    position: relative;
+    top: -594px;
+    left: 350px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#conteudoModalJogo1,
+#conteudoModalJogo2,
+#conteudoModalJogo3,
+#conteudoModalJogo4,
+#conteudoModalJogo5,
+#conteudoModalJogo6,
+#conteudoModalJogo7,
+#conteudoModalJogo8,
+#conteudoModalJogo9,
+#conteudoModalEbook1,
+#conteudoModalEbook2,
+#conteudoModalEbook3,
+#conteudoModalEbook4,
+#conteudoModalEbook5,
+#conteudoModalEbook6,
+#conteudoModalEbook7,
+#conteudoModalEbook8,
+#conteudoModalEbook9,
+#conteudoModalHibrido1,
+#conteudoModalHibrido2,
+#conteudoModalHibrido3,
+#conteudoModalHibrido4,
+#conteudoModalHibrido5,
+#conteudoModalHibrido6,
+#conteudoModalHibrido7,
+#conteudoModalHibrido8,
+#conteudoModalHibrido9,
+#conteudoModalMusica,
+#conteudoModalVideo,
+#conteudoModalSite {
+    top: -570px;
+    left: 38px;
+    width: 92%;
+    height: 430px;
+    display: flex;
+    justify-content: center;
+}
+
+#footerModalJogo1,
+#footerModalJogo2,
+#footerModalJogo3,
+#footerModalJogo4,
+#footerModalJogo5,
+#footerModalJogo6,
+#footerModalJogo7,
+#footerModalJogo8,
+#footerModalJogo9,
+#footerModalEbook1,
+#footerModalEbook2,
+#footerModalEbook3,
+#footerModalEbook4,
+#footerModalEbook5,
+#footerModalEbook6,
+#footerModalEbook7,
+#footerModalEbook8,
+#footerModalEbook9,
+#footerModalHibrido1,
+#footerModalHibrido2,
+#footerModalHibrido3,
+#footerModalHibrido4,
+#footerModalHibrido5,
+#footerModalHibrido6,
+#footerModalHibrido7,
+#footerModalHibrido8,
+#footerModalHibrido9,
+#footerModalMusica,
+#footerModalVideo {
+    border: none;
+    padding: 0;
+    position: relative;
+    top: -19px;
+    left: -308px;
+    display: flex;
+    justify-content: space-between;
+    width: 238%;
+}
+
+#footerModalSite {
+    border: none;
+    padding: 0;
+    position: relative;
+    top: -294px;
+    display: flex;
+    left: -42px;
+    width: 108%;
+    justify-content: space-between;
+}
+
+.AdminVazio {
+    position: absolute;
+}
+
+.ambienteAdminVazio {
+    display: flex;
+    height: 50px;
+    align-items: center;
+}
+
+#JogosAmbientes1Admin {
+    top: 1554px;
+}
+
+#JogosAmbientes2Admin {
+    top: 2647px;
+}
+
+#JogosAmbientes3Admin {
+    top: 1664px;
+}
+
+#JogosAmbientes4Admin {
+    top: 1554px;
+}
+
+#JogosAmbientes5Admin {
+    top: 1554px;
+}
+
+#JogosAmbientes6Admin {
+    top: 1554px;
+}
+
+#JogosAmbientes7Admin {
+    top: 1554px;
+}
+
+#JogosAmbientes8Admin {
+    top: 1554px;
+}
+
+#JogosAmbientes9Admin {
+    top: 1554px;
+}
+
+#EbooksAmbientes1Admin {
+    top: 2034px;
+}
+
+#EbooksAmbientes2Admin {
+    top: 2919px;
+}
+
+#EbooksAmbientes3Admin {
+    top: 1944px;
+}
+
+#EbooksAmbientes4Admin {
+    top: 2034px;
+}
+
+#EbooksAmbientes5Admin {
+    top: 2034px;
+}
+
+#EbooksAmbientes6Admin {
+    top: 2034px;
+}
+
+#EbooksAmbientes7Admin {
+    top: 2034px;
+}
+
+#EbooksAmbientes8Admin {
+    top: 2034px;
+}
+
+#EbooksAmbientes9Admin {
+    top: 2034px;
+}
+
+#JogoHibridoAmbientes1Admin {
+    top: 2313px;
+}
+
+#JogoHibridoAmbientes2Admin {
+    top: 3195px;
+}
+
+#JogoHibridoAmbientes3Admin {
+    top: 2217px;
+}
+
+#JogoHibridoAmbientes4Admin {
+    top: 2313px;
+}
+
+#JogoHibridoAmbientes5Admin {
+    top: 2313px;
+}
+
+#JogoHibridoAmbientes6Admin {
+    top: 2313px;
+}
+
+#JogoHibridoAmbientes7Admin {
+    top: 2313px;
+}
+
+#JogoHibridoAmbientes8Admin {
+    top: 2313px;
+}
+
+#JogoHibridoAmbientes9Admin {
+    top: 2313px;
+}
+
+.iconFecharFooter {
+    position: relative;
+    width: 90%;
+}
+
+.iconSalvarFooter {
+    position: relative;
+    left: -10px;
+}
+
+.btnFechar {
+    background-color: rgba(17, 17, 17, 0);
+    border: none;
+    width: 116px;
+    height: 116px;
+}
+
+.interiorModal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fraseUpload {
+    color: #e30808;
+    text-align: center;
+}
+
+.inputFile {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+[type="file"] {
+    color: #000000;
+}
+
+[type="file"]::-webkit-file-upload-button {
+    background: #76c949;
+    border: 2px solid #76c949;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    transition: all 1s ease;
+}
+
+[type="file"]::-webkit-file-upload-button:hover {
+    background: #fff;
+    border: 2px solid #76c949;
+    font-weight: normal;
+    color: #000;
+}
+
+/*  ////////// Footer ////////// */
+
+.espaco {
+    height: 90px;
+}
+
+.footer {
+    margin-top: 0;
+    border-top: 1px solid #292929;
+    width: 100%;
+    bottom: 0px;
+}
+
+.footer-inner {
+    padding: 15px 0;
+    font-size: 12px;
+    background: #111;
+    color: #999;
+}
+
+.footer a {
+    color: #999;
+}
+
+.footer a:hover {
+    color: #FFF;
+    text-decoration: none;
+}
+
+#footerInfo {
+    font-size: 20px;
+}
+
+.btnPlayerContent {
+    width: 100%;
+}
