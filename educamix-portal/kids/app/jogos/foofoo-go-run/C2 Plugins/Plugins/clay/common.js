@@ -1,3 +1,0 @@
-﻿/*
- * Nothing in common :(
- */
