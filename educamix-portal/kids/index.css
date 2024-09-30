@@ -3,8 +3,12 @@
 @import 'index1536.css';
 @import 'index1440.css';
 @import 'index1366.css';
+@import 'index1280.css';
+@import 'index1024.css';
 @import 'index768.css';
+@import 'index800.css';
 @import 'index425.css';
+@import 'index393.css';
 
 @font-face {
     font-family: 'Gotham';
@@ -115,13 +119,18 @@ main {
     height: 1000px;
 }
 
+.divLogoEducanave {
+    width: 30%;
+}
+
 .divLogoCittius {
-    width: 60%;
+    width: 50%;
     text-align: center;
 }
 
 .divBtnLogin {
     width: 20%;
+    text-align: end;
 }
 
 .divNuvem {
@@ -189,7 +198,7 @@ main {
 }
 
 .divTextoIcones {
-    width: 80%;
+    width: 70%;
     display: flex;
     flex-direction: column;
 }
@@ -203,6 +212,7 @@ main {
     width: 100%;
     display: flex;
     flex-direction: column;
+    margin-top: 50px;
 }
 
 .iconsNaveContainer {
@@ -251,20 +261,36 @@ main {
 
 .divTituloPlanetas {
     width: 75%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.setaEsquerda, .setaDireita {
+    width: 10%;
     display: flex;
     align-items: center;
 }
 
 .setaEsquerda {
-    width: 10%;
+    justify-content: right;
+}
+
+.setaDireita {
+    justify-content: left;
+}
+
+#textoAmbiente {
+    text-align: center;
+    padding: 20px 0;
 }
 
 .titulo {
     width: 80%;
-}
-
-.setaDireita {
-    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .ambienteText1, .ambienteText2 {
@@ -284,6 +310,15 @@ main {
     display: flex;
     flex-direction: column;
     width: 100%;
+    position: relative;
+    top: 100px;
+}
+
+.divContainerTextoFormacao {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .divTituloAcessibilidade {
@@ -301,7 +336,7 @@ main {
 
 .textoAcessibilidade {
     width: 80%;
-    padding: 50px;
+    padding: 50px 0 0 50px;
 }
 
 .divCometa {
@@ -405,6 +440,7 @@ main {
 
 .divOpcoesFormacao {
     width: 100%;
+    margin-left: 200px;
 }
 
 .listaFormacao {
@@ -417,14 +453,9 @@ main {
     width: 100%;
     display: flex;
     margin-top: 50px;
-}
-
-.divCatalogoJogos {
-    width: 50%;
-}
-
-.divCatalogoTecnico {
-    width: 50%;
+    margin-left: -50px;
+    justify-content: center;
+    gap: 50px;
 }
 
 .contato {
@@ -436,7 +467,7 @@ main {
 .divContainerContato {
     width: 100%;
     display: flex;
-    padding: 100px;
+    padding: 10px 100px;
 }
 
 .divLogoCittiusForm {
@@ -457,4 +488,17 @@ main {
     width: 100%;
     display: flex;
     justify-content: center;
+}
+
+.aspectStyles {
+    max-width: 75%;
+    font-size: 200%;
+}
+
+.aspectRatio {
+    max-width: 100%;
+}
+
+.aspectSol {
+    max-width: 120%;
 }

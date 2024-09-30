@@ -1,0 +1,706 @@
+@media (max-width: 393px) {
+
+    .aspectStyles {
+        font-size: 65% !important;
+    }
+    
+    body {
+        height: 4000px !important;
+    }
+
+    main {
+        height: 500px;
+    }
+
+    .topBar {
+        width: 100%;
+        height: 60px;
+        background-image: url("./assets/Celular/Borda_3.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 2;
+    }
+
+    /* Logo Educanave */
+    #logoEducanave {
+        content: url("./assets/Tablet/Logo-Nuvem-Mesa-tablet0.png");
+        position: absolute;
+        top: 9px;
+        left: -3px;
+    }
+
+    /* Logo Cittius */
+    #logoCittius {
+        content: url("./assets/Celular/cittius.png");
+        position: relative;
+        top: 20px;
+        left: 120px;
+    }
+
+    /* Botão Login */
+    #botaoLogin {
+        content: url("./assets/Celular/Botao_1.png");
+        position: relative;
+        top: 15px;
+        left: -150px;
+    }
+
+    /* Nuvem */
+    #nuvem {
+        content: url("./assets/Celular/Nuvem1_2.png");
+        position: relative;
+        top: 20px;
+    }
+
+    /* Título Decolar */
+    #decolar {
+        content: url("./assets/Celular/Decolar_5.png");
+        max-width: 150%;
+        position: relative;
+        top: 0px;
+        left: -30px;
+    }
+
+    /* Decolar Text 1 */
+
+    .star {
+        width: 15%; 
+    }
+
+    .divDecolarText1 {
+        width: 130%;
+        top: -470px;
+        left: 0px;
+    }
+
+    /* Decolar Text 2 */
+    .divDecolarText2 {
+        top: -670px;
+        left: 30px;
+        width: 120%;
+    }
+
+    #textDesktop {
+        display: none;
+    }
+
+    #textMobile {
+        display: block;
+    }
+
+    /* Decolar Texts */
+    .textDecolar {
+        padding-left: 20px;
+        font-family: 'Gotham-medium';
+        color: white;
+        font-size: 12px !important;
+    }
+
+    /* Sol */
+    #sol {
+        content: url("./assets/1440/Sol_1.png");
+        display: none;
+    }
+
+    /* Mesa 1 */
+    #mesa1 {
+        content: url("./assets/Celular/Mesa1_2.png");
+        position: relative;
+        top: -200px;
+        left: -150px;
+    }
+
+    .divTituloNave {
+        height: 50px !important;
+        position: relative;
+        top: 50px;
+    }
+
+    /* Título Nave */
+    #tituloNave {
+        content: url("./assets/Celular/Titulo1_1.png");
+        padding-left: 100px;
+        margin-top: -50px;
+    }
+
+    /* Dra. Ana */
+    #drAna {
+        content: url("./assets/Celular/Dr\ Ana_1.png");
+        max-width: 150px;
+        position: relative;
+        top: 20px !important;
+        left: 5px;
+    }
+
+    .textNave {
+        width: 100% !important;
+        margin-top: 0px !important;
+    }
+
+    .divTexto {
+        margin-top: 10px !important;
+    }
+
+    .divTextoNave {
+        height: 100% !important;
+    }
+
+    .divTextNave1 {
+        width: 80%;
+        position: relative;
+        top: 50px;
+        left: -50px;
+    }
+
+    #textNave1 {
+        font-family: 'Gotham-book';
+        font-size: 12px !important;
+
+    }
+
+    .textNaveMob {
+        font-family: 'Gotham-book';
+        font-size: 12px !important;
+        width: 400px;
+    }
+
+    #textNave1Line1 {
+        position: relative;
+        top: -40px;
+        left: -120px;
+    }
+
+    #textNave1Line2{
+        position: relative;
+        top: -40px;
+        left: -150px;
+    }
+
+    #textNave1Line3 {
+        position: relative;
+        top: -40px;
+        left: -160px;
+    }
+
+    #textNave1Line4 {
+        position: relative;
+        top: -40px;
+        left: -170px;
+    }
+
+    #textNave1Line5 {
+        position: relative;
+        top: -40px;
+        left: -180px;
+    }
+
+    #textNave1Line6 {
+        position: relative;
+        top: -40px;
+        left: -190px;
+    }
+
+    #textNave1Line7 {
+        position: relative;
+        top: -40px;
+        left: -210px;
+    }
+
+    #textNave1Line8 {
+        position: relative;
+        top: -40px;
+        left: -210px;
+    }
+
+    #textNave1Line9 {
+        position: relative;
+        top: -40px;
+        left: -210px;
+    }
+
+    .textNaveMobile1 {
+        display: none;
+        position: relative;
+        left: 200px;
+        top: 50px;
+    }
+
+    .divTextNave2 {
+        position: relative;
+        top: 71px;
+        left: -50px;
+        height: 430px;
+    }
+
+    #textNave2, #textNave3 {
+        font-family: 'Gotham-book';
+        font-size: 12px !important;
+    }
+
+    .divTextNave3 {
+        width: 100%;
+        position: relative;
+        top: -155px;
+        left: -40px;
+    }
+
+    #textNave3 {
+        position: relative;
+        left: 90px;
+    }
+
+    .divIconesNave {
+        width: 113% !important;
+        margin-top: 0px;
+        margin-bottom: 60px;
+        position: relative;
+        top: -122px;
+        left: -110px;
+        border: 3px solid grey;
+        border-radius: 50px;
+        padding: 30px;
+    }
+
+    .iconsNaveContainer {
+        flex-direction: column;
+
+    }
+
+    /* Icons Nave */
+    #livre {
+        content: url("./assets/Celular/Icone-Livre_4.png");
+    }
+
+    #interface {
+        content: url("./assets/Celular/Icone-Interface_5.png");
+    }
+
+    #audioDescricao {
+        content: url("./assets/Celular/Icone-AudioDescricao_5.png");
+    }
+
+    #limpeza {
+        content: url("./assets/Celular/Icone-Limpeza_5.png");
+    }
+
+    #offline {
+        content: url("./assets/Celular/Icone-Offline_5.png");
+    }
+
+    #braile {
+        content: url("./assets/Celular/Icone-brile_5.png");
+    }
+
+    #resistencia {
+        content: url("./assets/Celular/Icone-Resistencia_5.png");
+    }
+
+    #garantia {
+        content: url("./assets/Celular/Icone-Garantia_5.png");
+    }
+
+    #libras {
+        content: url("./assets/Celular/Icone_LIBRAS_5.png");
+    }
+
+    #touch {
+        content: url("./assets/Celular/Icone-Touch_5.png");
+    }
+
+    #ampliacao {
+        content: url("./assets/Celular/Icone-Ampliacao_5.png");
+    }
+
+    #naoToxico {
+        content: url("./assets/Celular/Icone-NaoToxico_4.png");
+    }
+
+    .textinNave {
+        font-family: 'Gotham-book';
+        font-size: 12px !important;
+        margin-left: 0px;
+        width: 80px;
+    }
+
+    /* Título Ambietnes */
+    #tituloAmbientes {
+        content: url("./assets/Celular/Titulo2_3.png");
+        padding: 20px 0 0 30px;
+    }
+
+    .planetasContainer {
+        padding: 20px !important;
+    }
+
+    .planetas {
+        width: 12% !important;
+    }
+
+    .divPrints {
+        padding: 25px !important;
+        justify-content: center;
+    }
+
+    .divPrintsMobile {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .prints {
+        border-radius: 10px !important;
+    }
+
+    .setaEsquerda, .setaDireita {
+        display: flex;
+    }
+
+    #setaEsquerda, #setaDireita {
+        width: 80% !important;
+    }
+
+    .divBolinhasPlanetas {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .tituloMobile {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .divGridGamesMobile {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 50px;
+    }
+
+    .prints {
+        border-radius: 20px;
+    }
+
+    .ambienteText {
+        font-size: 10px;
+    }
+
+    .divTituloPlanetas {
+        height: 100px !important;
+    }
+
+    /* Selo */
+    #seloMobile {
+        width: 25%;
+        position: relative;
+        top: 50px;
+        left: 300px;
+        animation: floatMobile 5s ease-in-out infinite;
+    }
+
+    #selo {
+        content: url("./assets/Celular/Selo_4.png");
+        position: relative;
+        top: -75px;
+        left: 200px !important;
+        animation: floatMobile 5s ease-in-out infinite;
+    }
+
+
+    .divCometa {
+        display: none;
+    }
+
+    .acessibilidade {
+        height: 1100px;
+        position: relative;
+        top: -150px;
+    }
+
+    #acessibilidade {
+        content: url("./assets/Celular/Titulo3_2.png");
+    }
+
+    /* Titulo Vídeo */
+    #tituloVideo {
+        content: url("./assets/Celular/Titulo4_2.png");
+        width: 45% !important;
+        margin-left: 50px;
+    }
+
+    .divTituloAcessibilidade {
+        height: 0px !important;
+    }
+
+
+    .textAcessibilidade {
+        font-size: 12px !important;
+        position: relative;
+        top: -15px;
+        left: -40px;
+    }
+
+    .divTituloVideo {
+        padding: 10px !important;
+    }
+
+    /* Moldura Video */
+    #molduraVideo {
+        content: url("./assets/Celular/GuiaAcessibilidade_1.png");
+    }
+
+    /* Video */
+    .divVideo {
+        position: relative;
+        padding-bottom: 50.25%;
+        height: 0;
+    }
+
+    .divVideo video {
+        z-index: -1;
+        position: relative;
+        left: 35px;
+        top: 0px !important;
+        width: 90%;
+    }
+
+    /* Sensor RFID */
+    .sensorRfid {
+        position: relative;
+        top: -870px;
+    }
+
+    /* Titulo Sensor RFID */
+    #tituloSensor {
+        content: url("./assets/Celular/Sensor_4.png");
+        padding: 25px;
+    }
+
+    .divP1Sensor {
+        margin-left: 0px !important;
+        width: 100% !important;
+        display: flex;
+        justify-content: center;
+    }
+
+    .cards1 {
+        position: relative;
+        left: 150px;
+    }
+
+    .cards2 {
+        margin-top: 50px;
+        margin-left: 50px;
+        display: none !important;
+    }
+
+    .textSensor, .textSensor2 {
+        font-size: 12px !important;
+    }
+
+    .textSensor2 {
+        padding: 10px 0 0 20px;
+    }
+
+    .divCardSensor {
+        padding: 0px !important;
+    }
+
+    .divTextSensor {
+        width: 100% !important;
+        margin-top: 90px;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Cartas Sensor RFID */
+    #cartaCores {
+        content: url("./assets/Tablet/Cores_2.png");
+        max-width: 100%;
+        position: relative;
+        left: 30px;
+    }
+
+    #cartaLetras {
+        content: url("./assets/Tablet/Letras.png");
+        max-width: 100%;
+        position: relative;
+        top: 30px;
+        left: -30px !important;
+    }
+
+    #cartaNumeros {
+        content: url("./assets/Tablet/Numeros_3.png");
+        max-width: 100%;
+        position: relative;
+        top: 85px;
+        left: -110px;
+    }
+
+    .lblCardItem {
+        font-size: 100% !important;
+    }
+
+    #lblCartaCores {
+        font-size: 100%;
+        position: relative;
+        top: 20px;
+        left: 12px !important;
+        transform: rotate(-15deg);
+    }
+
+    #lblCartaLetras {
+        font-size: 100%;
+        position: relative;
+        left: -25px !important;
+        top: 40px !important;
+        transform: rotate(4deg);
+    }
+
+    #lblCartaNumeros {
+        font-size: 100%;
+        position: relative;
+        left: -90px !important;
+        top: 110px !important;
+        transform: rotate(25deg);
+    }
+
+    /* Nuvem footer sensor */
+    .divFooterSensor {
+        background: url("./assets/4K/Nuves2.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        top: 21px !important;
+        height: 100px;
+    }
+
+    /* Mesa Sensor */
+
+    .divMesaSensor {
+        display: none;
+    }
+
+    #mesaSensor {
+        content: url("./assets/Tablet/Mesa2.png");
+        position: relative;
+        top: -250px;
+        left: 400px;
+    }
+
+    /* Carta Sensor */
+    #cartaSensor {
+        content: url("./assets/1440/versoCarta.png");
+        display: none;
+    }
+
+    .formacaoProfessores {
+        position: relative;
+        top: -910px;
+    }
+
+    #formacaoProfessores {
+        content: url("./assets/Celular/Formacao_3.png");
+    }
+
+    .textoFormacao {
+        font-size: 12px !important;
+    }
+
+    .textoForm {
+        font-size: 12px !important;
+        width: 250px;
+    }
+
+    .listaFormacao {
+        margin-left: 20px !important;
+    }
+
+    /* Catálogo de Jogos */
+    #catalogosJogos {
+        content: url("./assets/Celular/LivroProfessor.png");
+        position: relative;
+        left: 15px;
+    }
+
+    /* Catálogo Técnico */
+    #catalogoTecnico {
+        content: url("./assets/1440/livroProfessor2.png");
+        display: none;
+    }
+
+    .contato {
+        position: relative;
+        top: -900px;
+    }
+
+    .divContainerContato {
+        padding: 10px 50px 0px 50px !important;
+    }
+
+    .divMiguel {
+        display: none;
+    }
+
+    #logoCittiusForm {
+        content: url("./assets/Celular/cittius.png");
+        left: -7px;
+    }
+
+    .divLogoCittiusForm {
+        padding: 20px !important;
+    }
+
+    .inputContato {
+        border-radius: 20px;
+        font-size: 12px;
+        font-family: 'Gotham-book';
+        padding-left: 20px;
+        height: 25px !important;
+    }
+
+    .inputContato::placeholder {
+        font-size: 12px;
+    }
+    
+    #mensagem {
+        font-size: 12px;
+        font-family: 'Gotham-book';
+        padding: 10px 20px;
+        border-radius: 20px;
+    }
+
+    #mensagem::placeholder {
+        font-size: 12px;
+    }
+
+     /* Botão Enviar Formulário */
+     #enviar {
+        content: url("./assets/Celular/Botao2_1.png");
+    }
+
+    #textoAmbiente {
+        color: white;
+        font-family: 'Gotham-book';
+        font-size: 12px !important;
+        margin-top: 10px;
+    }
+
+    .ambientes {
+        position: relative;
+        top: -172px;
+    }
+
+    .divFormulario {
+        margin-bottom: 30px;
+    }
+
+    .textCaracteristicas {
+        position: relative;
+        left: -25px;
+        width: 90px;
+    }
+}

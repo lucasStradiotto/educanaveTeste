@@ -1,29 +1,34 @@
 @media (max-width: 1536px) {
 
+    .aspectStyles {
+        max-width: 75%;
+        font-size: 140% !important;
+    }
+
     main {
-        height: 1000px;
+        height: 1140px;
     }
 
     /* Logo Educanave */
     #logoEducanave {
-        content: url("./assets/1440/Nave_1.png");
-        position: relative;
-        top: 80px;
-        left: 80px;
+        content: url("./assets/1920/Logo-Nuvem-Mesa-19000.png");
+        max-width: 106%;
+        position: absolute;
+        top: 50px;
     }
 
     /* Logo Cittius */
     #logoCittius {
-        content: url("./assets/1440/Cittius_1.png");
+        content: url("./assets/1920/Cittius_3.png");
         position: relative;
-        top: 60px;
+        top: 50px;
     }
 
     /* Botão Login */
     #botaoLogin {
-        content: url("./assets/1440/Login_1.png");
+        content: url("./assets/1920/Login.png");
         position: relative;
-        top: 60px;
+        top: 50px;
     }
 
     /* Nuvem */
@@ -41,13 +46,13 @@
 
     /* Decolar Text 1 */
     .divDecolarText1 {
-        top: -200px;
+        top: -250px;
         left: 200px;
     }
 
     /* Decolar Text 2 */
     .divDecolarText2 {
-        top: -270px;
+        top: -350px;
         left: 100px;
         width: 70%;
     }
@@ -61,11 +66,19 @@
     }
 
     /* Sol */
-    #sol {
-        content: url("./assets/1440/Sol_1.png");
+    #raioSol {
+        content: url("./assets/1920/raioSol.png");
         position: relative;
-        top: -150px;
-        left: 95px;
+        top: -100px;
+        left: 50px;
+        animation: rotation 20s linear infinite;
+    }
+
+    #sol {
+        content: url("./assets/1920/sol.png");
+        position: relative;
+        top: -500px;
+        left: 100px;
         z-index: 1;
     }
 
@@ -82,6 +95,10 @@
         top: 50px;
     }
 
+    .divTituloAcessibilidade {
+        height: 70px !important;
+    }
+
     /* Título Nave */
     #tituloNave {
         content: url("./assets/1440/Titulo_2.png");
@@ -92,45 +109,55 @@
     /* Dra. Ana */
     #drAna {
         content: url("./assets/1440/DrAna_2.png");
+        max-width: 400px;
         position: relative;
-        top: 0px;
+        top: 100px;
+        left: 20px;
     }
 
     .divIconsNave1, .divIconsNave2, .divIconsNave3, .divIconsNave4 {
         text-align: center;
     }
 
+    .divCometa {
+        height: 180px !important;
+    }
+
     .iconNave {
         margin: 0;
+        width: 15%;
     }
 
     .iconsNaveContainer {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         gap: 10px;
     }
 
     .divIconesNave {
-        margin-top: 100px;
+        margin-top: 10px !important;
         margin-bottom: 50px;
         position: relative;
-        left: -400px;
-        border: 3px solid grey;
-        border-radius: 50px;
+        left: -150px;
         padding: 50px 100px;
     }
 
-    /* Selo */
+    #tituloAmbientes {
+        content: url("./assets/1920/Titulo2.png");
+    }
 
+    .div
+    /* Selo */
     .divSelo {
         position: relative;
         left: -500px;
     }
 
     #selo {
-        content: url("./assets/1440/Selo_2.png");
+        content: url("./assets/1920/Selo.png");
         position: relative;
         top: 100px;
+        left: 300px;
     }
 
     /* Seta Esquerda */
@@ -138,23 +165,30 @@
         content: url("./assets/1440/SetaE_1.png");
         transform: rotate(0deg);
         cursor: pointer;
+        top: 25px;
     }
 
     /* Seta Direita */
     #setaDireita {
         content: url("./assets/1440/SetaD_2.png");
         cursor: pointer;
+        top: 25px;
+    }
+
+    #acessibilidade {
+        content: url("./assets/1920/Titulo3.png");
     }
 
     /* Cometa */
     #cometa {
         content: url("./assets/1440/Cometa_2.png");
         position: relative;
-        left: -100px;
+        left: -130px;
     }
 
     /* Titulo Vídeo */
     #tituloVideo {
+        width: 30% !important;
         margin-left: 100px;
     }
 
@@ -166,21 +200,30 @@
     /* Video */
     .divVideo {
         position: relative;
-        padding-bottom: 56.25%;
-        height: 0;
+        padding-bottom: 60.25%;
+        height: 600px;
     }
 
     .divVideo video {
         z-index: -1;
         position: relative;
-        top: -650px;
-        width: 1000px;
+        left: 40px;
+        top: 1px;
+        width: 90%;
     }
 
     /* Sensor RFID */
     .sensorRfid {
+        background: url("./assets/4K/Fundo2_1.png");
+        background-repeat: no-repeat;
+        background-size: cover;
         position: relative;
         top: -700px;
+    }
+
+    .divCardSensor {
+        position: relative;
+        left: -100px;
     }
 
     /* Titulo Sensor RFID */
@@ -189,13 +232,21 @@
         padding: 50px;
     }
 
+    .textAcessibilidade {
+        margin-left: 10px;
+    }
+
     .cards2 {
         margin-top: 50px;
         margin-left: 50px;
     }
 
     /* Cartas Sensor RFID */
-    #cartaCores {
+
+    .lblCardItem {
+        padding: 15px;
+    }
+    /* #cartaCores {
         content: url("./assets/1440/cores.png");
     }
 
@@ -221,7 +272,7 @@
 
     #cartaEmocoes {
         content: url("./assets/1440/Emocoes_1.png");
-    }
+    } */
 
     /* Nuvem footer sensor */
     .divFooterSensor {
@@ -236,20 +287,25 @@
     #mesaSensor {
         content: url("./assets/1440/Mesa2_1.png");
         position: relative;
-        top: -20px;
+        top: -200px;
+        left: 30px;
     }
 
     /* Carta Sensor */
     #cartaSensor {
         content: url("./assets/1440/versoCarta.png");
         position: relative;
-        top: -50px;
-        left: 100px;
+        top: -200px;
+        left: 200px;
     }
 
     .formacaoProfessores {
         position: relative;
-        top: -700px;
+        top: -870px;
+    }
+
+    #formacaoProfessores {
+        content: url("./assets/1920/Titulo6.png");
     }
 
     /* Catálogo de Jogos */
@@ -264,7 +320,7 @@
 
     .contato {
         position: relative;
-        top: -600px;
+        top: -841px;
     }
 
     .inputContato {
@@ -291,5 +347,34 @@
         font-family: 'Gotham-book';
         font-size: 25px;
         margin-top: 10px;
+    }
+
+    .textinNave {
+        /* position: relative;
+        top: 20px; */
+        width: 400px;
+        max-width: 50% !important;
+        font-size: 150% !important;
+    }
+
+    #tituloPlaneta {
+        max-width: 90%;
+    }
+
+    .textCaracteristicas {
+        position: relative;
+        top: 13px;
+    }
+
+    .textSensor {
+        margin-left: -36px;
+    }
+
+    .textSensor2 {
+        padding: 50px 70px 50px 105px;
+    }
+
+    .divOpcoesFormacao {
+        margin-left: 130px !important;
     }
 }

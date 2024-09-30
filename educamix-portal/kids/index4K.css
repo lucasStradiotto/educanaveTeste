@@ -15,9 +15,9 @@
 
     /* Logo Educanave */
     #logoEducanave {
-        content: url("./assets/4K/nave.png");
-        position: relative;
-        left: 100px;
+        content: url("./assets/4K/Logo-Nuvem-Mesa-4k0.png");
+        position: absolute;
+        top: 16px;
     }
 
     /* Logo Cittius */
@@ -32,6 +32,7 @@
         content: url("./assets/4K/Login.png");
         position: relative;
         top: 35px;
+        left: -50px;
         z-index: 3;
     }
 
@@ -46,6 +47,7 @@
     #decolar {
         content: url("./assets/4K/Decolar.png");
         position: relative;
+        max-width: 99%;
     }
 
     /* Decolar Text 1 */
@@ -60,25 +62,33 @@
     /* Decolar Text 2 */
     .divDecolarText2 {
         left: 100px;
-        width: 50%;
+        width: 60%;
     }
 
     /* Decolar Texts */
     .textDecolar {
         padding-left: 20px;
         font-family: 'Gotham-medium';
-        font-size: 40px;
         color: white;
     }
 
     /* Sol */
+    #raioSol {
+        content: url("./assets/4K/raioSol.png");
+        max-width: 150%;
+        position: relative;
+        top: -150px;
+        left: 100px;
+        z-index: 1;
+        animation: rotation 20s linear infinite;
+    }
+
     #sol {
         content: url("./assets/4k/Sol_2.png");
         position: relative;
-        top: -150px;
-        left: 130px;
+        top: -820px;
+        left: 200px;
         z-index: 1;
-        animation: float 5s ease-in-out infinite;
     }
 
     /* Mesa 1 */
@@ -94,13 +104,14 @@
         content: url("./assets/4K/TituloNave.png");
         width: 70%;
         padding-left: 200px;
-        margin-top: 50px;
+        margin-top: 6px;
     }
 
     /* Dra. Ana */
     #drAna {
         content: url("./assets/4K/DrAna_1.png");
         animation: float 5s ease-in-out infinite;
+        max-width: 600px;
     }
 
     /* Texto Nave */
@@ -109,6 +120,8 @@
         font-family: 'Gotham-book';
         font-size: 35px;
         margin-top: 50px;
+        position: relative;
+        z-index: 2;
     }
 
     .textinNave {
@@ -120,6 +133,11 @@
 
     .iconNave {
         margin-bottom: 50px;
+        width: 15%;
+    }
+
+    .caracteristicasIcons {
+        max-width: 50%;
     }
 
     .iconsNaveContainer {
@@ -160,7 +178,7 @@
     }
 
     #libras {
-        content: url("./assets/4K/Icone_LIBRAS.png");
+        content: url("./assets/4K/Icone-LIBRAS.png");
     }
 
     #touch {
@@ -223,12 +241,18 @@
     #setaEsquerda {
         content: url("./assets/4K/setaE.png");
         cursor: pointer;
+        position: relative;
+        top: 50px;
+        left: 100px;
     }
 
     /* Seta Direita */
     #setaDireita {
         content: url("./assets/4K/SetaD.png");
         cursor: pointer;
+        position: relative;
+        top: 50px;
+        left: -100px;
     }
 
     /* Título Acessibilidade */
@@ -240,6 +264,7 @@
     .textAcessibilidade {
         font-family: 'Gotham-book';
         font-size: 35px;
+        margin-left: 30px;
     }
 
     /* Cometa */
@@ -264,15 +289,16 @@
     /* Video */
     .divVideo {
         position: relative;
-        padding-bottom: 56.25%;
-        height: 0;
+        padding-bottom: 67.25%;
+        height: 600px;
     }
 
     .divVideo video {
         z-index: -1;
         position: relative;
-        top: -1170px;
-        width: 1800px;
+        top: 0;
+        left: -90px;
+        width: 90%;
     }
 
     /* Titulo Sensor RFID */
@@ -282,16 +308,14 @@
     }
 
     .textSensor {
-        padding-left: 20px;
+        padding-left: 42px;
         font-family: 'Gotham-book';
-        font-size: 35px;
         color: white;
     }
 
     .textSensor2 {
-        padding: 50px 120px;
+        padding: 50px 20px 50px 144px;
         font-family: 'Gotham-book';
-        font-size: 35px;
         color: white;
     }
 
@@ -351,6 +375,7 @@
     /* Mesa Sensor */
     #mesaSensor {
         content: url("./assets/4K/mesa2.png");
+        max-width: 70%;
         position: relative;
         top: -400px;
     }
@@ -358,6 +383,7 @@
     /* Carta Sensor */
     #cartaSensor {
         content: url("./assets/4K/VersoCarta.png");
+        max-width: 70%;
         position: relative;
         top: -400px;
         left: 300px;
@@ -398,13 +424,14 @@
     #miguel {
         content: url("./assets/4K/Miguel.png");
         position: relative;
+        top: 200px;
         left: -300px;
         animation: float 5s ease-in-out infinite;
     }
 
     /* Input Formulario */
     .inputContato {
-        height: 100px;
+        height: 80px;
     }
 
     /* Formulário */
@@ -426,7 +453,7 @@
     
     .inputContato {
         border-radius: 20px;
-        font-size: 50px;
+        font-size: 40px;
         font-family: 'Gotham-book';
         padding-left: 20px;
     }
@@ -436,7 +463,7 @@
     }
     
     #mensagem {
-        font-size: 50px;
+        font-size: 40px;
         font-family: 'Gotham-book';
         padding-left: 20px;
         padding-top: 20px;
@@ -471,6 +498,7 @@
     
     .planetas {
         width: 11%;
+        transition: transform 0.5s;
     }
 
     @keyframes float {
@@ -485,6 +513,18 @@
         }
     }
 
+    @keyframes floatMobile {
+        0% {
+        transform: translateY(0);
+        }
+        50% {
+        transform: translateY(-10px);
+        }
+        100% {
+        transform: translateY(0);
+        }
+    }
+
     .gifPlanet {
         width: 50%;
         cursor: pointer;
@@ -493,25 +533,26 @@
     .resize {
         animation: resize 1s forwards;
     }
+
+    .downsize {
+        animation: downSize 1s forwards;
+    }
     
     @keyframes resize {
         0% {
         transform: scale(1);
         }
-        20% {
-            transform: scale(1.1);
+        100% {
+        transform: scale(1.3);
         }
-        40% {
-        transform: scale(1.2);
-        }
-        60% {
-            transform: scale(1.3);
-        }
-        80% {
-            transform: scale(1.4);
+    }
+
+    @keyframes downSize {
+        0% {
+        transform: scale(1.3);
         }
         100% {
-        transform: scale(1.5);
+        transform: scale(1);
         }
     }
 
@@ -520,6 +561,23 @@
         font-family: 'Gotham-book';
         font-size: 35px;
         margin-top: 10px;
+    }
+
+    .textoFormacao {
+        margin-left: -37px;
+    }
+
+    .divOpcoesFormacao {
+        margin-left: 500px !important;
+    }
+
+    @keyframes rotation {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
     }
 
 }

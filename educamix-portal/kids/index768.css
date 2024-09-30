@@ -1,22 +1,26 @@
 @media (max-width: 768px) {
 
+    .aspectStyles {
+        font-size: 100% !important;
+    }
+
     main {
         height: 1000px;
     }
 
     /* Logo Educanave */
     #logoEducanave {
-        content: url("./assets/Tablet/Nave_2.png");
-        position: relative;
-        top: 110px;
-        left: 20px;
+        content: url("./assets/Tablet/Logo-Nuvem-Mesa-tablet0.png");
+        position: absolute;
+        top: 30px;
+        left: -10px;
     }
 
     /* Logo Cittius */
     #logoCittius {
         content: url("./assets/Tablet/Cittius_2.png");
         position: relative;
-        top: 70px;
+        top: 30px;
         left: 200px;
     }
 
@@ -24,7 +28,7 @@
     #botaoLogin {
         content: url("./assets/Tablet/Botao1.png");
         position: relative;
-        top: 70px;
+        top: 20px;
         left: -300px;
     }
 
@@ -38,20 +42,21 @@
     /* Título Decolar */
     #decolar {
         content: url("./assets/Tablet/Decolar_4.png");
+        max-width: 120%;
         position: relative;
-        left: -120px;
+        top: 30px;
     }
 
     /* Decolar Text 1 */
     .divDecolarText1 {
         width: 130%;
-        top: -300px;
+        top: -350px;
         left: 0px;
     }
 
     /* Decolar Text 2 */
     .divDecolarText2 {
-        top: -400px;
+        top: -480px;
         left: 50px;
         width: 120%;
     }
@@ -68,11 +73,15 @@
     .textDecolar {
         padding-left: 20px;
         font-family: 'Gotham-medium';
-        font-size: 23px;
         color: white;
     }
 
     /* Sol */
+    #raioSol {
+        content: url("./assets/1920/raioSol.png");
+        display: none;
+    }
+
     #sol {
         content: url("./assets/1440/Sol_1.png");
         display: none;
@@ -94,23 +103,24 @@
     /* Título Nave */
     #tituloNave {
         content: url("./assets/Tablet/Titulo1.png");
-        padding-left: 260px;
+        max-width: 65%;
+        padding-left: 230px;
         margin-top: 40px;
     }
 
     /* Dra. Ana */
     #drAna {
         content: url("./assets/Tablet/DrAna_3.png");
+        max-width: 100%;
         position: relative;
-        top: -200px;
+        top: -60px !important;
+        left: 30px;
     }
 
     .divTextNave1 {
-        width: 50%;
-    }
-
-    #textNave1 {
-        display: none;
+        width: 100%;
+        position: relative;
+        /* left: 85px; */
     }
 
     .textNaveMob {
@@ -168,11 +178,11 @@
 
     .divTextNave2 {
         position: relative;
-        top: 10px;
-        left: 35px;
+        top: -10px;
+        /* left: 85px; */
     }
 
-    #textNave2, #textNave3 {
+    #textNave1, #textNave2, #textNave3 {
         font-family: 'Gotham-book';
         font-size: 23px;
     }
@@ -180,12 +190,12 @@
     .divTextNave3 {
         position: relative;
         top: -30px;
-        left: -200px;
+        left: -275px;
         width: 900px;
     }
 
     .divIconesNave {
-        width: 100%;
+        width: 113% !important;
         margin-top: 50px;
         position: relative;
         left: -200px;
@@ -198,10 +208,16 @@
         position: relative;
         left: 0px;
         gap: 0 20px;
+        margin-bottom: 20px;
     }
 
     .iconsNaveContainer {
+        
         gap: 0;
+    }
+
+    .iconNave {
+        width: 50%;
     }
 
     /* Icons Nave */
@@ -255,25 +271,26 @@
 
     .textinNave {
         font-family: 'Gotham-book';
-        font-size: 20px;
-        width: 190px;
+        width: 200px;
+        margin-bottom: 0px;
     }
 
     /* Título Ambietnes */
     #tituloAmbientes {
         content: url("./assets/Tablet/Titulo2_2.png");
-        padding: 50px;
+        padding: 30px 0px 0px 50px;
     }
 
     .planetasContainer {
         flex-direction: column;
         align-items: center;
+        padding: 50px !important;
     }
 
-    .divPrintsMobile {
+    .divPrints {
         display: flex;
-        flex-direction: column;
-        width: 100%;
+        padding: 50px 0px 0px 0px !important;
+        gap: 10px;
     }
 
     .divSetasAmbientesMobile {
@@ -332,10 +349,9 @@
     #selo {
         content: url("./assets/Tablet/Selo_3.png");
         position: relative;
-        top: -20px;
-        left: 550px;
+        top: -50px;
+        left: 100px !important;
     }
-
 
     .divCometa {
         display: none;
@@ -345,10 +361,11 @@
     #tituloVideo {
         /* margin-left: 100px; */
         content: url("./assets/Tablet/Titulo4_1.png");
+        width: 40%;
     }
 
     .acessibilidade {
-        height: 1150px;
+        height: 1110px;
     }
 
     #acessibilidade {
@@ -381,20 +398,35 @@
     .divVideo {
         position: relative;
         padding-bottom: 56.25%;
-        height: 0;
+        height: 600px;
     }
 
     .divVideo video {
         z-index: -1;
         position: relative;
-        top: -400px;
-        width: 650px;
+        left: 80px;
+        top: 1px;
+        width: 90%;
     }
 
     /* Sensor RFID */
     .sensorRfid {
         position: relative;
         top: -300px;
+    }
+
+    .divTextCardContainer {
+        display: none !important;
+    }
+
+    .divTextCardContainerMobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .divP1Sensor {
+        width: 90% !important;
+        margin-left: 50px !important;
     }
 
     /* Titulo Sensor RFID */
@@ -405,7 +437,8 @@
 
     .cards1 {
         position: relative;
-        left: -50px;
+        top: -50px;
+        left: 350px !important;
     }
 
     .cards2 {
@@ -419,48 +452,61 @@
     }
 
     .textSensor2 {
-        padding: 10px 0 0 120px;
+        padding: 10px 0 0 70px;
+        position: relative;
+        top: -250px;
     }
 
     /* Cartas Sensor RFID */
     #cartaCores {
         content: url("./assets/Tablet/Cores_2.png");
+        max-width: 100%;
         position: relative;
         left: 50px;
     }
 
     #cartaLetras {
         content: url("./assets/Tablet/Letras.png");
+        max-width: 100%;
         position: relative;
         top: 60px;
-        left: -30px;
+        left: -20px !important;
     }
 
     #cartaNumeros {
         content: url("./assets/Tablet/Numeros_3.png");
+        max-width: 100%;
         position: relative;
         top: 150px;
-        left: -150px;
+        left: -120px !important;
+        z-index: 2;
     }
 
     #lblCartaCores {
+        font-size: 100%;
         position: relative;
-        left: 10px;
+        top: 20px;
+        left: 30px !important;
         transform: rotate(-15deg);
     }
 
     #lblCartaLetras {
-        position: relative;
-        left: -20px;
-        top: 45px;
+        font-size: 100%;
+        left: -18px !important;
+        top: 65px !important;
         transform: rotate(5deg);
     }
 
     #lblCartaNumeros {
+        font-size: 100%;
         position: relative;
-        left: -90px;
-        top: 160px;
+        left: -80px !important;
+        top: 175px !important;
         transform: rotate(25deg);
+    }
+
+    .sensorRfid {
+        height: 965px;
     }
 
     /* Nuvem footer sensor */
@@ -469,15 +515,15 @@
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
-        top: 10px;
+        top: -70px !important;
     }
 
     /* Mesa Sensor */
     #mesaSensor {
         content: url("./assets/Tablet/Mesa2.png");
         position: relative;
-        top: -250px;
-        left: 350px;
+        top: -178px !important;
+        left: 383px !important;
     }
 
     /* Carta Sensor */
@@ -493,6 +539,8 @@
 
     #formacaoProfessores {
         content: url("./assets/Tablet/Formacao_2.png");
+        position: relative;
+        top: 30px;
     }
 
     .textoFormacao {
@@ -507,7 +555,7 @@
     #catalogosJogos {
         content: url("./assets/Tablet/Livro\ do\ professor.png");
         position: relative;
-        left: 100px;
+        left: 50px;
     }
 
     /* Catálogo Técnico */
@@ -532,7 +580,7 @@
     }
 
     .inputContato {
-        height: 60px;
+        height: 50px;
         border-radius: 20px;
         font-size: 30px;
         font-family: 'Gotham-book';
@@ -540,7 +588,7 @@
     }
 
     .inputContato::placeholder {
-        font-size: 25px;
+        font-size: 23px;
         text-transform: uppercase;
     }
     
@@ -566,5 +614,19 @@
         font-family: 'Gotham-book';
         font-size: 18px;
         margin-top: 10px;
+    }
+
+    .divAcessibilidadeContainer {
+        padding: 30px 50px !important;
+        top: 0 !important;
+        margin-bottom: 50px;
+    }
+    
+    .textoAcessibilidade {
+        padding: 20px 0 0 50px !important;
+    }
+
+    .divFormulario {
+        margin-bottom: 50px;
     }
 }

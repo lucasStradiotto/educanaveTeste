@@ -6,10 +6,11 @@
 
     /* Logo Educanave */
     #logoEducanave {
-        content: url("./assets/1920/Logo_Nave.png");
-        position: relative;
-        top: 50px;
-        left: 100px;
+        content: url("./assets/1920/Logo-Nuvem-Mesa-19000.png");
+        position: absolute;
+        top: 48px;
+        left: -3px;
+        max-width: 101%;
     }
 
     /* Logo Cittius */
@@ -41,23 +42,31 @@
 
     /* Decolar Text 1 */
     .divDecolarText1 {
-        top: -100px;
+        top: -150px;
         left: 300px;
     }
 
     /* Decolar Text 2 */
     .divDecolarText2 {
-        top: -100px;
+        top: -200px;
         left: 100px;
-        width: 60%;
+        width: 90%;
     }
 
     /* Sol */
-    #sol {
-        content: url("./assets/1920/sol.png");
+    #raioSol {
+        content: url("./assets/1920/raioSol.png");
         position: relative;
         top: -150px;
         left: 100px;
+        animation: rotation 20s linear infinite;
+    }
+
+    #sol {
+        content: url("./assets/1920/sol.png");
+        position: relative;
+        top: -650px;
+        left: 160px;
         z-index: 1;
     }
 
@@ -81,7 +90,9 @@
     #drAna {
         content: url("./assets/1920/DrAna.png");
         position: relative;
-        top: 175px;
+        top: 100px;
+        left: 50px;
+        max-width: 400px;
     }
 
     /* Texto Nave */
@@ -95,14 +106,13 @@
     .textinNave {
         font-family: 'Gotham-book';
         font-size: 30px;
-        width: 350px;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
 
     .divIconesNave {
-        margin-top: 150px;
+        margin-top: 150px !important;
         position: relative;
-        left: 0px;
+        left: -65px;
     }
 
     .divIconsNave2 {
@@ -120,53 +130,58 @@
         left: 0px;
     }
 
+    .iconNave {
+        margin-bottom: 30px;
+        width: 10%;
+    }
+
     /* Icons Nave */
     #livre {
-        content: url("./assets/1920/Icone-Livre.png");
+        content: url("./assets/4K/Icone-Livre.png");
     }
 
     #interface {
-        content: url("./assets/1920/Icone-Interface.png");
+        content: url("./assets/4K/Icone-Interface.png");
     }
 
     #audioDescricao {
-        content: url("./assets/1920/Icone-AudioDescricao.png");
+        content: url("./assets/4K/Icone-AudioDescricao.png");
     }
 
     #limpeza {
-        content: url("./assets/1920/Icone-Limpeza.png");
+        content: url("./assets/4K/Icone-Limpeza.png");
     }
 
     #offline {
-        content: url("./assets/1920/Icone-Offline.png");
+        content: url("./assets/4K/Icone-Offline.png");
     }
 
     #braile {
-        content: url("./assets/1920/Icone-brile.png");
+        content: url("./assets/4K/Icone-brile.png");
     }
 
     #resistencia {
-        content: url("./assets/1920/Icone-Resistencia.png");
+        content: url("./assets/4K/Icone-Resistencia.png");
     }
 
     #garantia {
-        content: url("./assets/1920/Icone-Garantia.png");
+        content: url("./assets/4K/Icone-Garantia.png");
     }
 
     #libras {
-        content: url("./assets/1920/Icone_LIBRAS.png");
+        content: url("./assets/4K/Icone_LIBRAS.png");
     }
 
     #touch {
-        content: url("./assets/1920/Icone-Touch.png");
+        content: url("./assets/4K/Icone-Touch.png");
     }
 
     #ampliacao {
-        content: url("./assets/1920/Icone-Ampliacao.png");
+        content: url("./assets/4K/Icone-Ampliacao.png");
     }
 
     #naoToxico {
-        content: url("./assets/1920/Icone-NaoToxico.png");
+        content: url("./assets/4K/Icone-Nao Toxico.png");
     }
     
     /* Selo */
@@ -177,8 +192,10 @@
 
     #selo {
         content: url("./assets/1920/Selo.png");
+        max-width: 70%;
         position: relative;
         top: 150px;
+        left: 50px;
     }
 
     /* Seta Esquerda */
@@ -198,12 +215,13 @@
     #cometa {
         content: url("./assets/1920/Cometa.png");
         position: relative;
-        left: -50px;
+        left: -200px;
     }
 
     /* Titulo Vídeo */
     #tituloVideo {
         content: url("./assets/1920/Titulo4.png");
+        margin-left: 100px;
     }
 
     /* Moldura Video */
@@ -214,15 +232,16 @@
     /* Video */
     .divVideo {
         position: relative;
-        padding-bottom: 56.25%;
-        height: 0;
+        padding-bottom: 67.25%;
+        height: 600px;
     }
 
     .divVideo video {
         z-index: -1;
         position: relative;
-        top: -850px;
-        width: 1300px;
+        left: 50px;
+        top: 0px;
+        width: 85%;
     }
 
     /* Sensor RFID */
@@ -232,7 +251,7 @@
     }
 
     .textSensor {
-        padding-left: 20px;
+        padding-left: 40px;
         font-family: 'Gotham-book';
         font-size: 30px;
         color: white;
@@ -242,13 +261,7 @@
         font-family: Gotham-book;
         font-size: 30px;
         color: white;
-        padding: 50px 120px;
-    }
-
-    /* Titulo Sensor RFID */
-    #tituloSensor {
-        content: url("./assets/1920/Titulo5.png");
-        padding: 50px;
+        padding: 50px 20px 50px 140px;
     }
 
     .cards2 {
@@ -298,7 +311,7 @@
     #mesaSensor {
         content: url("./assets/1920/Mesa.png");
         position: relative;
-        top: -200px;
+        top: -145px;
     }
 
     /* Carta Sensor */
@@ -311,7 +324,7 @@
 
     .formacaoProfessores {
         position: relative;
-        top: -1100px;
+        top: -1030px;
     }
 
     /* Catálogo de Jogos */
@@ -333,7 +346,8 @@
     #miguel {
         content: url("./assets/1920/Miguel.png");
         position: relative;
-        left: -100px;
+        top: 250px;
+        left: -150px;
     }
 
     /* Formulário */
@@ -355,5 +369,21 @@
         font-family: 'Gotham-book';
         font-size: 30px;
         margin-top: 10px;
+    }
+
+    .inputContato {
+        border-radius: 20px;
+        font-size: 30px;
+        font-family: 'Gotham-book';
+        padding-left: 20px;
+        height: 70px;
+    }
+
+    #mensagem {
+        font-size: 30px;
+    }
+
+    .textoFormacao {
+        margin-left: -3px;
     }
 }

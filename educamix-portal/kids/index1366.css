@@ -1,5 +1,23 @@
 @media (max-width: 1366px) {
 
+    /* Sol */
+    #raioSol {
+        content: url("./assets/1920/raioSol.png");
+        position: relative;
+        top: -80px;
+        left: 50px;
+        animation: rotation 20s linear infinite;
+        z-index: 1;
+    }
+
+    #sol {
+        content: url("./assets/1920/sol.png");
+        position: relative;
+        top: -435px;
+        left: 100px;
+        z-index: 2;
+    }
+
 
      /* Decolar Texts */
      .textDecolar {
@@ -9,12 +27,8 @@
         color: white;
     }
 
-    .iconsNaveContainer {
-        flex-direction: column;
-    }
-
     .divIconesNave {
-        left: -370px;
+        left: -200px;
     }
 
     #textoAmbiente {
@@ -22,5 +36,56 @@
         font-family: 'Gotham-book';
         font-size: 25px;
         margin-top: 10px;
+    }
+
+    #drAna {
+        left: -50px;
+    }
+
+    #mesaSensor {
+        content: url("./assets/1440/Mesa2_1.png");
+        position: relative;
+        top: -100px;
+    }
+
+    /* Video */
+    .divVideo {
+        position: relative;
+        padding-bottom: 62.25%;
+        height: 600px;
+    }
+
+    .divVideo video {
+        z-index: -1;
+        position: relative;
+        left: 50px;
+        top: 1px;
+        width: 90%;
+    }
+
+    .formacaoProfessores {
+        position: relative;
+        top: -800px;
+        height: 900px;
+    }
+
+    #formacaoProfessores {
+        content: url("./assets/1440/Formacao_1.png");
+    }
+
+    #tituloVideo {
+        width: 28% !important;
+    }
+
+    #cometa {
+        left: -160px;
+    }
+
+    .textoFormacao {
+        margin-left: -10px;
+    }
+
+    .divOpcoesFormacao {
+        margin-left: 200px !important;
     }
 }

@@ -3,6 +3,7 @@ $(document).ready(function(){
     let planeta = 0;
     let prints = document.querySelectorAll('.prints');
     let screen = verifyScreenWidth();
+    console.log(screen);
     const texto = [
         "Auxilia no processo de alfabetização e no reconhecimento das letras do alfabeto.",
         "Incentiva a compreensão e a valorização da identidade, o respeito às diferenças e o entendimento dos direitos e deveres das crianças.",
@@ -14,7 +15,7 @@ $(document).ready(function(){
         "Promove a compreensão da educação emocional, auxiliando as crianças a cultivarem relacionamentos saudáveis e a fortalecer a resiliência emocional.",
         "Possibilita que as crianças compreendam conceitos básicos de tecnologia, como a lógica de programação e a resolução de problemas simples por meio de atividades interativas."
     ];
-    $('#tituloPlaneta').attr('src', './assets/'+screen+'/Titulos planetas/titulo1.png');
+    $('#tituloPlaneta').attr('src', './assets/'+screen+'/Titulos Planetas/titulo0.png');
     $('#textoAmbiente').html(texto[0]);
     $('#setaDireita').on('click', function (){
         let planetClicked = document.querySelector('.resize');
@@ -25,7 +26,7 @@ $(document).ready(function(){
                 value.src = './assets/Prints Conteudo Educanave/'+planeta+'/'+i+'.png';
             });
             let screen = verifyScreenWidth();
-            $('#tituloPlaneta').attr('src', './assets/'+screen+'/Titulos planetas/titulo'+planeta+'.png');
+            $('#tituloPlaneta').attr('src', './assets/'+screen+'/Titulos Planetas/titulo'+planeta+'.png');
             $('#textoAmbiente').html(texto[planeta]);
         } else {
             planeta = 0;
@@ -34,8 +35,10 @@ $(document).ready(function(){
                 value.src = './assets/Prints Conteudo Educanave/'+planeta+'/'+i+'.png';
             });
             let screen = verifyScreenWidth();
-            $('#tituloPlaneta').attr('src', './assets/'+screen+'/Titulos planetas/titulo'+planeta+'.png');
-            $('#textoAmbiente').html(texto[planeta]);
+            if(screen != 0){
+                $('#tituloPlaneta').attr('src', './assets/'+screen+'/Titulos Planetas/titulo'+planeta+'.png');
+                $('#textoAmbiente').html(texto[planeta]);
+            }
         }
     });
     $('#setaEsquerda').on('click', function (){
@@ -47,7 +50,8 @@ $(document).ready(function(){
                 value.src = './assets/Prints Conteudo Educanave/'+planeta+'/'+i+'.png';
             });
             let screen = verifyScreenWidth();
-            $('#tituloPlaneta').attr('src', './assets/'+screen+'/Titulos planetas/titulo'+planeta+'.png');
+            console.log(screen);
+            $('#tituloPlaneta').attr('src', './assets/'+screen+'/Titulos Planetas/titulo'+planeta+'.png');
             $('#textoAmbiente').html(texto[planeta]);
         } else {
             planeta = 8;
@@ -56,133 +60,67 @@ $(document).ready(function(){
                 value.src = './assets/Prints Conteudo Educanave/'+planeta+'/'+i+'.png';
             });
             let screen = verifyScreenWidth();
-            $('#tituloPlaneta').attr('src', './assets/'+screen+'/Titulos planetas/titulo'+planeta+'.png');
-            $('#textoAmbiente').html(texto[planeta]);
+            if(screen != 0){
+                $('#tituloPlaneta').attr('src', './assets/'+screen+'/Titulos Planetas/titulo'+planeta+'.png');
+                $('#textoAmbiente').html(texto[planeta]);
+            }
         }
     });
 });
 
 function nextPlanet(planetClicked) {
-    removeResize();
+    removeResize(planetClicked);
+    $(planetClicked).attr('src', './assets/'+planetClicked.id+'.png');
     let proximoPlaneta = planetClicked.nextElementSibling;
     if(proximoPlaneta){
+        $(proximoPlaneta).attr('src', './assets/CARROSEL_PLANETAS/'+proximoPlaneta.id+'.gif');
         proximoPlaneta.classList.add('resize');
     } else {
-        $('#planetDigital').addClass('resize');
+        $('#planetAbc').addClass('resize');
+        $('#planetAbc').attr('src', './assets/CARROSEL_PLANETAS/planetAbc.gif');
     }
 }
 
 function prevPlanet(planetClicked) {
-    removeResize();
+    removeResize(planetClicked);
+    $(planetClicked).attr('src', './assets/'+planetClicked.id+'.png');
     let anteriorPlaneta = planetClicked.previousElementSibling;
     if(anteriorPlaneta){
+        $(anteriorPlaneta).attr('src', './assets/CARROSEL_PLANETAS/'+anteriorPlaneta.id+'.gif');
         anteriorPlaneta.classList.add('resize');
     } else {
-        $('#planetEmocoes').addClass('resize');
+        $('#planetDigital').addClass('resize');
+        $('#planetDigital').attr('src', './assets/CARROSEL_PLANETAS/planetDigital.gif');
     }
 }
 
-function removeResize() {
-    $('.planetas').removeClass('resize');
+function removeResize(planetClicked) {
+    $(planetClicked).removeClass('resize');
+    $(planetClicked).addClass('downsize');
+    setTimeout(() => {
+        $(planetClicked).removeClass('downsize');
+    }, 1000);
 }
 
 function verifyScreenWidth() {
-    let screenWidth = window.innerWidth;
-        let pasta;
-        switch (screenWidth) {
-            case 2560:
-                pasta = '4K';
-                return pasta;
-            case 1920:
-                pasta = '1920';
-                return pasta;
-            case 1536:
-                pasta = '1440';
-                return pasta;
-            case 1440:
-                pasta = '1440';
-                return pasta;
-            case 1366:
-                pasta = '1440';
-                return pasta;
-            case 768:
-                pasta = 'Tablet';
-                return pasta;
-            case 425:
-                pasta = 'Celular';
-                return pasta;
-            default:
-                return 0;
-        }
+    let screenWidth = document.documentElement.clientWidth;
+    let pasta;
+
+    console.log("screenWidth ",screenWidth);
+    if(screenWidth > 1921 && screenWidth < 2561) {
+        pasta = '4K';
+        return pasta;
+    } else if(screenWidth > 1535 && screenWidth < 1921) {
+        pasta = '1920';
+        return pasta;
+    } else if(screenWidth > 769 && screenWidth < 1535) {
+        pasta = '1440';
+        return pasta;
+    } else if(screenWidth > 426 && screenWidth < 769) {
+        pasta = 'Tablet';
+        return pasta;
+    } else if(screenWidth > 392 && screenWidth < 426) {
+        pasta = 'Celular';
+        return pasta;
+    }
 }
-
-// const prints = document.querySelectorAll('.prints');
-// const titulos1 = document.querySelector('.tituloPlanet1');
-// const titulos2 = document.querySelector('.tituloPlanet2');
-// const text1 = document.querySelector('.ambienteText1');
-// const text2 = document.querySelector('.ambienteText2');
-// const nextButton = document.querySelector('#setaDireita');
-// const prevButton = document.querySelector('#setaEsquerda');
-// const printsImgs = [0,1,2,3];
-// let currentPlanetIndex = 1;
-
-// function showPlanets() {
-//     planets.forEach((planet, index) => {
-//         if(index >= currentPlanetIndex - 2 && index <= currentPlanetIndex + 2) {
-//             planet.classList.remove('planetsOffScreen');
-//         } else {
-//             planet.classList.add('planetsOffScreen');
-//         }
-//     });
-//     titulos1.src = "./assets/1440/Titulos Planetas/titulo0.png";
-//     titulos2.src = "./assets/1440/Titulos Planetas/titulo0.png";
-    
-//     text1.innerHTML = texto[0];
-//     text2.innerHTML = texto[0];
-// }
-
-// function showPlanet(index, otherPlanetsIndex) {
-//     planets.forEach((planet) => {
-//       planet.classList.remove('active');
-//     });
-//     planets[index].classList.add('active');
-//     planets[index].src = "./assets/CARROSEL_PLANETAS/gif" + index + ".gif";
-//     planets[otherPlanetsIndex].src = "./assets/CARROSEL_PLANETAS/planeta" + otherPlanetsIndex + ".png";
-//     printsImgs.forEach((print) => {
-//         prints[print].src = "./assets/Prints Conteudo Educanave/" + index + "/" + print + ".png";
-//     });
-//     titulos1.src = "./assets/1440/Titulos Planetas/titulo" + index + ".png";
-//     titulos2.src = "./assets/1440/Titulos Planetas/titulo" + index + ".png";
-//     text1.innerHTML = texto[index];
-//     text2.innerHTML = texto[index];
-// }
-
-// function goToNextPlanet() {
-//     currentPlanetIndex = (currentPlanetIndex + 1) % planets.length;
-//     let prevIndex = currentPlanetIndex - 1;
-//     if(currentPlanetIndex === 0){
-//         prevIndex = 8;
-//     }
-//     showPlanets();
-//     showPlanet(currentPlanetIndex, prevIndex);
-// }
-
-// function goToPrevPlanet() {
-//     currentPlanetIndex = (currentPlanetIndex - 1 + planets.length) % planets.length;
-//     let nextIndex = currentPlanetIndex + 1;
-//     if(currentPlanetIndex === 8) {
-//         nextIndex = 0;
-//     }
-//     showPlanets();
-//     showPlanet(currentPlanetIndex, nextIndex);
-// }
-
-// prevButton.addEventListener('click', () => {
-//     goToPrevPlanet();
-// });
-  
-// nextButton.addEventListener('click', () => {
-//     goToNextPlanet();
-// });
-
-// showPlanets();

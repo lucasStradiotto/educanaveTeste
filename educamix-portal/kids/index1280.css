@@ -1,0 +1,220 @@
+@media (max-width: 1280px) {
+
+    /* Sol */
+    #raioSol {
+        content: url("./assets/1920/raioSol.png");
+        position: relative;
+        top: -80px;
+        left: 50px;
+        animation: rotation 20s linear infinite;
+        z-index: 1;
+    }
+
+    #sol {
+        content: url("./assets/1920/sol.png");
+        position: relative;
+        top: -420px;
+        left: 100px;
+        z-index: 2;
+    }
+
+     /* Decolar Texts */
+     .textDecolar {
+        padding-left: 20px;
+        font-family: sans-serif;
+        font-size: 28px;
+        color: white;
+    }
+
+    .divDecolarText1 {
+        top: -330px;
+    }
+
+    .divDecolarText2 {
+        top: -450px;
+    }
+
+    .divIconesNave {
+        left: -200px;
+    }
+
+    #textoAmbiente {
+        color: white;
+        font-family: 'Gotham-book';
+        font-size: 25px;
+        margin-top: 10px;
+    }
+
+    #drAna {
+        left: -50px;
+    }
+
+    #selo {
+        content: url("./assets/1920/Selo.png");
+        max-width: 50%;
+        position: relative;
+        top: 100px;
+        left: 200px;
+    }
+
+    .sensorRfid {
+        top: -630px;
+    }
+
+    #mesaSensor {
+        content: url("./assets/1440/Mesa2_1.png");
+        position: relative;
+        top: -120px;
+    }
+
+    .divTituloPlanetas {
+        height: 100px !important;
+    }
+
+    .divAcessibilidadeContainer {
+        top: 50px !important;
+    }
+
+    .divTituloVideo {
+        padding: 20px 0 !important;
+    }
+
+    .divTextCardContainer {
+        display: none !important;
+    }
+
+    .divTextCardContainerMobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .divP1Sensor {
+        width: 90% !important;
+        margin-left: 50px !important;
+    }
+
+    #cometa {
+        top: 10px;
+        left: -130px;
+    }
+
+    /* Titulo Sensor RFID */
+    #tituloSensor {
+        content: url("./assets/1440/Sensor_1.png");
+        padding: 50px;
+    }
+
+    .cards1 {
+        position: relative;
+        top: -50px;
+        left: 700px;
+    }
+
+    .cards2 {
+        margin-top: 50px;
+        margin-left: 50px;
+        display: none !important;
+    }
+
+    .textSensor {
+        margin-left: 15px;
+    }
+
+    .textSensor, .textSensor2 {
+        font-size: 23px;
+    }
+
+    .textSensor2 {
+        position: relative;
+        top: -340px !important;
+        padding: 10px 0 0 70px;
+        margin-left: 35px;
+    }
+
+    /* Cartas Sensor RFID */
+    #cartaCores {
+        content: url("./assets/Tablet/Cores_2.png");
+        position: relative;
+        left: 50px;
+    }
+
+    #cartaLetras {
+        content: url("./assets/Tablet/Letras.png");
+        position: relative;
+        top: 60px;
+        left: -30px;
+    }
+
+    #cartaNumeros {
+        content: url("./assets/Tablet/Numeros_3.png");
+        position: relative;
+        top: 150px;
+        left: -150px;
+        z-index: 2;
+    }
+
+    #lblCartaCores {
+        position: relative;
+        left: 10px;
+        transform: rotate(-15deg);
+    }
+
+    #lblCartaLetras {
+        position: relative;
+        left: -20px;
+        top: 45px;
+        transform: rotate(5deg);
+    }
+
+    #lblCartaNumeros {
+        position: relative;
+        left: -90px;
+        top: 160px;
+        transform: rotate(25deg);
+    }
+
+    /* Mesa Sensor */
+    #mesaSensor {
+        content: url("./assets/Tablet/Mesa2.png");
+        position: relative;
+        top: -331px;
+        left: 731px;
+    }
+
+    #cartaSensor {
+        display: none;
+        top: -650px;
+        left: 150px;
+    }
+
+    .formacaoProfessores {
+        top: -815px;
+    }
+
+    .contato {
+        top: -850px;
+    }
+
+    .inputContato {
+        height: 60px;
+    }
+
+    #miguel {
+        max-width: 250%;
+    }
+
+    /* Video */
+    .divVideo {
+        position: relative;
+        padding-bottom: 57.25%;
+        height: 600px;
+    }
+
+    .divVideo video {
+        z-index: -1;
+        position: relative;
+        left: 50px;
+        top: 1px;
+        width: 90%;
+    }
+}

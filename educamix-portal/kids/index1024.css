@@ -1,0 +1,345 @@
+@media (max-width: 1024px) {
+
+    .aspectStyles {
+        font-size: 100% !important;
+    }
+
+    main {
+        height: 700px;
+    }
+
+    /* Sol */
+    #raioSol {
+        content: url("./assets/1920/raioSol.png");
+        position: relative;
+        top: -80px;
+        left: 50px;
+        animation: rotation 20s linear infinite;
+        z-index: 1;
+    }
+
+    #sol {
+        content: url("./assets/1920/sol.png");
+        position: relative;
+        top: -350px;
+        left: 90px;
+        z-index: 2;
+    }
+
+
+     /* Decolar Texts */
+     .textDecolar {
+        padding-left: 20px;
+        font-family: sans-serif;
+        font-size: 28px;
+        color: white;
+    }
+
+    .divDecolarText1 {
+        top: -400px;
+    }
+
+    .divDecolarText2 {
+        top: -550px;
+    }
+
+    .divIconesNave {
+        left: -200px;
+    }
+
+    .divTextoNave {
+        width: 85% !important;
+    }
+
+    .textNave {
+        margin-top: 30px;
+        position: relative;
+        left: 100px;
+    }
+
+    #drAna {
+        max-width: 65%;
+        top: 50px;
+        left: 100px;
+    }
+
+    #selo {
+        max-width: 40%;
+        left: 300px !important;
+    }
+
+    #textoAmbiente {
+        color: white;
+        font-family: 'Gotham-book';
+        font-size: 25px;
+        margin-top: 10px;
+    }
+
+    #molduraVideo {
+        max-width: 98%;
+    }
+
+    /* Video */
+    .divVideo {
+        position: relative;
+        padding-bottom: 57.25%;
+        height: 600px;
+    }
+
+    .divVideo video {
+        z-index: -1;
+        position: relative;
+        left: 60px;
+        top: 0px;
+        width: 90%;
+    }
+
+    #tituloPlaneta {
+        max-width: 100%;
+    }
+
+    .divTituloPlanetas {
+        height: 100px !important;
+    }
+
+    .divAcessibilidadeContainer {
+        padding: 0 0 40px 50px !important;
+        top: 100px !important;
+    }
+
+    .divTituloVideo {
+        padding: 20px 0 !important;
+    }
+
+    .divTextCardContainer {
+        display: none !important;
+    }
+
+    .divTextCardContainerMobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .divP1Sensor {
+        width: 90% !important;
+        margin-left: 50px !important;
+    }
+
+    #cometa {
+        top: -100px;
+        left: -130px;
+    }
+
+    /* Titulo Sensor RFID */
+    #tituloSensor {
+        content: url("./assets/1440/Sensor_1.png");
+        padding: 50px;
+    }
+
+    .cards1 {
+        position: relative;
+        top: -70px;
+        left: 500px;
+    }
+
+    .cards2 {
+        margin-top: 50px;
+        margin-left: 50px;
+        display: none !important;
+    }
+
+    .textSensor {
+        margin-left: 15px;
+    }
+
+    .textSensor, .textSensor2 {
+        font-size: 23px;
+    }
+
+    .textSensor2 {
+        position: relative;
+        top: -320px !important;
+        padding: 10px 0 0 70px;
+        margin-left: 35px;
+    }
+
+    /* Cartas Sensor RFID */
+    #cartaCores {
+        content: url("./assets/Tablet/Cores_2.png");
+        max-width: 90%;
+        position: relative;
+        left: 50px;
+    }
+
+    #cartaLetras {
+        content: url("./assets/Tablet/Letras.png");
+        max-width: 90%;
+        position: relative;
+        top: 60px;
+        left: -30px;
+    }
+
+    #cartaNumeros {
+        content: url("./assets/Tablet/Numeros_3.png");
+        max-width: 90%;
+        position: relative;
+        top: 150px;
+        left: -150px;
+    }
+
+    #lblCartaCores {
+        font-size: 100%;
+        position: relative;
+        top: 25px;
+        left: 20px;
+        transform: rotate(-15deg);
+    }
+
+    #lblCartaLetras {
+        font-size: 100%;
+        position: relative;
+        left: -20px;
+        top: 70px;
+        transform: rotate(5deg);
+    }
+
+    #lblCartaNumeros {
+        font-size: 100%;
+        position: relative;
+        left: -110px;
+        top: 180px;
+        transform: rotate(25deg);
+    }
+
+    /* Mesa Sensor */
+    #mesaSensor {
+        content: url("./assets/Tablet/Mesa2.png");
+        position: relative;
+        top: -214px;
+        left: 537px;
+    }
+
+    #cartaSensor {
+        display: none;
+        top: -650px;
+        left: 100px;
+    }
+
+    .formacaoProfessores {
+        top: -850px;
+        height: 720px;
+    }
+
+    #formacaoProfessores {
+        content: url("./assets/1440/Formacao_1.png");
+        position: relative;
+        top: 30px;
+    }
+
+    .contato {
+        top: -900px;
+    }
+
+    .inputContato {
+        height: 60px;
+    }
+
+    #miguel {
+        max-width: 250%;
+        left: -100px;
+    }
+
+    .divLivros {
+        gap: 20px !important;
+        margin-left: -35px !important;
+    }
+
+    #catalogosJogos, #catalogoTecnico {
+        max-width: 95%;
+    }
+
+    #tituloVideo {
+        content: url("./assets/Tablet/Titulo4_1.png");
+    }
+
+    .divTexto {
+        width: 100% !important;
+        display: flex;
+        justify-content: center;
+        margin-left: -130px;
+    }
+
+    .divOpcoesFormacao {
+        margin-left: 0 !important;
+        display: flex;
+        justify-content: center;
+    }
+
+    #tituloAmbientes {
+        padding: 50px 0 0 50px;
+    }
+
+    .textoAcessibilidade {
+        padding: 25px  0 0 50px !important;
+    }
+
+    .textCaracteristicas {
+        margin-top: 20px;
+        top: 0px;
+    }
+
+    /* Seta Esquerda */
+    #setaEsquerda {
+        left: 50px;
+    }
+
+    /* Seta Direita */
+    #setaDireita {
+        left: -50px;
+    }
+}
+
+@media (max-width: 915px) {
+    #mesaSensor {
+        top: -260px;
+    }
+
+    #sol {
+        top: -322px;
+    }
+
+    .divIconesNave {
+        left: -185px;
+    }
+
+    #logoCittiusForm {
+        content: url(./assets/4K/Cittius.png);
+        max-width: 70%;
+        position: relative;
+        left: 50px;
+    }
+
+    .divTexto {
+        margin-left: -100px;
+    }
+
+    .divLivros {
+        gap: 0px !important;
+        margin-left: -40px !important;
+    }
+}
+
+@media (max-width: 873px) {
+    #sol {
+        top: -310px;
+    }
+
+    .divIconesNave {
+        left: -175px;
+    }
+
+    .divLivros {
+        gap: 0px !important;
+        margin-left: -45px !important;
+    }
+}
