@@ -69,9 +69,9 @@ $(document).ready(function(){
 
     window.addEventListener('orientationchange', function() {
         if (window.orientation === 0 || window.orientation === 180) {
-            console.log('Modo retrato (vertical)');
+            $('#botaoLogin').css('backgroundColor', 'green');
         } else if (window.orientation === 90 || window.orientation === -90) {
-            console.log('Modo paisagem (horizontal)');
+            $('#botaoLogin').css('backgroundColor', 'blue');
         }
     });
 });
