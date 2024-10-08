@@ -66,14 +66,6 @@ $(document).ready(function(){
             }
         }
     });
-
-    window.addEventListener('orientationchange', function() {
-        if (window.orientation === 0 || window.orientation === 180) {
-            $('#botaoLogin').css('backgroundColor', 'green');
-        } else if (window.orientation === 90 || window.orientation === -90) {
-            $('#botaoLogin').css('backgroundColor', 'blue');
-        }
-    });
 });
 
 function nextPlanet(planetClicked) {
@@ -132,3 +124,24 @@ function verifyScreenWidth() {
         return pasta;
     }
 }
+
+// Detecta se está em modo retrato ou paisagem no momento
+function checkOrientation() {
+    if (window.matchMedia("(orientation: portrait)").matches) {
+        console.log("Modo retrato (vertical)");
+    } else if (window.matchMedia("(orientation: landscape)").matches) {
+        console.log("Modo paisagem (horizontal)");
+    }
+}
+
+// Detecta mudanças de orientação em tempo real
+window.matchMedia("(orientation: portrait)").addEventListener('change', function(e) {
+    if (e.matches) {
+        console.log("Mudou para modo retrato (vertical)");
+    } else {
+        console.log("Mudou para modo paisagem (horizontal)");
+    }
+});
+
+// Chamada inicial para verificar a orientação
+checkOrientation();
