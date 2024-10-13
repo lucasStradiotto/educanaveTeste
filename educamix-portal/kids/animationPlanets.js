@@ -116,7 +116,6 @@ function checkOrientation() {
     if (window.matchMedia("(orientation: portrait)").matches) {
         console.log("Modo retrato (vertical)");
         let screen = verifyScreenWidth();
-        console.log(screen);
         const texto = [
             "Auxilia no processo de alfabetização e no reconhecimento das letras do alfabeto.",
             "Incentiva a compreensão e a valorização da identidade, o respeito às diferenças e o entendimento dos direitos e deveres das crianças.",
@@ -133,7 +132,6 @@ function checkOrientation() {
     } else if (window.matchMedia("(orientation: landscape)").matches) {
         console.log("Modo paisagem (horizontal)");
         let screen = verifyScreenWidth();
-        console.log(screen);
         const texto = [
             "Auxilia no processo de alfabetização e no reconhecimento das letras do alfabeto.",
             "Incentiva a compreensão e a valorização da identidade, o respeito às diferenças e o entendimento dos direitos e deveres das crianças.",
@@ -155,7 +153,7 @@ window.matchMedia("(orientation: portrait)").addEventListener('change', function
     if (e.matches) {
         console.log("Mudou para modo retrato (vertical)");
         let screen = verifyScreenWidth();
-        console.log(screen);
+        console.log("retorno portrait > ", screen);
         const texto = [
             "Auxilia no processo de alfabetização e no reconhecimento das letras do alfabeto.",
             "Incentiva a compreensão e a valorização da identidade, o respeito às diferenças e o entendimento dos direitos e deveres das crianças.",
@@ -172,7 +170,7 @@ window.matchMedia("(orientation: portrait)").addEventListener('change', function
     } else {
         console.log("Mudou para modo paisagem (horizontal)");
         let screen = verifyScreenWidth();
-        console.log(screen);
+        console.log("retorno landscape > ", screen);
         const texto = [
             "Auxilia no processo de alfabetização e no reconhecimento das letras do alfabeto.",
             "Incentiva a compreensão e a valorização da identidade, o respeito às diferenças e o entendimento dos direitos e deveres das crianças.",
