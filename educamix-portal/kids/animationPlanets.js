@@ -93,7 +93,7 @@ function verifyScreenWidth() {
     let pasta;
 
     console.log("screenWidth ",screenWidth);
-    $('#tamanhoScreen').html(screen);
+    $('#tamanhoScreen').html(screenWidth);
     if(screenWidth > 1921 && screenWidth < 2561) {
         pasta = '4K';
         return pasta;
