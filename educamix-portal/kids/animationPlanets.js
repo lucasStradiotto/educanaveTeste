@@ -93,6 +93,7 @@ function verifyScreenWidth() {
     let pasta;
 
     console.log("screenWidth ",screenWidth);
+    $('#tamanhoScreen').html(screen);
     if(screenWidth > 1921 && screenWidth < 2561) {
         pasta = '4K';
         return pasta;
@@ -154,7 +155,6 @@ window.matchMedia("(orientation: portrait)").addEventListener('change', function
         console.log("Mudou para modo retrato (vertical)");
         let screen = verifyScreenWidth();
         console.log("retorno portrait > ", screen);
-        $('#tamanhoScreen').html(screen);
         const texto = [
             "Auxilia no processo de alfabetização e no reconhecimento das letras do alfabeto.",
             "Incentiva a compreensão e a valorização da identidade, o respeito às diferenças e o entendimento dos direitos e deveres das crianças.",
@@ -172,7 +172,6 @@ window.matchMedia("(orientation: portrait)").addEventListener('change', function
         console.log("Mudou para modo paisagem (horizontal)");
         let screen = verifyScreenWidth();
         console.log("retorno landscape > ", screen);
-        $('#tamanhoScreen').html(screen);
         const texto = [
             "Auxilia no processo de alfabetização e no reconhecimento das letras do alfabeto.",
             "Incentiva a compreensão e a valorização da identidade, o respeito às diferenças e o entendimento dos direitos e deveres das crianças.",
