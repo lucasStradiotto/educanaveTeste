@@ -105,7 +105,7 @@ function verifyScreenWidth() {
     } else if(screenWidth > 426 && screenWidth < 769) {
         pasta = 'Tablet';
         return pasta;
-    } else if(screenWidth > 392 && screenWidth < 426) {
+    } else if(screenWidth < 426) {
         pasta = 'Celular';
         return pasta;
     }
