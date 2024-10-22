@@ -614,6 +614,7 @@
         position: relative;
         top: -880px;
         height: 500px;
+        width: 311px !important;
     }
 
     #formacaoProfessores {
@@ -657,6 +658,7 @@
 
     .divContainerContato {
         padding: 10px 50px 0px 50px !important;
+        width: 312px !important;
     }
 
     .divMiguel {
