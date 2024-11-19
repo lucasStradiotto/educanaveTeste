@@ -1,19 +1,8 @@
 $(document).ready(function(){
+    checkOrientation();
     $('#inputCelular').mask('(00) 0 0000-0000');
     let planeta = 0;
     let prints = document.querySelectorAll('.prints');
-    const texto = [
-        "Auxilia no processo de alfabetização e no reconhecimento das letras do alfabeto.",
-        "Incentiva a compreensão e a valorização da identidade, o respeito às diferenças e o entendimento dos direitos e deveres das crianças.",
-        "Colabora na percepção do corpo e de como ele permite o movimento, sendo essencial para o desenvolvimento físico e cognitivo das crianças.",
-        "Ajuda na compreensão de conceitos como tempo e espaço, no reconhecimento e na compreensão de quantidades e noções básicas de adição e subtração.",
-        "Permite o compartilhamento de ideias, encorajando as crianças a explorarem a imaginação e a criatividade por meio de atividades artísticas e literárias.",
-        "Envolve o aprendizado sobre a importância do respeito pela natureza e pelas pessoas.",
-        "Valoriza a prática de contar e ler histórias, para que as crianças possam se envolver com as narrativas e desenvolver habilidades de escuta e compreensão.",
-        "Promove a compreensão da educação emocional, auxiliando as crianças a cultivarem relacionamentos saudáveis e a fortalecer a resiliência emocional.",
-        "Possibilita que as crianças compreendam conceitos básicos de tecnologia, como a lógica de programação e a resolução de problemas simples por meio de atividades interativas."
-    ];
-    checkOrientation(planeta);
     $('#setaDireita').on('click', function (){
         let planetClicked = document.querySelector('.resize');
         planeta++;
@@ -22,7 +11,9 @@ $(document).ready(function(){
             prints.forEach((value, i) => {
                 value.src = './assets/Prints Conteudo Educanave/'+planeta+'/'+i+'.png';
             });
-            checkOrientation(planeta);
+            let screen = verifyScreenWidth();
+            $('#tituloPlaneta').attr('src', './assets/'+screen+'/Titulos Planetas/titulo'+planeta+'.png');
+            $('#textoAmbiente').html(texto[planeta]);
         } else {
             planeta = 0;
             nextPlanet(planetClicked, planeta);
@@ -31,7 +22,8 @@ $(document).ready(function(){
             });
             let screen = verifyScreenWidth();
             if(screen != 0){
-                checkOrientation(planeta);
+                $('#tituloPlaneta').attr('src', './assets/'+screen+'/Titulos Planetas/titulo'+planeta+'.png');
+                $('#textoAmbiente').html(texto[planeta]);
             }
         }
     });
@@ -43,7 +35,10 @@ $(document).ready(function(){
             prints.forEach((value, i) => {
                 value.src = './assets/Prints Conteudo Educanave/'+planeta+'/'+i+'.png';
             });
-            checkOrientation(planeta);
+            let screen = verifyScreenWidth();
+            console.log(screen);
+            $('#tituloPlaneta').attr('src', './assets/'+screen+'/Titulos Planetas/titulo'+planeta+'.png');
+            $('#textoAmbiente').html(texto[planeta]);
         } else {
             planeta = 8;
             prevPlanet(planetClicked, planeta);
@@ -52,7 +47,8 @@ $(document).ready(function(){
             });
             let screen = verifyScreenWidth();
             if(screen != 0){
-                checkOrientation(planeta);
+                $('#tituloPlaneta').attr('src', './assets/'+screen+'/Titulos Planetas/titulo'+planeta+'.png');
+                $('#textoAmbiente').html(texto[planeta]);
             }
         }
     });
@@ -116,9 +112,9 @@ function verifyScreenWidth() {
 }
 
 // Detecta se está em modo retrato ou paisagem no momento
-function checkOrientation(planeta) {
-    let planetaSelected = planeta;
+function checkOrientation() {
     if (window.matchMedia("(orientation: portrait)").matches) {
+        console.log("Modo retrato (vertical)");
         let screen = verifyScreenWidth();
         const texto = [
             "Auxilia no processo de alfabetização e no reconhecimento das letras do alfabeto.",
@@ -131,9 +127,10 @@ function checkOrientation(planeta) {
             "Promove a compreensão da educação emocional, auxiliando as crianças a cultivarem relacionamentos saudáveis e a fortalecer a resiliência emocional.",
             "Possibilita que as crianças compreendam conceitos básicos de tecnologia, como a lógica de programação e a resolução de problemas simples por meio de atividades interativas."
         ];
-        $('#tituloPlaneta').attr('src', './assets/'+screen+'/Titulos Planetas/titulo'+planetaSelected+'.png');
-        $('#textoAmbiente').html(texto[planetaSelected]);
+        $('#tituloPlaneta').attr('src', './assets/'+screen+'/Titulos Planetas/titulo0.png');
+        $('#textoAmbiente').html(texto[0]);
     } else if (window.matchMedia("(orientation: landscape)").matches) {
+        console.log("Modo paisagem (horizontal)");
         let screen = verifyScreenWidth();
         const texto = [
             "Auxilia no processo de alfabetização e no reconhecimento das letras do alfabeto.",
@@ -146,46 +143,48 @@ function checkOrientation(planeta) {
             "Promove a compreensão da educação emocional, auxiliando as crianças a cultivarem relacionamentos saudáveis e a fortalecer a resiliência emocional.",
             "Possibilita que as crianças compreendam conceitos básicos de tecnologia, como a lógica de programação e a resolução de problemas simples por meio de atividades interativas."
         ];
-        $('#tituloPlaneta').attr('src', './assets/'+screen+'/Titulos Planetas/titulo'+planetaSelected+'.png');
-        $('#textoAmbiente').html(texto[planetaSelected]);
+        $('#tituloPlaneta').attr('src', './assets/'+screen+'/Titulos Planetas/titulo0.png');
+        $('#textoAmbiente').html(texto[0]);
     }
-
-    // Detecta mudanças de orientação em tempo real
-    window.matchMedia("(orientation: portrait)").addEventListener('change', function(e) {
-        if (e.matches) {
-            console.log("Mudou para modo retrato (vertical)");
-            let screen = verifyScreenWidth();
-            console.log("retorno portrait > ", screen);
-            const texto = [
-                "Auxilia no processo de alfabetização e no reconhecimento das letras do alfabeto.",
-                "Incentiva a compreensão e a valorização da identidade, o respeito às diferenças e o entendimento dos direitos e deveres das crianças.",
-                "Colabora na percepção do corpo e de como ele permite o movimento, sendo essencial para o desenvolvimento físico e cognitivo das crianças.",
-                "Ajuda na compreensão de conceitos como tempo e espaço, no reconhecimento e na compreensão de quantidades e noções básicas de adição e subtração.",
-                "Permite o compartilhamento de ideias, encorajando as crianças a explorarem a imaginação e a criatividade por meio de atividades artísticas e literárias.",
-                "Envolve o aprendizado sobre a importância do respeito pela natureza e pelas pessoas.",
-                "Valoriza a prática de contar e ler histórias, para que as crianças possam se envolver com as narrativas e desenvolver habilidades de escuta e compreensão.",
-                "Promove a compreensão da educação emocional, auxiliando as crianças a cultivarem relacionamentos saudáveis e a fortalecer a resiliência emocional.",
-                "Possibilita que as crianças compreendam conceitos básicos de tecnologia, como a lógica de programação e a resolução de problemas simples por meio de atividades interativas."
-            ];
-            $('#tituloPlaneta').attr('src', './assets/'+screen+'/Titulos Planetas/titulo'+planetaSelected+'.png');
-            $('#textoAmbiente').html(texto[planetaSelected]);
-        } else {
-            console.log("Mudou para modo paisagem (horizontal)");
-            let screen = verifyScreenWidth();
-            console.log("retorno landscape > ", screen);
-            const texto = [
-                "Auxilia no processo de alfabetização e no reconhecimento das letras do alfabeto.",
-                "Incentiva a compreensão e a valorização da identidade, o respeito às diferenças e o entendimento dos direitos e deveres das crianças.",
-                "Colabora na percepção do corpo e de como ele permite o movimento, sendo essencial para o desenvolvimento físico e cognitivo das crianças.",
-                "Ajuda na compreensão de conceitos como tempo e espaço, no reconhecimento e na compreensão de quantidades e noções básicas de adição e subtração.",
-                "Permite o compartilhamento de ideias, encorajando as crianças a explorarem a imaginação e a criatividade por meio de atividades artísticas e literárias.",
-                "Envolve o aprendizado sobre a importância do respeito pela natureza e pelas pessoas.",
-                "Valoriza a prática de contar e ler histórias, para que as crianças possam se envolver com as narrativas e desenvolver habilidades de escuta e compreensão.",
-                "Promove a compreensão da educação emocional, auxiliando as crianças a cultivarem relacionamentos saudáveis e a fortalecer a resiliência emocional.",
-                "Possibilita que as crianças compreendam conceitos básicos de tecnologia, como a lógica de programação e a resolução de problemas simples por meio de atividades interativas."
-            ];
-            $('#tituloPlaneta').attr('src', './assets/'+screen+'/Titulos Planetas/titulo'+planetaSelected+'.png');
-            $('#textoAmbiente').html(texto[planetaSelected]);
-        }
-    });
 }
+
+// Detecta mudanças de orientação em tempo real
+window.matchMedia("(orientation: portrait)").addEventListener('change', function(e) {
+    if (e.matches) {
+        console.log("Mudou para modo retrato (vertical)");
+        let screen = verifyScreenWidth();
+        console.log("retorno portrait > ", screen);
+        const texto = [
+            "Auxilia no processo de alfabetização e no reconhecimento das letras do alfabeto.",
+            "Incentiva a compreensão e a valorização da identidade, o respeito às diferenças e o entendimento dos direitos e deveres das crianças.",
+            "Colabora na percepção do corpo e de como ele permite o movimento, sendo essencial para o desenvolvimento físico e cognitivo das crianças.",
+            "Ajuda na compreensão de conceitos como tempo e espaço, no reconhecimento e na compreensão de quantidades e noções básicas de adição e subtração.",
+            "Permite o compartilhamento de ideias, encorajando as crianças a explorarem a imaginação e a criatividade por meio de atividades artísticas e literárias.",
+            "Envolve o aprendizado sobre a importância do respeito pela natureza e pelas pessoas.",
+            "Valoriza a prática de contar e ler histórias, para que as crianças possam se envolver com as narrativas e desenvolver habilidades de escuta e compreensão.",
+            "Promove a compreensão da educação emocional, auxiliando as crianças a cultivarem relacionamentos saudáveis e a fortalecer a resiliência emocional.",
+            "Possibilita que as crianças compreendam conceitos básicos de tecnologia, como a lógica de programação e a resolução de problemas simples por meio de atividades interativas."
+        ];
+        $('#tituloPlaneta').attr('src', './assets/'+screen+'/Titulos Planetas/titulo0.png');
+        $('#textoAmbiente').html(texto[0]);
+    } else {
+        console.log("Mudou para modo paisagem (horizontal)");
+        let screen = verifyScreenWidth();
+        console.log("retorno landscape > ", screen);
+        const texto = [
+            "Auxilia no processo de alfabetização e no reconhecimento das letras do alfabeto.",
+            "Incentiva a compreensão e a valorização da identidade, o respeito às diferenças e o entendimento dos direitos e deveres das crianças.",
+            "Colabora na percepção do corpo e de como ele permite o movimento, sendo essencial para o desenvolvimento físico e cognitivo das crianças.",
+            "Ajuda na compreensão de conceitos como tempo e espaço, no reconhecimento e na compreensão de quantidades e noções básicas de adição e subtração.",
+            "Permite o compartilhamento de ideias, encorajando as crianças a explorarem a imaginação e a criatividade por meio de atividades artísticas e literárias.",
+            "Envolve o aprendizado sobre a importância do respeito pela natureza e pelas pessoas.",
+            "Valoriza a prática de contar e ler histórias, para que as crianças possam se envolver com as narrativas e desenvolver habilidades de escuta e compreensão.",
+            "Promove a compreensão da educação emocional, auxiliando as crianças a cultivarem relacionamentos saudáveis e a fortalecer a resiliência emocional.",
+            "Possibilita que as crianças compreendam conceitos básicos de tecnologia, como a lógica de programação e a resolução de problemas simples por meio de atividades interativas."
+        ];
+        $('#tituloPlaneta').attr('src', './assets/'+screen+'/Titulos Planetas/titulo0.png');
+        $('#textoAmbiente').html(texto[0]);
+    }
+});
+
+// Chamada inicial para verificar a orientação

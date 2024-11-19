@@ -1,15 +1,16 @@
 @media (max-width: 800px) {
 
-    html, body {
-        overflow-x: hidden;
-    }
-
     .aspectStyles {
         font-size: 100% !important;
     }
 
     main {
         height: 1000px;
+    }
+
+    .divBtnLogin a {
+        outline: none !important;
+        display: block;
     }
 
     /* Logo Educanave */
@@ -197,8 +198,7 @@
         position: relative;
         top: -30px;
         left: -275px;
-        width: 900px;
-        margin-bottom: 20px;
+        width: 800px;
     }
 
     .divIconesNave {
@@ -538,8 +538,8 @@
 
     .formacaoProfessores {
         position: relative;
-        top: -475px;
-        width: 668px !important;
+        top: -500px;
+        width: 87% !important;
     }
 
     #formacaoProfessores {
@@ -550,6 +550,8 @@
 
     .textoFormacao {
         font-size: 23px;
+        position: relative;
+        left: 15px;
     }
 
     #cartaEsquerda {
@@ -560,7 +562,7 @@
     #catalogosJogos {
         content: url("./assets/Tablet/Livro\ do\ professor.png");
         position: relative;
-        left: 10px;
+        left: 50px;
     }
 
     /* Catálogo Técnico */
@@ -625,7 +627,7 @@
         padding: 30px 50px !important;
         top: 0 !important;
         margin-bottom: 50px;
-        width: 668px !important;
+        width: 87% !important;
     }
     
     .textoAcessibilidade {
@@ -653,7 +655,9 @@
     }
 
     .divContainerContato {
-       width: 668px !important;
-       padding: 50px !important;
+        width: 75% !important;
+        padding: 10px 0px !important;
+        position: relative;
+        left: 165px;
     }
 }
