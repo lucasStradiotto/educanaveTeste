@@ -1,5 +1,9 @@
 @media (max-width: 393px) {
 
+    html, body {
+        overflow-x: hidden;
+    }
+
     .aspectStyles {
         font-size: 65% !important;
     }

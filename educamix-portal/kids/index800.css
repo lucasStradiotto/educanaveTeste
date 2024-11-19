@@ -1,5 +1,9 @@
 @media (max-width: 800px) {
 
+    html, body {
+        overflow-x: hidden;
+    }
+
     .aspectStyles {
         font-size: 100% !important;
     }
@@ -194,6 +198,7 @@
         top: -30px;
         left: -275px;
         width: 900px;
+        margin-bottom: 20px;
     }
 
     .divIconesNave {
@@ -533,7 +538,8 @@
 
     .formacaoProfessores {
         position: relative;
-        top: -500px;
+        top: -475px;
+        width: 668px !important;
     }
 
     #formacaoProfessores {
@@ -619,7 +625,7 @@
         padding: 30px 50px !important;
         top: 0 !important;
         margin-bottom: 50px;
-        width: 314px !important;
+        width: 668px !important;
     }
     
     .textoAcessibilidade {
@@ -644,5 +650,10 @@
     #setaDireita {
         max-width: 50%;
         top: 18px;
+    }
+
+    .divContainerContato {
+       width: 668px !important;
+       padding: 50px !important;
     }
 }

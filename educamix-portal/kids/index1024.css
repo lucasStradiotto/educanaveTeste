@@ -300,6 +300,11 @@
 }
 
 @media (max-width: 915px) {
+
+    html, body {
+        overflow-x: hidden;
+    }
+
     #mesaSensor {
         top: -260px;
     }
@@ -330,6 +335,11 @@
 }
 
 @media (max-width: 873px) {
+
+    html, body {
+        overflow-x: hidden;
+    }
+
     #sol {
         top: -310px;
     }
