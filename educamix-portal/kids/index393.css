@@ -5,6 +5,7 @@
     }
     
     body {
+        overflow-x: hidden;
         height: 4000px !important;
     }
 
@@ -595,11 +596,6 @@
     #cartaSensor {
         content: url("./assets/1440/versoCarta.png");
         display: none;
-    }
-
-    .formacaoProfessores {
-        position: relative;
-        top: -910px;
     }
 
     #formacaoProfessores {

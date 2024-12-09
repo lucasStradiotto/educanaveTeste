@@ -5,6 +5,7 @@
     }
     
     body {
+        overflow-x: hidden !important;
         height: 4100px !important;
     }
 
@@ -445,6 +446,7 @@
 
 
     .textAcessibilidade {
+        max-width: 260px !important;
         font-size: 12px !important;
         position: relative;
         top: -15px;
@@ -642,6 +644,7 @@
     #catalogosJogos {
         content: url("./assets/Celular/LivroProfessor.png");
         position: relative;
+        top: -15px;
         left: 60px;
     }
 
@@ -753,5 +756,6 @@
 
     .formacaoProfessores  {
         height: 570px;
+        padding: 30px 50px 50px 50px !important;
     }
 }
