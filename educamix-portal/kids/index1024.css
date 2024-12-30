@@ -260,6 +260,7 @@
 
     #tituloVideo {
         content: url("./assets/Tablet/Titulo4_1.png");
+        width: 33% !important;
     }
 
     .divTexto {

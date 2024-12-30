@@ -8,6 +8,11 @@
         height: 1000px;
     }
 
+    .divBtnLogin a {
+        outline: none !important;
+        display: block;
+    }
+
     /* Logo Educanave */
     #logoEducanave {
         content: url("./assets/Tablet/Logo-Nuvem-Mesa-tablet0.png");
@@ -193,7 +198,7 @@
         position: relative;
         top: -30px;
         left: -275px;
-        width: 900px;
+        width: 800px;
     }
 
     .divIconesNave {
@@ -533,7 +538,8 @@
 
     .formacaoProfessores {
         position: relative;
-        top: -500px;
+        top: -480px;
+        width: 87% !important;
     }
 
     #formacaoProfessores {
@@ -544,6 +550,8 @@
 
     .textoFormacao {
         font-size: 23px;
+        position: relative;
+        left: 15px;
     }
 
     #cartaEsquerda {
@@ -554,7 +562,7 @@
     #catalogosJogos {
         content: url("./assets/Tablet/Livro\ do\ professor.png");
         position: relative;
-        left: 10px;
+        left: 50px;
     }
 
     /* Catálogo Técnico */
@@ -619,6 +627,7 @@
         padding: 30px 50px !important;
         top: 0 !important;
         margin-bottom: 50px;
+        width: 87% !important;
     }
     
     .textoAcessibilidade {
@@ -643,5 +652,12 @@
     #setaDireita {
         max-width: 50%;
         top: 18px;
+    }
+
+    .divContainerContato {
+        width: 75% !important;
+        padding: 10px 0px !important;
+        position: relative;
+        left: 165px;
     }
 }

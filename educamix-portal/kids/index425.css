@@ -5,6 +5,7 @@
     }
     
     body {
+        overflow-x: hidden !important;
         height: 4100px !important;
     }
 
@@ -58,7 +59,7 @@
         max-width: 150%;
         position: relative;
         top: 0px;
-        left: -30px;
+        left: -42px;
     }
 
     /* Decolar Text 1 */
@@ -423,7 +424,7 @@
     .acessibilidade {
         position: relative;
         top: -150px;
-        height: 1080px;
+        height: 1111px;
     }
 
     #acessibilidade {
@@ -445,6 +446,7 @@
 
 
     .textAcessibilidade {
+        max-width: 260px !important;
         font-size: 12px !important;
         position: relative;
         top: -15px;
@@ -613,7 +615,8 @@
     .formacaoProfessores {
         position: relative;
         top: -880px;
-        height: 500px;
+        height: 550px;
+        width: 75% !important;
     }
 
     #formacaoProfessores {
@@ -641,7 +644,8 @@
     #catalogosJogos {
         content: url("./assets/Celular/LivroProfessor.png");
         position: relative;
-        left: 15px;
+        top: -15px;
+        left: 60px;
     }
 
     /* Catálogo Técnico */
@@ -656,7 +660,10 @@
     }
 
     .divContainerContato {
-        padding: 10px 50px 0px 50px !important;
+        padding: 10px 0px 0px 0px !important;
+        width: 100% !important;
+        margin: 0;
+        left: 50px;
     }
 
     .divMiguel {
@@ -731,6 +738,10 @@
     .divOpcoesFormacao {
         margin-left: -90px !important;
     }
+
+    .divAcessibilidadeContainer  {
+        width: 76% !important;
+    }
 }
 
 @media (max-width: 412px) {
@@ -741,5 +752,10 @@
 
     #textNave3 {
         top: 20px;
+    }
+
+    .formacaoProfessores  {
+        height: 570px;
+        padding: 30px 50px 50px 50px !important;
     }
 }
