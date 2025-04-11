@@ -79,6 +79,11 @@
         padding: 20px 0 !important;
     }
 
+    #tituloVideo {
+        width: 55% !important;
+        left: -280px;
+    }
+
     .divTextCardContainer {
         display: none !important;
     }
@@ -95,7 +100,7 @@
 
     #cometa {
         top: 10px;
-        left: -130px;
+        left: -100px;
     }
 
     /* Titulo Sensor RFID */
@@ -200,7 +205,8 @@
     }
 
     #miguel {
-        max-width: 250%;
+        max-width: 350px;
+        left: -95px;
     }
 
     /* Video */
@@ -217,4 +223,54 @@
         top: 1px;
         width: 90%;
     }
+
+    .divLivros {
+        position: relative;
+        left: 55px;
+    }
+}
+
+@media (max-width: 1081px){
+    main {
+        height: 785px;
+    }
+
+    #sol {
+        top: -370px;
+        left: 89px;
+    }
+
+    #logoEducanave {
+        max-width: 101%;
+    }
+
+    #drAna {
+        max-width: 300px;
+        top: 35px;
+        left: 8px;
+    }
+
+    #tituloVideo {
+        width: 45% !important;
+        position: relative;
+        left: -210px;
+    }
+
+    .cards1 {
+        left: 610px;
+    }
+
+    #mesaSensor {
+        top: -350px;
+        left: 620px;
+    }
+
+    .divLivros {
+        margin-left: 0px !important;
+    }
+
+    #catalogosJogos, #catalogoTecnico {
+        max-width: 500px;
+    }
+
 }

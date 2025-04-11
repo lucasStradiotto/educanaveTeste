@@ -13,6 +13,7 @@
         content: url("./assets/1440/Logo-Nuvem-Mesa-14000.png");
         position: absolute;
         top: 20px;
+        max-width: 100%;
     }
 
     /* Logo Cittius */
@@ -169,11 +170,12 @@
     #cometa {
         content: url("./assets/1440/Cometa_2.png");
         position: relative;
-        left: -140px;
+        left: -70px;
     }
 
     /* Titulo Vídeo */
     #tituloVideo {
+        left: -350px;
         margin-left: 100px;
     }
 
@@ -182,6 +184,7 @@
     }
 
     .textAcessibilidade {
+        max-width: 98% !important;
         margin-left: 0px;
     }
 

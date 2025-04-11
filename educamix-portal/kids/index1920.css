@@ -112,6 +112,7 @@
     .divIconesNave {
         margin-top: 150px !important;
         position: relative;
+        top: 45px;
         left: -65px;
     }
 
@@ -222,6 +223,8 @@
     #tituloVideo {
         content: url("./assets/1920/Titulo4.png");
         margin-left: 100px;
+        position: relative;
+        left: -550px;
     }
 
     /* Moldura Video */
@@ -385,5 +388,10 @@
 
     .textoFormacao {
         margin-left: -3px;
+    }
+
+    .divLivros {
+        position: relative;
+        left: 50px;
     }
 }

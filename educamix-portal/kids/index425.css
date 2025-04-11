@@ -1,16 +1,20 @@
-@media (max-width: 425px) {
+@media (max-width: 427px) {
+
+    body {
+        height: 4000px !important;
+    }
 
     .aspectStyles {
         font-size: 70% !important;
     }
-    
-    body {
-        overflow-x: hidden !important;
-        height: 4100px !important;
-    }
 
     main {
-        height: 600px;
+        width: 475px !important;
+        height: 550px;
+    }
+
+    .header {
+        width: 475px !important;
     }
 
     .topBar {
@@ -25,9 +29,38 @@
     /* Logo Educanave */
     #logoEducanave {
         content: url("./assets/Tablet/Logo-Nuvem-Mesa-tablet0.png");
+        max-width: 475px !important;
         position: absolute;
-        top: 30px;
-        left: -3px;
+        top: 20px;
+        left: -2px;
+    }
+
+    #logoEducanave {
+        width: 415px !important;
+    }
+
+    .divLogoEducanave, .divBtnLogin, .divNuvem, .divMesaSolContainer {
+        width: 25% !important;
+    }
+
+    .divLogoEducanave {
+        width: 27% !important;
+    }
+
+    .divNuvem {
+        width: 20% !important;
+    }
+
+    .divTituloDecolar {
+        height: 11% !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .divDecolarText1, .divDecolarText2 {
+        height: 10% !important;
+        top: 0px !important;
     }
 
     /* Logo Cittius */
@@ -35,7 +68,7 @@
         content: url("./assets/Celular/cittius.png");
         position: relative;
         top: 20px;
-        left: 120px;
+        left: 130px;
     }
 
     /* Botão Login */
@@ -56,10 +89,9 @@
     /* Título Decolar */
     #decolar {
         content: url("./assets/Celular/Decolar_5.png");
-        max-width: 150%;
         position: relative;
-        top: 0px;
-        left: -42px;
+        top: -20px;
+        left: 0px;
     }
 
     /* Decolar Text 1 */
@@ -82,10 +114,12 @@
 
     #textMobile {
         display: block;
+        width: 195px !important;
     }
 
     /* Decolar Texts */
     .textDecolar {
+        width: 220px !important;
         padding-left: 20px;
         font-family: 'Gotham-medium';
         color: white;
@@ -103,6 +137,10 @@
         position: relative;
         top: -200px;
         left: -150px;
+    }
+
+    .tituloNave {
+        height: 1110px;
     }
 
     .divTituloNave {
@@ -144,14 +182,18 @@
     .divTextNave1 {
         width: 80%;
         position: relative;
-        top: 50px;
-        left: -50px;
+        top: 156px;
+        left: -15px;
     }
 
     #textNave1 {
         font-family: 'Gotham-book';
         font-size: 12px !important;
+        left: 50px;
+    }
 
+    #textNave2 {
+        left: 86px;
     }
 
     .textNaveMob {
@@ -223,26 +265,28 @@
 
     .divTextNave2 {
         position: relative;
-        top: 66px;
+        top: 180px;
         left: -50px;
         height: 430px;
     }
 
     #textNave2, #textNave3 {
         font-family: 'Gotham-book';
-        font-size: 12px;
+        font-size: 12px !important;
     }
 
     .divTextNave3 {
-        width: 100%;
+        width: 140%;
         position: relative;
-        top: -190px;
-        left: -40px;
+        top: -65px;
+        left: -106px;
+        margin-top: 0;
     }
 
     #textNave3 {
+        max-width: 139%;
         position: relative;
-        left: 90px;
+        left: 21px;
     }
 
     .divIconesNave {
@@ -250,16 +294,31 @@
         margin-top: 0px;
         margin-bottom: 60px;
         position: relative;
-        top: -170px;
+        top: -160px;
         left: -112px;
         border: 3px solid grey;
         border-radius: 50px;
         padding: 30px;
     }
 
+    .divIconsNave1, .divIconsNave2, .divIconsNave3, .divIconsNave4 {
+        gap: 0 30px;
+        margin-bottom: 15px;
+    }
+
+    .iconNave {
+        width: 40%;
+        position: relative;
+        left: 0px;
+    }
+
+    .textinNave {
+        left: 0px;
+    }
+
     .iconsNaveContainer {
         flex-direction: column;
-
+        gap: 5px;
     }
 
     /* Icons Nave */
@@ -335,6 +394,7 @@
     .divPrints {
         padding: 25px !important;
         justify-content: center;
+        left: 0px;
     }
 
     .divPrintsMobile {
@@ -430,14 +490,7 @@
     #acessibilidade {
         content: url("./assets/Celular/Titulo3_2.png");
         position: relative;
-        left: -25px;
-    }
-
-    /* Titulo Vídeo */
-    #tituloVideo {
-        content: url("./assets/Celular/Titulo4_2.png");
-        width: 42% !important;
-        margin-left: 50px;
+        left: 5px;
     }
 
     .divTituloAcessibilidade {
@@ -446,7 +499,7 @@
 
 
     .textAcessibilidade {
-        max-width: 260px !important;
+        width: 100%;
         font-size: 12px !important;
         position: relative;
         top: -15px;
@@ -472,14 +525,14 @@
     .divVideo video {
         z-index: -1;
         position: relative;
-        left: 36px;
+        left: 0px;
         top: 0px !important;
-        width: 90%;
+        width: 100%;
     }
 
     /* Sensor RFID */
     .sensorRfid {
-        height: 650px;
+        height: 700px;
         position: relative;
         top: -850px;
     }
@@ -487,7 +540,7 @@
     /* Titulo Sensor RFID */
     #tituloSensor {
         content: url("./assets/Celular/Sensor_4.png");
-        padding: 25px;
+        padding: 25px 0px 10px 30px;
     }
 
     .divP1Sensor {
@@ -499,8 +552,8 @@
 
     .cards1 {
         position: relative;
-        top: -25px;
-        left: 150px !important;
+        top: -10px;
+        left: 20px !important;
     }
 
     .cards2 {
@@ -510,6 +563,8 @@
     }
 
     .textSensor {
+        position: relative;
+        left: 7px;
         margin-left: -29px;
     }
 
@@ -522,6 +577,7 @@
         top: 0px !important;
         padding: 10px 0 0 20px;
         margin-left: -10px;
+        left: -23px !important;
     }
 
     .divCardSensor {
@@ -529,10 +585,12 @@
     }
 
     .divTextSensor {
-        width: 100% !important;
+        width: 80% !important;
         margin-top: 120px;
         display: flex;
         justify-content: center;
+        position: relative;
+        left: 45px;
     }
 
     /* Cartas Sensor RFID */
@@ -562,7 +620,7 @@
     #lblCartaCores {
         font-size: 100%;
         position: relative;
-        top: 20px;
+        top: -20px;
         left: 132px;
         transform: rotate(-15deg);
     }
@@ -571,7 +629,7 @@
         font-size: 100%;
         position: relative;
         left: 95px;
-        top: 60px;
+        top: 60px !important;
         transform: rotate(5deg);
     }
 
@@ -579,7 +637,7 @@
         font-size: 90%;
         position: relative;
         left: 25px;
-        top: 170px;
+        top: 170px !important;
         transform: rotate(25deg);
     }
 
@@ -615,20 +673,26 @@
     .formacaoProfessores {
         position: relative;
         top: -880px;
-        height: 550px;
+        height: 560px;
         width: 75% !important;
     }
 
     #formacaoProfessores {
-        content: url("./assets/Celular/Formacao_3.png");
+        content: url(./assets/Celular/Formacao_3.png);
         position: relative;
         top: 10px;
-        left: -30px;
+        left: 9px;
+    }
+
+    .textoFormacao {
+        top: 0px;
+        left: 56px !important;
+        font-size: 12px !important;
     }
 
     .textoFormacao {
         font-size: 12px !important;
-        margin-left: 50px;
+        margin-left: 12px;
     }
 
     .textoForm {
@@ -637,15 +701,17 @@
     }
 
     .listaFormacao {
-        margin-left: 20px !important;
+        margin-left: 0px !important;
+        position: relative;
+        left: -15px;
     }
 
     /* Catálogo de Jogos */
     #catalogosJogos {
-        content: url("./assets/Celular/LivroProfessor.png");
+        content: url(./assets/Celular/LivroProfessor.png);
         position: relative;
         top: -15px;
-        left: 60px;
+        left: 70px !important;
     }
 
     /* Catálogo Técnico */
@@ -663,7 +729,7 @@
         padding: 10px 0px 0px 0px !important;
         width: 100% !important;
         margin: 0;
-        left: 50px;
+        left: 30px;
     }
 
     .divMiguel {
@@ -722,6 +788,8 @@
 
     .divFormulario {
         margin-bottom: 30px;
+        margin-left: 0px;
+        width: 80% !important;
     }
 
     .textCaracteristicas {
@@ -736,26 +804,109 @@
     }
 
     .divOpcoesFormacao {
-        margin-left: -90px !important;
+        margin-left: -15px !important;
     }
 
     .divAcessibilidadeContainer  {
-        width: 76% !important;
+        width: 88% !important;
+    }
+
+    .textoAcessibilidade {
+        padding: 20px 0 0 80px !important;
+    }
+
+    #tituloVideo {
+        content: url(./assets/Celular/Titulo4_2.png);
+        width: 70% !important;
+        margin-left: 50px;
+        left: -89px !important;
+    }
+
+    .divTexto p {
+        position: relative;
+        left: 45px;
     }
 }
 
-@media (max-width: 412px) {
+@media (max-width: 413px) {
+
+    main {
+        height: 530px;
+    }
+
+    #logoEducanave {
+        width: 400px;
+    }
+
+    #decolar {
+        top: -10px;
+    }
+
+    .divDecolarText1, .divDecolarText2 {
+        top: 15px !important;
+    }
+
+    #textNave1 {
+        position: relative;
+        left: 60px;
+    }
+
+    #textNave2 {
+        width: 94% !important;
+        position: relative;
+        top: -63px;
+        left: 97px;
+    }
+
     #textNave2, #textNave3 {
         font-family: 'Gotham-book';
         font-size: 12px !important;
     }
 
     #textNave3 {
-        top: 20px;
+        top: -80px;
+    }
+
+    .divIconesNave {
+        left: -110px;
+    }
+
+    .divPrints {
+        left: 0px;
+    }
+
+    #tituloSensor {
+        padding: 10px 0px 10px 30px;
+    }
+
+    .textSensor {
+        position: relative;
+        left: 10px;
+    }
+
+    #formacaoProfessores {
+        left: -13px;
     }
 
     .formacaoProfessores  {
         height: 570px;
         padding: 30px 50px 50px 50px !important;
+    }
+
+    .textoFormacao {
+        left: 32px !important;
+    }
+
+    .divTexto p {
+        position: relative;
+        left: 45px;
+    }
+
+    #tituloVideo {
+        left: -76px !important;
+    }
+
+    #catalogosJogos {
+        left: 45px !important;
     }
 }

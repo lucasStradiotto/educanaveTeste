@@ -13,10 +13,18 @@
         display: block;
     }
 
+    .divLogoEducanave, .divBtnLogin {
+        width: 25% !important;
+    }
+
+    .divDecolar {
+        width: 50% !important;
+    }
+
     /* Logo Educanave */
     #logoEducanave {
-        content: url("./assets/Tablet/Logo-Nuvem-Mesa-tablet0.png");
-        max-width: 110%;
+        content: url(./assets/Tablet/Logo-Nuvem-Mesa-tablet0.png);
+        max-width: 101%;
         width: 101%;
         position: absolute;
         top: 30px;
@@ -28,7 +36,7 @@
         content: url("./assets/Tablet/Cittius_2.png");
         position: relative;
         top: 30px;
-        left: 220px;
+        left: 250px;
     }
 
     /* Botão Login */
@@ -48,10 +56,10 @@
 
     /* Título Decolar */
     #decolar {
-        content: url("./assets/Tablet/Decolar_4.png");
-        max-width: 120%;
+        content: url(./assets/Tablet/Decolar_4.png);
+        max-width: 140%;
         position: relative;
-        top: 30px;
+        top: 10px;
     }
 
     /* Decolar Text 1 */
@@ -102,6 +110,10 @@
         left: -270px;
     }
 
+    .tituloNave {
+        height: 1180px;
+    }
+
     .divTituloNave {
         position: relative;
         top: 50px;
@@ -122,6 +134,10 @@
         position: relative;
         top: -80px;
         left: 30px;
+    }
+
+    .divTextoNave {
+        top: 25px;
     }
 
     .divTextNave1 {
@@ -195,6 +211,7 @@
     }
 
     .divTextNave3 {
+        margin-top: 60px;
         position: relative;
         top: -30px;
         left: -275px;
@@ -205,7 +222,8 @@
         width: 113% !important;
         margin-top: 50px;
         position: relative;
-        left: -207px;
+        left: -217px;
+        top: 30px;
         border: 3px solid grey;
         border-radius: 50px;
         padding: 50px;
@@ -367,22 +385,35 @@
 
     /* Titulo Vídeo */
     #tituloVideo {
-        /* margin-left: 100px; */
         content: url("./assets/Tablet/Titulo4_1.png");
-        width: 40%;
+        width: 55% !important;
+        left: -185px;
+    }
+
+    .listaFormacao {
+        margin-left: 40px !important;
     }
 
     .acessibilidade {
         height: 990px;
     }
 
+    .divLivros {
+        margin-left: -50px !important;
+    }
+
     #acessibilidade {
         content: url("./assets/Tablet/Titulo3_1.png");
+    }
+
+    .divTextAcessibilidadeCometa {
+        width: 120% !important;
     }
 
     .textAcessibilidade {
         font-size: 23px;
         margin-left: -10px;
+        max-width: 100% !important;
     }
 
     .divTituloAcessibilidade {
@@ -413,7 +444,7 @@
     .divVideo video {
         z-index: -1;
         position: relative;
-        left: 70px;
+        left: 50px;
         top: 0px;
         width: 90%;
     }
@@ -447,7 +478,7 @@
 
     .cards1 {
         position: relative;
-        left: 350px;
+        left: 400px;
     }
 
     .cards2 {
@@ -518,7 +549,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
-        top: -100px;
+        top: -75px;
     }
 
     /* Mesa Sensor */
@@ -526,7 +557,7 @@
         content: url("./assets/Tablet/Mesa2.png");
         position: relative;
         top: -166px;
-        left: 360px;
+        left: 400px;
     }
 
     /* Carta Sensor */
@@ -540,6 +571,7 @@
         position: relative;
         top: -480px;
         width: 87% !important;
+        height: 675px;
     }
 
     #formacaoProfessores {
@@ -578,6 +610,7 @@
     }
 
     .contato {
+        height: 1000px;
         position: relative;
         top: -500px;
     }
@@ -636,6 +669,7 @@
 
     .divFormulario {
         margin-bottom: 50px;
+        margin-left: 85px !important;
     }
 
     .textCaracteristicas {
@@ -658,6 +692,6 @@
         width: 75% !important;
         padding: 10px 0px !important;
         position: relative;
-        left: 165px;
+        left: 35px;
     }
 }

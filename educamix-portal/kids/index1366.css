@@ -1,4 +1,4 @@
-@media (max-width: 1366px) {
+@media (max-width: 1367px) {
 
     /* Sol */
     #raioSol {
@@ -18,9 +18,8 @@
         z-index: 2;
     }
 
-
-     /* Decolar Texts */
-     .textDecolar {
+    /* Decolar Texts */
+    .textDecolar {
         padding-left: 20px;
         font-family: sans-serif;
         font-size: 28px;
@@ -46,6 +45,10 @@
         content: url("./assets/1440/Mesa2_1.png");
         position: relative;
         top: -100px;
+    }
+
+    #logoEducanave {
+        max-width: 101%;
     }
 
     /* Video */
@@ -74,11 +77,12 @@
     }
 
     #tituloVideo {
-        width: 28% !important;
+        width: 55% !important;
+        left: -315px;
     }
 
     #cometa {
-        left: -160px;
+        left: -85px;
     }
 
     .textoFormacao {
@@ -87,5 +91,11 @@
 
     .divOpcoesFormacao {
         margin-left: 200px !important;
+    }
+
+    .divTextoNave {
+        width: 95%;
+        position: relative;
+        left: 10px;
     }
 }

@@ -1,16 +1,20 @@
-@media (max-width: 393px) {
+@media (max-width: 395px) {
 
-    .aspectStyles {
-        font-size: 65% !important;
-    }
-    
     body {
-        overflow-x: hidden;
         height: 4000px !important;
     }
 
+    .aspectStyles {
+        font-size: 70% !important;
+    }
+
     main {
+        width: 475px !important;
         height: 500px;
+    }
+
+    .header {
+        width: 475px !important;
     }
 
     .topBar {
@@ -25,9 +29,38 @@
     /* Logo Educanave */
     #logoEducanave {
         content: url("./assets/Tablet/Logo-Nuvem-Mesa-tablet0.png");
+        max-width: 475px !important;
         position: absolute;
-        top: 9px;
-        left: -3px;
+        top: 20px;
+        left: -2px;
+    }
+
+    #logoEducanave {
+        width: 385px !important;
+    }
+
+    .divLogoEducanave, .divBtnLogin, .divNuvem, .divMesaSolContainer {
+        width: 25% !important;
+    }
+
+    .divLogoEducanave {
+        width: 27% !important;
+    }
+
+    .divNuvem {
+        width: 20% !important;
+    }
+
+    .divTituloDecolar {
+        height: 11% !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .divDecolarText1, .divDecolarText2 {
+        height: 10% !important;
+        top: 0px !important;
     }
 
     /* Logo Cittius */
@@ -35,15 +68,12 @@
         content: url("./assets/Celular/cittius.png");
         position: relative;
         top: 20px;
-        left: 120px;
+        left: 130px;
     }
 
     /* Botão Login */
     #botaoLogin {
-        content: url("./assets/Celular/Botao_1.png");
-        position: relative;
-        top: 15px;
-        left: -150px;
+        left: -142px;
     }
 
     /* Nuvem */
@@ -56,27 +86,21 @@
     /* Título Decolar */
     #decolar {
         content: url("./assets/Celular/Decolar_5.png");
-        max-width: 150%;
         position: relative;
-        top: 0px;
-        left: -38px;
+        top: -20px;
+        left: 0px;
     }
 
     /* Decolar Text 1 */
-
-    .star {
-        width: 15%; 
-    }
-
     .divDecolarText1 {
         width: 130%;
-        top: -470px;
+        top: -460px;
         left: 0px;
     }
 
     /* Decolar Text 2 */
     .divDecolarText2 {
-        top: -670px;
+        top: -650px;
         left: 30px;
         width: 120%;
     }
@@ -87,14 +111,15 @@
 
     #textMobile {
         display: block;
+        width: 195px !important;
     }
 
     /* Decolar Texts */
     .textDecolar {
-        padding-left: 20px;
+        width: 220px !important;
+        padding-left: 10px;
         font-family: 'Gotham-medium';
         color: white;
-        font-size: 12px !important;
     }
 
     /* Sol */
@@ -111,6 +136,10 @@
         left: -150px;
     }
 
+    .tituloNave {
+        height: 1070px;
+    }
+
     .divTituloNave {
         height: 50px !important;
         position: relative;
@@ -122,6 +151,8 @@
         content: url("./assets/Celular/Titulo1_1.png");
         padding-left: 100px;
         margin-top: -50px;
+        position: relative;
+        top: -5px;
     }
 
     /* Dra. Ana */
@@ -140,6 +171,7 @@
 
     .divTexto {
         margin-top: 10px !important;
+        justify-content: start;
     }
 
     .divTextoNave {
@@ -149,14 +181,14 @@
     .divTextNave1 {
         width: 80%;
         position: relative;
-        top: 50px;
-        left: -50px;
+        top: 145px;
+        left: 0px;
     }
 
     #textNave1 {
         font-family: 'Gotham-book';
         font-size: 12px !important;
-
+        top: -80px;
     }
 
     .textNaveMob {
@@ -228,26 +260,28 @@
 
     .divTextNave2 {
         position: relative;
-        top: 71px;
-        left: -50px;
+        top: 167px;
+        left: -45px;
         height: 430px;
     }
 
     #textNave2, #textNave3 {
         font-family: 'Gotham-book';
-        font-size: 12px !important;
+        font-size: 12px;
     }
 
     .divTextNave3 {
-        width: 100%;
+        width: 140%;
         position: relative;
-        top: -155px;
-        left: -40px;
+        top: -195px;
+        left: -106px;
+        margin-top: 0;
     }
 
     #textNave3 {
+        max-width: 139%;
         position: relative;
-        left: 90px;
+        left: 21px;
     }
 
     .divIconesNave {
@@ -255,16 +289,27 @@
         margin-top: 0px;
         margin-bottom: 60px;
         position: relative;
-        top: -122px;
-        left: -110px;
+        top: -206px;
+        left: -106px;
         border: 3px solid grey;
         border-radius: 50px;
         padding: 30px;
     }
 
+    .divIconsNave1, .divIconsNave2, .divIconsNave3, .divIconsNave4 {
+        gap: 0 30px;
+        margin-bottom: 15px;
+    }
+
     .iconsNaveContainer {
         flex-direction: column;
+        gap: 5px;
+    }
 
+    .iconNave {
+        width: 40%;
+        position: relative;
+        left: 0px;
     }
 
     /* Icons Nave */
@@ -321,6 +366,8 @@
         font-size: 12px !important;
         margin-left: 0px;
         width: 80px;
+        position: relative;
+        left: 0px;
     }
 
     /* Título Ambietnes */
@@ -338,6 +385,8 @@
     }
 
     .divPrints {
+        position: relative;
+        left: 0px;
         padding: 25px !important;
         justify-content: center;
     }
@@ -356,8 +405,18 @@
         display: flex;
     }
 
-    #setaEsquerda, #setaDireita {
-        width: 80% !important;
+    /* Seta Esquerda */
+    #setaEsquerda {
+        max-width: 50%;
+        left: 30px;
+        top: 10px;
+    }
+
+    /* Seta Direita */
+    #setaDireita {
+        left: -30px;
+        max-width: 50%;
+        top: 10px;
     }
 
     .divBolinhasPlanetas {
@@ -404,32 +463,39 @@
 
     #selo {
         content: url("./assets/Celular/Selo_4.png");
+        max-width: 80%;
         position: relative;
-        top: -75px;
+        top: -60px;
         left: 200px !important;
         animation: floatMobile 5s ease-in-out infinite;
     }
-
 
     .divCometa {
         display: none;
     }
 
     .acessibilidade {
-        height: 1130px;
         position: relative;
         top: -150px;
+        height: 1111px;
     }
 
     #acessibilidade {
         content: url("./assets/Celular/Titulo3_2.png");
+        position: relative;
+        left: 13px;
+    }
+
+    .textoAcessibilidade {
+        padding: 20px 0 0 90px !important;
     }
 
     /* Titulo Vídeo */
     #tituloVideo {
-        content: url("./assets/Celular/Titulo4_2.png");
-        width: 45% !important;
+        content: url(./assets/Celular/Titulo4_2.png);
+        width: 70% !important;
         margin-left: 50px;
+        left: -57px !important;
     }
 
     .divTituloAcessibilidade {
@@ -438,6 +504,8 @@
 
 
     .textAcessibilidade {
+        max-width: 500px !important;
+        width: 120%;
         font-size: 12px !important;
         position: relative;
         top: -15px;
@@ -456,32 +524,33 @@
     /* Video */
     .divVideo {
         position: relative;
-        padding-bottom: 50.25%;
-        height: 0;
+        padding-bottom: 65.25% !important;
+        height: 800px;
     }
 
     .divVideo video {
         z-index: -1;
         position: relative;
-        left: 35px;
+        left: 36px;
         top: 0px !important;
         width: 90%;
     }
 
     /* Sensor RFID */
     .sensorRfid {
+        height: 690px;
         position: relative;
-        top: -870px;
+        top: -850px;
     }
 
     /* Titulo Sensor RFID */
     #tituloSensor {
         content: url("./assets/Celular/Sensor_4.png");
-        padding: 25px;
+        padding: 20px 0px 10px 40px;
     }
 
     .divP1Sensor {
-        margin-left: 0px !important;
+        margin-left: -3px !important;
         width: 100% !important;
         display: flex;
         justify-content: center;
@@ -489,7 +558,8 @@
 
     .cards1 {
         position: relative;
-        left: 150px;
+        top: -25px;
+        left: 20px !important;
     }
 
     .cards2 {
@@ -498,23 +568,35 @@
         display: none !important;
     }
 
+    .textSensor {
+        margin-left: -29px;
+        position: relative;
+        left: 20px;
+    }
+
     .textSensor, .textSensor2 {
         font-size: 12px !important;
     }
 
     .textSensor2 {
+        position: relative;
+        top: 0px !important;
+        left: -12px !important;
         padding: 10px 0 0 20px;
+        margin-left: -10px;
     }
 
     .divCardSensor {
-        padding: 0px !important;
+        padding: 20px !important;
     }
 
     .divTextSensor {
-        width: 100% !important;
-        margin-top: 90px;
+        width: 80% !important;
+        margin-top: 120px;
         display: flex;
         justify-content: center;
+        position: relative;
+        left: 40px;
     }
 
     /* Cartas Sensor RFID */
@@ -522,50 +604,46 @@
         content: url("./assets/Tablet/Cores_2.png");
         max-width: 100%;
         position: relative;
-        left: 30px;
+        left: 50px;
     }
 
     #cartaLetras {
         content: url("./assets/Tablet/Letras.png");
         max-width: 100%;
         position: relative;
-        top: 30px;
-        left: -30px !important;
+        top: 50px;
+        left: 90px;
     }
 
     #cartaNumeros {
         content: url("./assets/Tablet/Numeros_3.png");
         max-width: 100%;
         position: relative;
-        top: 85px;
-        left: -110px;
-    }
-
-    .lblCardItem {
-        font-size: 100% !important;
+        top: 150px;
+        left: -5px;
     }
 
     #lblCartaCores {
         font-size: 100%;
         position: relative;
-        top: 20px;
-        left: 12px !important;
+        top: -20px;
+        left: 132px;
         transform: rotate(-15deg);
     }
 
     #lblCartaLetras {
         font-size: 100%;
         position: relative;
-        left: -25px !important;
-        top: 40px !important;
-        transform: rotate(4deg);
+        left: 95px;
+        top: 60px;
+        transform: rotate(5deg);
     }
 
     #lblCartaNumeros {
-        font-size: 100%;
+        font-size: 90%;
         position: relative;
-        left: -90px !important;
-        top: 110px !important;
+        left: 25px;
+        top: 170px;
         transform: rotate(25deg);
     }
 
@@ -575,7 +653,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
-        top: 21px !important;
+        top: 15px !important;
         height: 100px;
     }
 
@@ -598,28 +676,41 @@
         display: none;
     }
 
+    .formacaoProfessores {
+        position: relative;
+        top: -880px;
+        height: 585px;
+        width: 75% !important;
+    }
+
     #formacaoProfessores {
-        content: url("./assets/Celular/Formacao_3.png");
+        content: url(./assets/Celular/Formacao_3.png);
+        position: relative;
+        top: 10px;
+        left: -7px;
     }
 
     .textoFormacao {
         font-size: 12px !important;
+        margin-left: -8px;
+        left: 56px !important;
     }
 
     .textoForm {
         font-size: 12px !important;
-        width: 250px;
+        text-align: center;
     }
 
     .listaFormacao {
-        margin-left: 20px !important;
+        margin-left: 75px !important;
     }
 
     /* Catálogo de Jogos */
     #catalogosJogos {
-        content: url("./assets/Celular/LivroProfessor.png");
+        content: url(./assets/Celular/LivroProfessor.png);
         position: relative;
-        left: 50px;
+        top: -15px;
+        left: 0px;
     }
 
     /* Catálogo Técnico */
@@ -635,6 +726,9 @@
 
     .divContainerContato {
         padding: 10px 0px 0px 0px !important;
+        width: 100% !important;
+        margin: 0;
+        left: 30px;
     }
 
     .divMiguel {
@@ -644,6 +738,7 @@
     #logoCittiusForm {
         content: url("./assets/Celular/cittius.png");
         left: -7px;
+        max-width: 100%;
     }
 
     .divLogoCittiusForm {
@@ -687,11 +782,13 @@
 
     .ambientes {
         position: relative;
-        top: -172px;
+        top: -200px;
     }
 
     .divFormulario {
         margin-bottom: 30px;
+        margin-left: 0px;
+        width: 80% !important;
     }
 
     .textCaracteristicas {
@@ -699,4 +796,462 @@
         left: -25px;
         width: 90px;
     }
+
+    #tituloPlaneta {
+        position: relative;
+        top: 20px;
+    }
+
+    .divOpcoesFormacao {
+        margin-left: -90px !important;
+    }
+
+    .divAcessibilidadeContainer  {
+        width: 76% !important;
+    }
+
+    #textNave2 {
+        top: -90px;
+        left: 105px;
+        width: 190px !important;
+    }
+
+    #textNave3 {
+        top: 20px;
+    }
+}
+
+@media (max-width: 372px) {
+
+    body {
+        height: 3992px !important;
+    }
+
+    main {
+        height: 465px;
+    }
+
+    .tituloNave {
+        height: 1060px;
+    }
+
+    #botaoLogin {
+        left: -130px;
+    }
+
+    #logoCittius {
+        left: 120px;
+    }
+
+    #logoEducanave {
+        left: -2px;
+        width: 357px !important;
+    }
+
+    .textDecolar {
+        width: 200px !important;
+        padding-left: 0px;
+    }
+
+    .divTextNave1 {
+        top: 138px !important;
+        left: 15px;
+    }
+
+    .divTextNave2 {
+        top: 152px !important;
+        left: -20px;
+    }
+
+    .divTextNave3 {
+        top: -196px;
+    }
+
+    .divIconesNave {
+        left: -100px;
+        top: -200px;
+    }
+
+    .iconNave {
+        width: 25%;
+        left: 0px;
+    }
+
+    .textinNave {
+        left: 0px;
+    }
+
+    .divIconsNave1, .divIconsNave2, .divIconsNave3, .divIconsNave4 {
+        gap: 0 30px;
+    }
+
+    .iconsNaveContainer {
+        gap: 5px;
+    }
+
+    #acessibilidade {
+        left: 12px;
+    }
+
+    .textoAcessibilidade {
+        left: 13px;
+        padding: 20px 0 15px 35px !important;
+    }
+
+    #tituloVideo {
+        top: -15px;
+        left: -50px !important;
+    }
+
+    .divVideo video {
+        z-index: -1;
+        position: relative;
+        left: -5px;
+        top: 0px !important;
+        width: 103%;
+    }
+
+    .sensorRfid {
+        height: 670px;
+    }
+
+    .cards1 {
+        top: -10px;
+        left: 20px !important;
+    }
+
+    .divTextAcessibilidadeCometa {
+        width: 300px !important;
+    }
+
+    #lblCartaCores {
+        top: -22px;
+    }
+
+    #lblCartaLetras {
+        top: 56px !important;
+    }
+
+    #lblCartaNumeros {
+        top: 173px !important;
+    }
+
+    .divTextSensor {
+        width: 86% !important;
+    }
+
+    .textSensor2 {
+        left: -5px;
+    }
+
+    .textoFormacao {
+        left: 37px;
+        margin-left: 0px;
+    }
+
+    .listaFormacao {
+        margin-left: 10px !important;
+    }
+
+    .divOpcoesFormacao {
+        margin-left: 0px !important;
+    }
+
+    .contato {
+        height: 537px;
+    }
+
+    .divContainerContato {
+        left: 30px;
+    }
+
+    .textoAcessibilidade {
+        padding: 20px 0 15px 88px !important;
+    }
+
+    .formacaoProfessores {
+        position: relative;
+        top: -880px;
+        height: 590px;
+        width: 75% !important;
+    }
+
+    #textNave1 {
+        left: 40px;
+    }
+
+    #textNave2 {
+        top: -80px;
+        left: 75px;
+        width: 180px !important;
+    }
+
+    #textNave3 {
+        top: 35px;
+    }
+
+    .textSensor {
+        position: relative;
+        left: 25px;
+    }
+
+    .textSensor2 {
+        position: relative;
+        left: 20px;
+    }
+
+}
+
+@media (max-width: 362px) {
+
+    body {
+        height: 3890px !important;
+    }
+
+    main {
+        height: 465px;
+    }
+    
+    #botaoLogin {
+        left: -130px;
+    }
+
+    #logoCittius {
+        content: url("./assets/Tablet/Cittius_2.png");
+        max-width: 50%;
+        position: relative;
+        top: 20px;
+        left: 120px;
+    }
+
+    #logoEducanave {
+        top: 15px;
+        left: -2px;
+        width: 365px !important;
+    }
+
+    .textDecolar {
+        width: 200px !important;
+        padding-left: 0px;
+    }
+
+    .divNuvem {
+        width: 18% !important;
+    }
+
+    .textDecolar {
+        width: 200px !important;
+    }
+
+    #textMobile {
+        width: 170px !important;
+    }
+
+    .tituloNave {
+        height: 1080px;
+    }
+
+    .divTextNave1 {
+        top: 140px !important;
+        left: 10px;
+    }
+
+    .divTextNave2 {
+        top: 150px !important;
+        left: -20px;
+    }
+
+    .divTextNave3 {
+        top: -196px;
+    }
+
+    .divIconsNave1, .divIconsNave2, .divIconsNave3, .divIconsNave4 {
+        gap: 0 30px;
+    }
+
+    .divIconesNave {
+        width: 113% !important;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        position: relative;
+        top: -200px;
+        left: -102px;
+        border: 3px solid grey;
+        border-radius: 50px;
+        padding: 30px;
+    }
+
+    .divTextAcessibilidadeCometa {
+        width: 310px !important;
+    }
+
+    .iconNave {
+        width: 40%;
+        position: relative;
+        left: 0px;
+    }
+
+    .textinNave {
+        left: 0px;
+    }
+
+    .iconsNaveContainer {
+        gap: 5px 0px;
+    }
+
+    .acessibilidade {
+        position: relative;
+        top: -130px;
+        height: 1125px;
+    }
+
+    #acessibilidade {
+        margin-bottom: 10px;
+    }
+
+    .textAcessibilidade {
+        left: -40px;
+    }
+
+    .divVideo video {
+        z-index: -1;
+        position: relative;
+        left: -4px;
+        top: 0px !important;
+        width: 102%;
+    }
+
+    .ambientes {
+        top: -185px;
+    }
+
+    .sensorRfid {
+        height: 530px;
+    }
+
+    .textSensor {
+        position: relative;
+        left: 22px;
+    }
+
+    .textSensor2 {
+        position: relative;
+        left: 10px;
+    }
+
+    .cards1 {
+        position: relative;
+        top: -25px;
+        left: 16px !important;
+    }
+
+    #lblCartaCores {
+        font-size: 100%;
+        position: relative;
+        top: -21px;
+        left: 132px;
+        transform: rotate(-15deg);
+    }
+
+    #lblCartaLetras {
+        top: 10px !important;
+    }
+
+    #cartaLetras {
+        content: url(./assets/Tablet/Letras.png);
+        max-width: 100%;
+        position: relative;
+        top: 0px;
+        left: 90px;
+    }
+
+    #lblCartaNumeros {
+        top: 89px !important;
+        left: -82px !important;
+    }
+
+    #cartaNumeros {
+        content: url(./assets/Tablet/Numeros_3.png);
+        max-width: 100%;
+        position: relative;
+        top: 65px;
+        left: -110px !important;
+    }
+
+    .divTextSensor {
+        width: 88% !important;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .textoFormacao {
+        left: 54px;
+    }
+
+    #formacaoProfessores {
+        left: -5px;
+    }
+
+    .formacaoProfessores {
+        height: 535px;
+    }
+
+    .textoFormacao {
+        font-size: 12px !important;
+        margin-left: -17px;
+        left: 65px !important;
+    }
+
+    .listaFormacao {
+        margin-left: 65px !important;
+    }
+
+    #catalogosJogos {
+        content: url(./assets/Tablet/Livro\ do\ professor.png);
+        position: relative;
+        top: -15px;
+        left: -7px;
+    }
+
+    .divOpcoesFormacao {
+        margin-left: -24px !important;
+        width: 125% !important;
+    }
+
+    .contato {
+        height: 540px;
+    }
+
+    .divContainerContato {
+        padding: 10px 0px 0px 0px !important;
+        width: 100% !important;
+        margin: 0;
+        left: 20px;
+    }
+
+    #textNave2 {
+        top: -75px;
+        width: 180px !important;
+        position: relative;
+        left: 70px;
+    }
+
+    #textNave3 {
+        top: 30px;
+    }
+
+    .sensorRfid {
+        height: 600px !important;
+    }
+
+    #tituloVideo {
+        left: -45px !important;
+    }
+
+    .divTexto p {
+        position: relative;
+        left: 50px;
+    }
+
 }

@@ -77,7 +77,7 @@
     #sol {
         content: url("./assets/1920/sol.png");
         position: relative;
-        top: -500px;
+        top: -510px;
         left: 100px;
         z-index: 1;
     }
@@ -183,13 +183,15 @@
     #cometa {
         content: url("./assets/1440/Cometa_2.png");
         position: relative;
-        left: -130px;
+        left: -50px;
     }
 
     /* Titulo Vídeo */
     #tituloVideo {
-        width: 30% !important;
+        width: 60% !important;
         margin-left: 100px;
+        position: relative;
+        left: -400px;
     }
 
     /* Moldura Video */
@@ -234,6 +236,7 @@
 
     .textAcessibilidade {
         margin-left: 10px;
+        max-width: 100% !important;
     }
 
     .cards2 {
@@ -376,5 +379,15 @@
 
     .divOpcoesFormacao {
         margin-left: 130px !important;
+    }
+
+    .divLivros {
+        position: relative;
+        left: 60px;
+    }
+
+    #miguel {
+        max-width: 350px;
+        left: -118px;
     }
 }

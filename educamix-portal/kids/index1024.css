@@ -10,20 +10,22 @@
 
     /* Sol */
     #raioSol {
-        content: url("./assets/1920/raioSol.png");
-        position: relative;
-        top: -80px;
-        left: 50px;
+        content: url(./assets/1920/raioSol.png);
+        position: absolute;
+        top: 15px;
+        left: 872px;
         animation: rotation 20s linear infinite;
         z-index: 1;
+        width: 30%;
     }
 
     #sol {
-        content: url("./assets/1920/sol.png");
-        position: relative;
-        top: -350px;
-        left: 90px;
+        content: url(./assets/1920/sol.png);
+        position: absolute;
+        top: 45px;
+        left: 910px;
         z-index: 2;
+        width: 23%;
     }
 
 
@@ -123,6 +125,10 @@
     .divP1Sensor {
         width: 90% !important;
         margin-left: 50px !important;
+    }
+
+    .textAcessibilidade {
+        max-width: 90% !important;
     }
 
     #cometa {
@@ -237,6 +243,7 @@
     }
 
     .contato {
+        height: 1100px;
         top: -900px;
     }
 
@@ -245,13 +252,14 @@
     }
 
     #miguel {
-        max-width: 250%;
+        max-width: 500%;
         left: -100px;
     }
 
     .divLivros {
         gap: 20px !important;
-        margin-left: -35px !important;
+        position: relative;
+        left: 15px;
     }
 
     #catalogosJogos, #catalogoTecnico {
@@ -260,14 +268,20 @@
 
     #tituloVideo {
         content: url("./assets/Tablet/Titulo4_1.png");
-        width: 33% !important;
+        width: 75% !important;
+        position: relative;
+        left: -295px;
     }
 
     .divTexto {
         width: 100% !important;
         display: flex;
         justify-content: center;
-        margin-left: -130px;
+        margin-left: -110px;
+    }
+
+    .listaFormacao {
+        margin-left: 150px !important;
     }
 
     .divOpcoesFormacao {
@@ -298,15 +312,45 @@
     #setaDireita {
         left: -50px;
     }
+
+    .divFormulario {
+        width: 90% !important;
+        margin-left: 100px;
+    }
 }
 
-@media (max-width: 915px) {
+@media (max-width: 916px) {
+
+    #logoEducanave {
+        content: url(./assets/1440/Logo-Nuvem-Mesa-14000.png);
+        position: absolute;
+        top: 20px;
+        max-width: 103%;
+    }
+
+    #logoCittius {
+        left: -45px;
+    }
+
     #mesaSensor {
         top: -260px;
     }
 
+    #raioSol {
+        top: 17px;
+        left: 763px;
+        width: 25%;
+    }
+
     #sol {
-        top: -322px;
+        top: 42px;
+        left: 794px;
+        width: 18%;
+    }
+
+    #tituloVideo {
+        width: 70% !important;
+        left: -235px;
     }
 
     .divIconesNave {
@@ -326,13 +370,63 @@
 
     .divLivros {
         gap: 0px !important;
-        margin-left: -40px !important;
+        margin-left: 0px !important;
+    }
+
+    #tituloNave {
+        margin-top: 0px;
+    }
+
+    .divFormulario {
+        width: 100% !important;
+    }
+
+    #miguel {
+        max-width: 650%;
+        left: -75px;
+    }
+
+    #drAna {
+        top: -45px;
+    }
+
+    .divTextoNave {
+        top: -80px;
+    }
+
+    .divIconesNave {
+        top: -100px;
+    }
+
+    .tituloNave {
+        height: 1000px;
+    }
+
+    .contato {
+        height: 925px;
+    }
+
+    .formacaoProfessores {
+        height: 650px;
+    }
+
+    .formContato {
+        width: 80% !important;
+    }
+
+    #miguel {
+        left: -50px;
     }
 }
 
-@media (max-width: 873px) {
+@media (max-width: 876px) {
     #sol {
-        top: -310px;
+        top: 41px;
+        left: 792px;
+    }
+
+    .aspectStyles {
+        font-size: 90% !important;
     }
 
     .divIconesNave {
@@ -341,6 +435,27 @@
 
     .divLivros {
         gap: 0px !important;
-        margin-left: -45px !important;
+        margin-left: 0px !important;
     }
+    
+    .divDecolarText1 {
+        left: 150px;
+    }
+
+    .divDecolarText2 {
+        left: 50px;
+    }
+
+    #tituloVideo {
+        left: -210px;
+    }
+
+    .divFormulario {
+        margin-left: 65px !important;
+    }
+
+    .formacaoProfessores {
+        height: 600px;
+    }
+
 }
