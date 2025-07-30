@@ -5,7 +5,7 @@
     }
 
     main {
-        height: 1000px;
+        height: 880px;
     }
 
     /* Logo Educanave */
@@ -103,7 +103,7 @@
     }
 
     .tituloNave {
-        height: 1180px;
+        height: 1200px;
     }
 
     .divTituloNave {
@@ -203,6 +203,10 @@
         top: -30px;
         left: -275px;
         width: 800px;
+    }
+
+    #textNave3 {
+        top: -20px;
     }
 
     .divIconesNave {
@@ -376,7 +380,7 @@
     }
 
     .acessibilidade {
-        height: 995px;
+        height: 645px;
     }
 
     #acessibilidade {
@@ -421,12 +425,6 @@
         width: 90%;
     }
 
-    /* Sensor RFID */
-    .sensorRfid {
-        position: relative;
-        top: -300px;
-    }
-
     .divTextCardContainer {
         display: none !important;
     }
@@ -434,10 +432,11 @@
     .divTextCardContainerMobile {
         display: flex;
         flex-direction: column;
+        background-position: center 450px;
     }
 
     .divP1Sensor {
-        width: 90% !important;
+        width: 800px !important;
         margin-left: 50px !important;
     }
 
@@ -457,6 +456,10 @@
         margin-top: 50px;
         margin-left: 50px;
         display: none !important;
+    }
+
+    .textSensor {
+        width: 700px;
     }
 
     .textSensor, .textSensor2 {
@@ -518,10 +521,6 @@
         transform: rotate(25deg);
     }
 
-    .sensorRfid {
-        height: 940px;
-    }
-
     /* Nuvem footer sensor */
     .divFooterSensor {
         background: url(./assets/4K/Nuves2.png);
@@ -539,16 +538,15 @@
         left: 383px !important;
     }
 
+    #mesaSensorMobile {
+        top: 0px;
+        left: 30px;
+    }
+
     /* Carta Sensor */
     #cartaSensor {
         content: url("./assets/1440/versoCarta.png");
         display: none;
-    }
-
-    .formacaoProfessores {
-        height: 725px;
-        position: relative;
-        top: -500px;
     }
 
     #formacaoProfessores {
@@ -651,7 +649,7 @@
 @media (max-width: 542px) {
 
     main {
-        height: 640px;
+        height: 575px;
     }
 
     .topBar {
@@ -690,7 +688,7 @@
     }
 
     .tituloNave {
-        height: 970px;
+        height: 1050px;
     }
 
     #tituloNave {
@@ -714,13 +712,18 @@
         width: 500px;
     }
 
+    #textNave3 {
+        width: 95%;
+        top: -5px;
+    }
+
     #drAna {
         top: -10px !important;
     }
 
     .divIconesNave {
         width: 100% !important;
-        top: 20px;
+        top: 65px;
         left: -130px;
         padding: 40px 50px 25px;
     }
@@ -795,7 +798,7 @@
     }
 
     .acessibilidade {
-        height: 925px;
+        height: 560px;
     }
 
     #selo {
@@ -806,12 +809,12 @@
         left: -60px !important;
     }
 
-    .sensorRfid {
-        height: 620px;
-    }
-
     #tituloSensor {
         padding: 30px 50px;
+    }
+
+    .divP1Sensor {
+        width: 500px !important;
     }
 
     .textSensor2 {
@@ -824,7 +827,7 @@
     }
 
     #catalogosJogos {
-        left: 35px !important;
+        left: 50px !important;
     }
 
     .cards1 {
@@ -840,13 +843,15 @@
         left: 305px !important;
     }
 
-    #formacaoProfessores {
-        width: 95%;
+    #mesaSensorMobile {
+        top: 20px;
+        left: 73px;
     }
 
-    .formacaoProfessores {
-        height: 935px;
-        top: -290px;
+
+    #formacaoProfessores {
+        width: 75%;
+        margin-left: 20px;
     }
 
     .textoFormacao {
@@ -863,7 +868,11 @@
     }
 
     .divContainerContato {
-        width: 88% !important;
+        width: 70% !important;
+    }
+
+    #logoCittiusForm {
+        left: 30px;
     }
 
     .divFormulario {
@@ -904,7 +913,7 @@
     }
 
     main {
-        height: 540px;
+        height: 470px;
     }
 
     #logoCittius {
@@ -949,6 +958,21 @@
         width: 400px;
     }
 
+    #textNave3 {
+        top: -27px;
+    }
+
+    #textoAmbiente {
+        font-size: 10px !important;
+    }
+
+    .divTextCardContainerMobile {
+        height: 666px;
+        display: flex;
+        flex-direction: column;
+        background-position: center 597px;
+    }
+
     .divIconesNave {
         top: -20px;
         left: -118px;
@@ -963,11 +987,19 @@
     }
 
     .textAcessibilidade {
-        font-size: 12px !important;
+        font-size: 11px !important;
     }
 
     .acessibilidade {
-        height: 825px;
+        height: 460px;
+    }
+
+    .sensorRfid {
+        height: 845px;
+    }
+
+    .divP1Sensor {
+        width: 400px !important;
     }
 
     .textSensor, .textSensor2 {
@@ -975,8 +1007,22 @@
     }
 
     .cards1 {
-        left: 265px !important;
+        left: 140px !important;
         top: -71px;
+    }
+
+    #mesaSensorMobile {
+        top: 5px;
+        left: -25px;
+    }
+
+    .textSensor2 {
+        max-width: 150% !important;
+        width: 260px;
+        padding: 10px 0 0 90px;
+        position: relative;
+        top: 190px !important;
+        left: -1px !important;
     }
 
     .divFooterSensor {
@@ -989,11 +1035,6 @@
         left: -88px !important;
         top: 175px !important;
         transform: rotate(25deg);
-    }
-
-    .formacaoProfessores {
-        height: 720px;
-        top: -340px;
     }
 
     #formacaoProfessores {
@@ -1268,10 +1309,6 @@
         width: 103%;
     }
 
-    .sensorRfid {
-        height: 515px;
-    }
-
     #tituloSensor {
         content: url(./assets/Celular/Sensor_4.png);
         padding: 25px 0px 10px 25px;
@@ -1353,13 +1390,6 @@
     #mesaSensor {
         content: url(./assets/Tablet/Mesa2.png);
         display: none;
-    }
-
-    .formacaoProfessores {
-        height: 660px;
-        position: relative;
-        top: -370px;
-        padding: 25px !important;
     }
 
     #formacaoProfessores {

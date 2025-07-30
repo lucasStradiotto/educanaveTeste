@@ -289,7 +289,7 @@
     /* Video */
     .divVideo {
         position: relative;
-        padding-bottom: 67.25%;
+        padding-bottom: 19.25%;
         height: 600px;
     }
 
@@ -319,10 +319,8 @@
         color: white;
     }
 
-    /* Sensor RFID */
-    .sensorRfid {
-        position: relative;
-        top: -1200px;
+    .divContainerTextSensor {
+        display: flex;
     }
 
     .divTextCardContainerMobile {
@@ -332,6 +330,14 @@
     .cards2 {
         margin-top: 50px;
         margin-left: 100px;
+    }
+
+    .divP1Sensor {
+        width: 2300px !important;
+    }
+
+    .textSensor {
+        width: 1600px;
     }
 
     /* Cartas Sensor RFID */
@@ -368,8 +374,9 @@
         background: url("./assets/4K/Nuves2.png");
         background-repeat: no-repeat;
         background-size: cover;
-        position: relative;
-        top: 10px;
+        background-position: center 150px;
+        height: 450px;
+        padding-bottom: 30px;
     }
 
     /* Mesa Sensor */
@@ -385,19 +392,15 @@
         content: url("./assets/4K/VersoCarta.png");
         max-width: 70%;
         position: relative;
-        top: -400px;
+        top: -150px;
         left: 300px;
+        height: 600px;
         animation: float 5s ease-in-out infinite;
     }
 
     /* Titulo Formação de Professores */
     #formacaoProfessores {
         content: url("./assets/4K/TituloFormacao.png");
-    }
-
-    .formacaoProfessores {
-        position: relative;
-        top: -1500px;
     }
 
     /* Catálogo de Jogos */
@@ -441,6 +444,7 @@
         flex-direction: column;
         align-items: center;
         padding-left: 200px;
+        margin-bottom: 20px;
     }
 
     .formContato {

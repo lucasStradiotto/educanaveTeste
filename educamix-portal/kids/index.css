@@ -5,8 +5,8 @@
 @import 'index1366.css';
 @import 'index1280.css';
 @import 'index1024.css';
-@import 'index768.css';
 @import 'index800.css';
+@import 'index768.css';
 @import 'index425.css';
 @import 'index393.css';
 
@@ -85,9 +85,14 @@
     src: url('./font/Gotham-ThinItalic.otf');
 }
 
-body {
+/* body {
     overflow-x: hidden;
     height: 5000px;
+} */
+
+body {
+    overflow-x: hidden;
+    min-height: 100vh;
 }
 
 *{
@@ -309,7 +314,6 @@ main {
     padding: 50px;
     display: flex;
     flex-direction: column;
-    width: 100%;
     position: relative;
     top: 100px;
 }
@@ -352,7 +356,6 @@ main {
 }
 
 .divTituloVideo {
-    width: 100%;
     padding: 50px;
 }
 
@@ -374,6 +377,7 @@ main {
 
 .divTextCardContainer {
     display: flex;
+    flex-direction: column;
 }
 
 .divTextSensor {
@@ -420,8 +424,8 @@ main {
 }
 
 .formacaoProfessores {
-    width: 100%;
     padding: 50px;
+    margin-bottom: 50px !important;
 }
 
 .tituloFormacao {
@@ -465,8 +469,8 @@ main {
 }
 
 .divContainerContato {
-    width: 100%;
     display: flex;
+    justify-content: flex-end;
     padding: 10px 100px;
 }
 

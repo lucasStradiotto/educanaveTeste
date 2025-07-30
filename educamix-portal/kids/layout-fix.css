@@ -1,0 +1,50 @@
+/* Ajustes gerais para evitar espaço em branco no final da página */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    position: relative;
+    overflow-y: auto;
+}
+
+body::after {
+    content: '';
+    display: block;
+}
+
+/* Bloco final agrupado */
+.blocoFinal {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Corrigir espaço no final */
+.blocoFinal>*:last-child {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+/* Seções internas não devem ter espaçamento negativo */
+.sensorRfid,
+.formacaoProfessores,
+.contato {
+    position: static !important;
+    top: auto !important;
+    margin: 0;
+    padding: 0;
+}
+
+/* Elementos auxiliares */
+.videoPlay {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* 
+html, body {
+    cursor: none;
+} */

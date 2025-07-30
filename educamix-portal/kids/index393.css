@@ -31,12 +31,12 @@
         content: url("./assets/Tablet/Logo-Nuvem-Mesa-tablet0.png");
         max-width: 475px !important;
         position: absolute;
-        top: 20px;
+        top: 10px;
         left: -2px;
     }
 
     #logoEducanave {
-        width: 385px !important;
+        width: 395px !important;
     }
 
     .divLogoEducanave, .divBtnLogin, .divNuvem, .divMesaSolContainer {
@@ -477,7 +477,7 @@
     .acessibilidade {
         position: relative;
         top: -150px;
-        height: 1111px;
+        height: 1050px;
     }
 
     #acessibilidade {
@@ -534,13 +534,6 @@
         left: 36px;
         top: 0px !important;
         width: 90%;
-    }
-
-    /* Sensor RFID */
-    .sensorRfid {
-        height: 690px;
-        position: relative;
-        top: -850px;
     }
 
     /* Titulo Sensor RFID */
@@ -674,13 +667,6 @@
     #cartaSensor {
         content: url("./assets/1440/versoCarta.png");
         display: none;
-    }
-
-    .formacaoProfessores {
-        position: relative;
-        top: -880px;
-        height: 585px;
-        width: 75% !important;
     }
 
     #formacaoProfessores {
@@ -889,6 +875,10 @@
         gap: 5px;
     }
 
+    .acessibilidade {
+        height: 1100px;
+    }
+
     #acessibilidade {
         left: 12px;
     }
@@ -909,10 +899,6 @@
         left: -5px;
         top: 0px !important;
         width: 103%;
-    }
-
-    .sensorRfid {
-        height: 670px;
     }
 
     .cards1 {
@@ -967,13 +953,6 @@
 
     .textoAcessibilidade {
         padding: 20px 0 15px 88px !important;
-    }
-
-    .formacaoProfessores {
-        position: relative;
-        top: -880px;
-        height: 590px;
-        width: 75% !important;
     }
 
     #textNave1 {
@@ -1125,10 +1104,6 @@
         top: -185px;
     }
 
-    .sensorRfid {
-        height: 530px;
-    }
-
     .textSensor {
         position: relative;
         left: 22px;
@@ -1193,10 +1168,6 @@
         left: -5px;
     }
 
-    .formacaoProfessores {
-        height: 535px;
-    }
-
     .textoFormacao {
         font-size: 12px !important;
         margin-left: -17px;
@@ -1239,10 +1210,6 @@
 
     #textNave3 {
         top: 30px;
-    }
-
-    .sensorRfid {
-        height: 600px !important;
     }
 
     #tituloVideo {

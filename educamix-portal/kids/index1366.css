@@ -47,6 +47,19 @@
         top: -100px;
     }
 
+    .divFooterSensor {
+        padding-bottom: 50px;
+    }
+
+    /* Carta Sensor */
+    #cartaSensor {
+        content: url("./assets/1440/versoCarta.png");
+        position: relative;
+        top: -150px;
+        left: 180px;
+        height: 450px;
+    }
+
     #logoEducanave {
         max-width: 101%;
     }
@@ -54,7 +67,7 @@
     /* Video */
     .divVideo {
         position: relative;
-        padding-bottom: 62.25%;
+        padding-bottom: 19.25%;
         height: 600px;
     }
 
@@ -64,12 +77,6 @@
         left: 50px;
         top: 1px;
         width: 90%;
-    }
-
-    .formacaoProfessores {
-        position: relative;
-        top: -800px;
-        height: 900px;
     }
 
     #formacaoProfessores {
@@ -97,5 +104,9 @@
         width: 95%;
         position: relative;
         left: 10px;
+    }
+
+    .textSensor {
+        width: 1150px;
     }
 }

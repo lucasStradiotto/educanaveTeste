@@ -57,14 +57,24 @@
         left: 200px;
     }
 
-    .sensorRfid {
-        top: -630px;
+    .divContainerTextSensorMobile {
+        display: flex;
+        flex-direction: row;
+        height: 390px;
     }
 
     #mesaSensor {
         content: url("./assets/1440/Mesa2_1.png");
         position: relative;
         top: -120px;
+    }
+
+    #mesaSensorMobile {
+        content: url(./assets/1440/Mesa2_1.png);
+        max-width: 85%;
+        position: relative;
+        top: -15px;
+        left: 130px;
     }
 
     .divTituloPlanetas {
@@ -89,12 +99,16 @@
     }
 
     .divTextCardContainerMobile {
+        background: url("./assets/4K/Nuves2.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center 600px;
         display: flex;
         flex-direction: column;
     }
 
     .divP1Sensor {
-        width: 90% !important;
+        width: 1500px !important;
         margin-left: 50px !important;
     }
 
@@ -122,6 +136,7 @@
     }
 
     .textSensor {
+        width: 1080px;
         margin-left: 15px;
     }
 
@@ -192,10 +207,6 @@
         left: 150px;
     }
 
-    .formacaoProfessores {
-        top: -815px;
-    }
-
     .contato {
         top: -850px;
     }
@@ -212,7 +223,7 @@
     /* Video */
     .divVideo {
         position: relative;
-        padding-bottom: 57.25%;
+        padding-bottom: 19.25%;
         height: 600px;
     }
 

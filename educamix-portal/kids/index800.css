@@ -5,7 +5,7 @@
     }
 
     main {
-        height: 1000px;
+        height: 940px;
     }
 
     .divBtnLogin a {
@@ -218,6 +218,10 @@
         width: 800px;
     }
 
+    #textNave3 {
+        top: -10px;
+    }
+
     .divIconesNave {
         width: 113% !important;
         margin-top: 50px;
@@ -395,7 +399,7 @@
     }
 
     .acessibilidade {
-        height: 990px;
+        height: 680px;
     }
 
     .divLivros {
@@ -449,13 +453,6 @@
         width: 90%;
     }
 
-    /* Sensor RFID */
-    .sensorRfid {
-        height: 940px;
-        position: relative;
-        top: -300px;
-    }
-
     .divTextCardContainer {
         display: none !important;
     }
@@ -466,7 +463,7 @@
     }
 
     .divP1Sensor {
-        width: 90% !important;
+        width: 800px !important;
         margin-left: 50px !important;
     }
 
@@ -560,18 +557,16 @@
         left: 400px;
     }
 
+    #mesaSensorMobile {
+        top: -19px;
+        left: 30px;
+    }
+
     /* Carta Sensor */
     #cartaSensor {
         content: url("./assets/1440/versoCarta.png");
         display: none;
         left: 60px;
-    }
-
-    .formacaoProfessores {
-        position: relative;
-        top: -480px;
-        width: 87% !important;
-        height: 675px;
     }
 
     #formacaoProfessores {
@@ -690,8 +685,8 @@
 
     .divContainerContato {
         width: 75% !important;
-        padding: 10px 0px !important;
+        padding: 10px 100px !important;
         position: relative;
-        left: 35px;
+        left: 0px;
     }
 }

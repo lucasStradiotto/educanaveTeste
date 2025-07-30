@@ -530,13 +530,6 @@
         width: 100%;
     }
 
-    /* Sensor RFID */
-    .sensorRfid {
-        height: 700px;
-        position: relative;
-        top: -850px;
-    }
-
     /* Titulo Sensor RFID */
     #tituloSensor {
         content: url("./assets/Celular/Sensor_4.png");
@@ -668,13 +661,6 @@
     #cartaSensor {
         content: url("./assets/1440/versoCarta.png");
         display: none;
-    }
-
-    .formacaoProfessores {
-        position: relative;
-        top: -880px;
-        height: 560px;
-        width: 75% !important;
     }
 
     #formacaoProfessores {
@@ -886,11 +872,6 @@
 
     #formacaoProfessores {
         left: -13px;
-    }
-
-    .formacaoProfessores  {
-        height: 570px;
-        padding: 30px 50px 50px 50px !important;
     }
 
     .textoFormacao {

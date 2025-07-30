@@ -14,6 +14,7 @@
     <link rel="https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css">
     <link rel="shortcut icon" href="./assets/favicons/educanaveFavicon.ico">
     <link href="index.css" rel="stylesheet">
+    <link href="layout-fix.css" rel="stylesheet">
     <!-- main JS libs  -->
     <script src="js/libs/modernizr.min.js"></script>
     <script src="js/libs/respond.min.js"></script>
@@ -231,139 +232,148 @@
             </div>
         </div>
     </div>
-    <div class="sensorRfid">
-        <div class="divTituloSensor">
-            <img id="tituloSensor" alt="">
-        </div>
-        <div class="divP1Sensor">
-            <p class="textSensor aspectStyles">
-                A tecnologia de Identificação por Radiofrequência (RFID), que faz parte da Mesa Interativa Digital Educa NAVE, baseia-se na exploração de conjuntos de cartas interativas. É utilizado o método de aproximação das peças ao sensor. 
-            </p>
-        </div>
-        <div class="divTextCardContainerMobile">
-            <div class="divCardSensor">
-                <div class="cards1">
-                    <div class="cardItem">
-                        <label class="lblCardItem" id="lblCartaCores">Cores</label>
-                        <img id="cartaCores" alt="Carta Cores">
+    <section class="blocoFinal">
+        <div class="sensorRfid">
+            <div class="divTituloSensor">
+                <img id="tituloSensor" alt="">
+            </div>
+            <div class="divP1Sensor">
+                <p class="textSensor aspectStyles">
+                    A tecnologia de Identificação por Radiofrequência (RFID), que faz parte da Mesa Interativa Digital Educa NAVE, baseia-se na exploração de conjuntos de cartas interativas. É utilizado o método de aproximação das peças ao sensor. 
+                </p>
+            </div>
+            <div class="divTextCardContainerMobile">
+                <div class="divCardSensor">
+                    <div class="cards1">
+                        <div class="cardItem">
+                            <label class="lblCardItem" id="lblCartaCores">Cores</label>
+                            <img id="cartaCores" alt="Carta Cores">
+                        </div>
+                        <div class="cardItem">
+                            <label class="lblCardItem" id="lblCartaLetras">Letras</label>
+                            <img id="cartaLetras" alt="Carta Letras">
+                        </div>
+                        <div class="cardItem">
+                            <label class="lblCardItem" id="lblCartaNumeros">Números</label>
+                            <img id="cartaNumeros" alt="Carta Números">
+                        </div>
                     </div>
-                    <div class="cardItem">
-                        <label class="lblCardItem" id="lblCartaLetras">Letras</label>
-                        <img id="cartaLetras" alt="Carta Letras">
+                </div>
+                <div class="divContainerTextSensorMobile">
+                    <div class="divTextSensor">
+                        <p class="textSensor2 aspectStyles">
+                            Por meio da manipulação dessas cartas, as crianças são incentivadas a aprender e interagir com as imagens, construindo memórias e promovendo a troca de experiências com outros ambientes educacionais. A interface é intuitiva, e o design promove o trabalho coletivo, incentivando a interação social e o desenvolvimento de atividades em grupos.
+                        </p>
                     </div>
-                    <div class="cardItem">
-                        <label class="lblCardItem" id="lblCartaNumeros">Números</label>
-                        <img id="cartaNumeros" alt="Carta Números">
+                    <div class="divMesaSensorMobile">
+                        <img id="mesaSensorMobile" alt="Mesa Sensor">
                     </div>
                 </div>
             </div>
-            <div class="divTextSensor">
-                <p class="textSensor2 aspectStyles">
-                    Por meio da manipulação dessas cartas, as crianças são incentivadas a aprender e interagir com as imagens, construindo memórias e promovendo a troca de experiências com outros ambientes educacionais. A interface é intuitiva, e o design promove o trabalho coletivo, incentivando a interação social e o desenvolvimento de atividades em grupos.
-                </p>
-            </div>
-        </div>
-        <div class="divTextCardContainer">
-            <div class="divTextSensor">
-                <p class="textSensor2 aspectStyles">
-                    Por meio da manipulação dessas cartas, as crianças são incentivadas a aprender e interagir com as imagens, construindo memórias e promovendo a troca de experiências com outros ambientes educacionais. A interface é intuitiva, e o design promove o trabalho coletivo, incentivando a interação social e o desenvolvimento de atividades em grupos.
-                </p>
-            </div>
-            <div class="divCardSensor">
-                <div class="cards1">
-                    <div class="cardItem">
-                        <label class="lblCardItem" id="lblCartaCores">Cores</label>
-                        <img id="cartaCores" alt="Carta Cores">
+            <div class="divTextCardContainer">
+                <div class="divContainerTextSensor">
+                    <div class="divTextSensor">
+                        <p class="textSensor2 aspectStyles">
+                            Por meio da manipulação dessas cartas, as crianças são incentivadas a aprender e interagir com as imagens, construindo memórias e promovendo a troca de experiências com outros ambientes educacionais. A interface é intuitiva, e o design promove o trabalho coletivo, incentivando a interação social e o desenvolvimento de atividades em grupos.
+                        </p>
                     </div>
-                    <div class="cardItem">
-                        <label class="lblCardItem" id="lblCartaLetras">Letras</label>
-                        <img id="cartaLetras" alt="Carta Letras">
-                    </div>
-                    <div class="cardItem">
-                        <label class="lblCardItem" id="lblCartaNumeros">Números</label>
-                        <img id="cartaNumeros" alt="Carta Números">
-                    </div>
-                    <div class="cardItem">
-                        <label class="lblCardItem">Esquerda</label>
-                        <img id="cartaEsquerda" alt="Carta Direções">
-                    </div>
-                </div>
-                <div class="cards2">
-                    <div class="cardItem">
-                        <label class="lblCardItem">Notas</label>
-                        <img id="cartaNotas" alt="Carta Notas">
-                    </div>
-                    <div class="cardItem">
-                        <label class="lblCardItem">Instrumentos</label>
-                        <img id="cartaInsturmentos" alt="Carta Instrumentos">
-                    </div>
-                    <div class="cardItem">
-                        <label class="lblCardItem">Emoções</label>
-                        <img id="cartaEmocoes" alt="Carta Emoções">
+                    <div class="divCardSensor">
+                        <div class="cards1">
+                            <div class="cardItem">
+                                <label class="lblCardItem" id="lblCartaCores">Cores</label>
+                                <img id="cartaCores" alt="Carta Cores">
+                            </div>
+                            <div class="cardItem">
+                                <label class="lblCardItem" id="lblCartaLetras">Letras</label>
+                                <img id="cartaLetras" alt="Carta Letras">
+                            </div>
+                            <div class="cardItem">
+                                <label class="lblCardItem" id="lblCartaNumeros">Números</label>
+                                <img id="cartaNumeros" alt="Carta Números">
+                            </div>
+                            <div class="cardItem">
+                                <label class="lblCardItem">Esquerda</label>
+                                <img id="cartaEsquerda" alt="Carta Direções">
+                            </div>
+                        </div>
+                        <div class="cards2">
+                            <div class="cardItem">
+                                <label class="lblCardItem">Notas</label>
+                                <img id="cartaNotas" alt="Carta Notas">
+                            </div>
+                            <div class="cardItem">
+                                <label class="lblCardItem">Instrumentos</label>
+                                <img id="cartaInsturmentos" alt="Carta Instrumentos">
+                            </div>
+                            <div class="cardItem">
+                                <label class="lblCardItem">Emoções</label>
+                                <img id="cartaEmocoes" alt="Carta Emoções">
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="divFooterSensor">
-            <div class="divMesaSensor">
-                <img id="mesaSensor" alt="Mesa Sensor">
-            </div>
-            <div class="divCartaSensor">
-                <img id="cartaSensor" alt="Carta Sensor">
-            </div>
-        </div>
-    </div>
-    <div class="formacaoProfessores">
-        <div class="tituloFormacao">
-            <img id="formacaoProfessores" alt="">
-        </div>
-        <div class="divContainerTextoFormacao">
-            <div class="divTexto">
-                <p class="textoFormacao aspectStyles">
-                    A formação docente, como apoio aos professores, acontecerá de forma online e presencial, totalizando 16 horas de estudos técnicos e pedagógicos. A assessoria pedagógica continuada acontecerá por meio de acesso ao Portal Educa NAVE, que contemplará: 
-                </p>
-            </div>
-            <div class="divOpcoesFormacao">
-                <ul class="listaFormacao">
-                    <li class="textoFormacao aspectStyles">Sugestões de planejamento de aulas orientadas a partir dos jogos, que podem ser realizados antes, durante ou após o uso do conteúdo da mesa;</li>
-                    <li class="textoFormacao aspectStyles">Objetos digitais (vídeos, áudios, tutoriais), que fundamentarão o trabalho pedagógico com os ambientes e seus recursos;</li>
-                    <li class="textoFormacao aspectStyles">Orientação por intermédio de textos e indicações sobre a aplicação das atividades oferecidas.</li>
-                </ul>
-            </div>
-        </div>
-        <div class="divLivros">
-            <div class="divCatalogoJogos">
-                <img id="catalogosJogos" alt="Catálogo de Jogos">
-            </div>
-            <div class="divCatalogoTecnico">
-                <img id="catalogoTecnico" alt="Catálogo Técnico">
-            </div>
-        </div>
-    </div>
-    <div class="contato">
-        <div class="divContainerContato">
-            <div class="divFormulario">
-                <div class="divLogoCittiusForm">
-                    <img id="logoCittiusForm" alt="logo Cittius">
-                </div>
-                <p class="textoForm aspectStyles">
-                    Preencha os campos abaixo para mais informações.
-                </p>
-                <form id="contactForm" action="" method="POST" class="formContato">
-                    <input class="inputContato" id="inputNome" placeholder="Nome" type="text">
-                    <input class="inputContato" id="inputEmail" placeholder="E-mail" type="text">
-                    <input class="inputContato" id="inputCelular" placeholder="Celular" type="text">
-                    <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Mensagem"></textarea>
-                    <div class="btnEnviar">
-                        <img id="enviar" alt="">
+                <div class="divFooterSensor">
+                    <div class="divMesaSensor">
+                        <img id="mesaSensor" alt="Mesa Sensor">
                     </div>
-                </form>
-            </div>
-            <div class="divMiguel">
-                <img id="miguel" alt="Miguel">
+                    <div class="divCartaSensor">
+                        <img id="cartaSensor" alt="Carta Sensor">
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+        <div class="formacaoProfessores">
+            <div class="tituloFormacao">
+                <img id="formacaoProfessores" alt="">
+            </div>
+            <div class="divContainerTextoFormacao">
+                <div class="divTexto">
+                    <p class="textoFormacao aspectStyles">
+                        A formação docente, como apoio aos professores, acontecerá de forma online e presencial, totalizando 16 horas de estudos técnicos e pedagógicos. A assessoria pedagógica continuada acontecerá por meio de acesso ao Portal Educa NAVE, que contemplará: 
+                    </p>
+                </div>
+                <div class="divOpcoesFormacao">
+                    <ul class="listaFormacao">
+                        <li class="textoFormacao aspectStyles">Sugestões de planejamento de aulas orientadas a partir dos jogos, que podem ser realizados antes, durante ou após o uso do conteúdo da mesa;</li>
+                        <li class="textoFormacao aspectStyles">Objetos digitais (vídeos, áudios, tutoriais), que fundamentarão o trabalho pedagógico com os ambientes e seus recursos;</li>
+                        <li class="textoFormacao aspectStyles">Orientação por intermédio de textos e indicações sobre a aplicação das atividades oferecidas.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="divLivros">
+                <div class="divCatalogoJogos">
+                    <img id="catalogosJogos" alt="Catálogo de Jogos">
+                </div>
+                <div class="divCatalogoTecnico">
+                    <img id="catalogoTecnico" alt="Catálogo Técnico">
+                </div>
+            </div>
+        </div>
+        <div class="contato">
+            <div class="divContainerContato">
+                <div class="divFormulario">
+                    <div class="divLogoCittiusForm">
+                        <img id="logoCittiusForm" alt="logo Cittius">
+                    </div>
+                    <p class="textoForm aspectStyles">
+                        Preencha os campos abaixo para mais informações.
+                    </p>
+                    <form id="contactForm" action="" method="POST" class="formContato">
+                        <input class="inputContato" id="inputNome" placeholder="Nome" type="text">
+                        <input class="inputContato" id="inputEmail" placeholder="E-mail" type="text">
+                        <input class="inputContato" id="inputCelular" placeholder="Celular" type="text">
+                        <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Mensagem"></textarea>
+                        <div class="btnEnviar">
+                            <img id="enviar" alt="">
+                        </div>
+                    </form>
+                </div>
+                <div class="divMiguel">
+                    <img id="miguel" alt="Miguel">
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
     <script src="animationPlanets.js"></script>

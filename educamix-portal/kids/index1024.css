@@ -84,8 +84,8 @@
     /* Video */
     .divVideo {
         position: relative;
-        padding-bottom: 57.25%;
-        height: 600px;
+        padding-bottom: 0%;
+        height: 490px;
     }
 
     .divVideo video {
@@ -94,6 +94,24 @@
         left: 60px;
         top: 0px;
         width: 90%;
+    }
+
+    .divTextCardContainerMobile {
+        background-position: center 500px;
+    }
+
+    .divContainerTextSensorMobile {
+        display: flex;
+        flex-direction: row;
+        height: 300px;
+    }
+
+    #mesaSensorMobile {
+        content: url(./assets/1440/Mesa2_1.png);
+        max-width: 75%;
+        position: relative;
+        top: -39px;
+        left: 70px;
     }
 
     #tituloPlaneta {
@@ -123,9 +141,11 @@
     }
 
     .divP1Sensor {
-        width: 90% !important;
+        width: 1100px !important;
         margin-left: 50px !important;
     }
+
+    
 
     .textAcessibilidade {
         max-width: 90% !important;
@@ -155,6 +175,7 @@
     }
 
     .textSensor {
+        width: 1000px;
         margin-left: 15px;
     }
 
@@ -229,11 +250,6 @@
         display: none;
         top: -650px;
         left: 100px;
-    }
-
-    .formacaoProfessores {
-        top: -850px;
-        height: 720px;
     }
 
     #formacaoProfessores {
@@ -402,12 +418,12 @@
         height: 1000px;
     }
 
-    .contato {
-        height: 925px;
+    .textSensor {
+        width: 750px;
     }
 
-    .formacaoProfessores {
-        height: 650px;
+    .contato {
+        height: 925px;
     }
 
     .formContato {
@@ -420,6 +436,11 @@
 }
 
 @media (max-width: 876px) {
+
+    main {
+        height: 650px;
+    }
+
     #sol {
         top: 41px;
         left: 792px;
@@ -430,7 +451,10 @@
     }
 
     .divIconesNave {
-        left: -175px;
+        top: 50px;
+        left: -75px;
+        margin: 0;
+        padding: 0;
     }
 
     .divLivros {
@@ -449,13 +473,17 @@
     #tituloVideo {
         left: -210px;
     }
+    
+    .textSensor {
+        width: 650px;
+    }
+
+    .textSensor2 {
+        padding: 15px 0 0 70px;
+    }
 
     .divFormulario {
         margin-left: 65px !important;
-    }
-
-    .formacaoProfessores {
-        height: 600px;
     }
 
 }

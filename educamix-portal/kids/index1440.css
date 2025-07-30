@@ -196,7 +196,7 @@
     /* Video */
     .divVideo {
         position: relative;
-        padding-bottom: 60.25%;
+        padding-bottom: 19.25%;
         height: 600px;
     }
 
@@ -205,12 +205,6 @@
         position: relative;
         left: 40px;
         top: 0px;
-    }
-
-    /* Sensor RFID */
-    .sensorRfid {
-        position: relative;
-        top: -700px;
     }
 
     /* Titulo Sensor RFID */
@@ -222,6 +216,10 @@
     .cards2 {
         margin-top: 50px;
         margin-left: 50px;
+    }
+
+    .textSensor {
+        width: 1200px;
     }
 
     /* Cartas Sensor RFID */
@@ -258,8 +256,7 @@
         background: url("./assets/4K/Nuves2.png");
         background-repeat: no-repeat;
         background-size: cover;
-        position: relative;
-        top: 10px;
+        background-position: center 0px;
     }
 
     /* Mesa Sensor */
@@ -276,11 +273,7 @@
         position: relative;
         top: -200px;
         left: 180px;
-    }
-
-    .formacaoProfessores {
-        position: relative;
-        top: -870px;
+        height: 500px;
     }
 
     /* Catálogo de Jogos */
