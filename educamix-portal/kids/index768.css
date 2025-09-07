@@ -469,7 +469,7 @@
     .textSensor2 {
         padding: 10px 0 0 70px;
         position: relative;
-        top: 150px !important;
+        top: -285px !important;
         left: 18px;
     }
 
@@ -1046,7 +1046,7 @@
 
     .textoFormacao {
         top: -40px;
-        left: 40px;
+        left: 55px;
         font-size: 12px !important;
     }
 
@@ -1392,7 +1392,7 @@
     .textoFormacao {
         font-size: 10px !important;
         margin-bottom: 5px;
-        left: 24px;
+        left: 40px;
     }
 
     .divTexto {

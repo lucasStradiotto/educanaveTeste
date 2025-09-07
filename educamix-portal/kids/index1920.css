@@ -375,6 +375,8 @@
 
     .textoFormacao {
         margin-left: -3px;
+        position: relative;
+        left: 77px;
     }
 
     .divLivros {
