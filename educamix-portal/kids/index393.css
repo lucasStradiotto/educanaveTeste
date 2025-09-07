@@ -301,6 +301,10 @@
         margin-bottom: 15px;
     }
 
+    .divIconsNave4 {
+        margin-bottom: 0 !important;
+    }
+
     .iconsNaveContainer {
         flex-direction: column;
         gap: 5px;
@@ -922,13 +926,13 @@
         top: 173px !important;
     }
 
-    .divTextSensor {
+    /* .divTextSensor {
         width: 86% !important;
-    }
+    } */
 
-    .textSensor2 {
+    /* .textSensor2 {
         left: -5px;
-    }
+    } */
 
     .textoFormacao {
         left: 37px;
@@ -948,7 +952,7 @@
     }
 
     .divContainerContato {
-        left: 30px;
+        left: 0px;
     }
 
     .textoAcessibilidade {
@@ -974,9 +978,19 @@
         left: 25px;
     }
 
-    .textSensor2 {
+    /* .textSensor2 {
         position: relative;
         left: 20px;
+    } */
+
+    .textSensor2 {
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        width: 250% !important;
+        left: 0px !important;
+        top: 152px !important;
+        max-width: 250% !important;
     }
 
 }
@@ -1081,7 +1095,7 @@
     .acessibilidade {
         position: relative;
         top: -130px;
-        height: 1125px;
+        height: 240px !important;
     }
 
     #acessibilidade {
@@ -1109,10 +1123,10 @@
         left: 22px;
     }
 
-    .textSensor2 {
+    /* .textSensor2 {
         position: relative;
         left: 10px;
-    }
+    } */
 
     .cards1 {
         position: relative;
@@ -1153,12 +1167,12 @@
         left: -110px !important;
     }
 
-    .divTextSensor {
+    /* .divTextSensor {
         width: 88% !important;
         margin-top: 10px;
         display: flex;
         justify-content: center;
-    }
+    } */
 
     .textoFormacao {
         left: 54px;
@@ -1198,7 +1212,7 @@
         padding: 10px 0px 0px 0px !important;
         width: 100% !important;
         margin: 0;
-        left: 20px;
+        left: 0px;
     }
 
     #textNave2 {
@@ -1219,6 +1233,18 @@
     .divTexto p {
         position: relative;
         left: 50px;
+    }
+
+    #mesaSensorMobile {
+        top: -12px !important;
+    }
+
+    .textSensor2 {
+        top: 35px !important;
+    }
+
+    .sensorRfid {
+        height: 650px !important;
     }
 
 }

@@ -76,7 +76,7 @@
         content: url("./assets/Celular/Botao_1.png");
         position: relative;
         top: 15px;
-        left: -160px;
+        left: -136px;
     }
 
     /* Nuvem */
@@ -484,7 +484,7 @@
     .acessibilidade {
         position: relative;
         top: -150px;
-        height: 1111px;
+        height: 220px !important;
     }
 
     #acessibilidade {
@@ -567,24 +567,23 @@
 
     .textSensor2 {
         position: relative;
-        top: 0px !important;
-        padding: 10px 0 0 20px;
-        margin-left: -10px;
-        left: -23px !important;
+        top: 200px !important;
+        width: 150%;
+        margin-bottom: 50px;
     }
 
     .divCardSensor {
         padding: 20px !important;
     }
 
-    .divTextSensor {
+    /* .divTextSensor {
         width: 80% !important;
         margin-top: 120px;
         display: flex;
         justify-content: center;
         position: relative;
         left: 45px;
-    }
+    } */
 
     /* Cartas Sensor RFID */
     #cartaCores {
@@ -697,7 +696,7 @@
         content: url(./assets/Celular/LivroProfessor.png);
         position: relative;
         top: -15px;
-        left: 70px !important;
+        left: 45px !important;
     }
 
     /* Catálogo Técnico */
@@ -715,7 +714,7 @@
         padding: 10px 0px 0px 0px !important;
         width: 100% !important;
         margin: 0;
-        left: 30px;
+        left: -3px;
     }
 
     .divMiguel {
@@ -812,6 +811,22 @@
         position: relative;
         left: 45px;
     }
+
+    .sensorRfid {
+        height: 720px !important;
+    }
+
+    #mesaSensorMobile {
+        top: 95px;
+    }
+
+    .divTextCardContainerMobile {
+        background: none;
+    }
+
+    .sensorRfid {
+        height: 780px !important;
+    }
 }
 
 @media (max-width: 413px) {
@@ -890,4 +905,12 @@
     #catalogosJogos {
         left: 45px !important;
     }
+
+    #mesaSensorMobile {
+        top: 95px !important;
+    }
+
+    /* .sensorRfid {
+        height: 778px !important;
+    } */
 }
