@@ -595,25 +595,25 @@
     .inputContato {
         height: 50px;
         border-radius: 20px;
-        font-size: 30px;
+        font-size: 15px;
         font-family: 'Gotham-book';
         padding-left: 20px;
     }
 
     .inputContato::placeholder {
-        font-size: 23px;
+        font-size: 15px;
         text-transform: uppercase;
     }
     
     #mensagem {
-        font-size: 30px;
+        font-size: 15px;
         font-family: 'Gotham-book';
         padding-left: 20px;
         border-radius: 20px;
     }
 
     #mensagem::placeholder {
-        font-size: 25px;
+        font-size: 15px;
         text-transform: uppercase;
     }
 
@@ -1056,6 +1056,13 @@
         left: -15px;
     }
 
+    .planetasContainer {
+        padding: 50px 50px 25px 50px !important;
+    }
+
+    .divPrints {
+        padding: 50px 0 0 0 !important;
+    }
 
 }
 

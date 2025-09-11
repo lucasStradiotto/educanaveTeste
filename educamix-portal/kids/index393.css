@@ -381,7 +381,7 @@
     }
 
     .planetasContainer {
-        padding: 20px !important;
+        padding: 20px 20px 0 20px !important;
     }
 
     .planetas {
@@ -677,7 +677,7 @@
         content: url(./assets/Celular/Formacao_3.png);
         position: relative;
         top: 10px;
-        left: -7px;
+        left: 0px;
     }
 
     .textoFormacao {
@@ -991,6 +991,10 @@
         left: 0px !important;
         top: 152px !important;
         max-width: 250% !important;
+    }
+
+    .planetasContainer {
+        padding: 20px 20px 0 20px !important;
     }
 
 }

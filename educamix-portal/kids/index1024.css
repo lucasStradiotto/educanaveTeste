@@ -259,7 +259,7 @@
     }
 
     .contato {
-        height: 1100px;
+        height: 970px;
         top: -900px;
     }
 
@@ -433,6 +433,10 @@
     #miguel {
         left: -50px;
     }
+
+    .formacaoProfessores {
+        margin-bottom: 50px !important;
+    }
 }
 
 @media (max-width: 876px) {
@@ -484,6 +488,10 @@
 
     .divFormulario {
         margin-left: 65px !important;
+    }
+
+    .divPrints {
+        padding: 50px 50px 0 50px !important;
     }
 
 }

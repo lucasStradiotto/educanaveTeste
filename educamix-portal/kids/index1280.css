@@ -239,6 +239,10 @@
         position: relative;
         left: 55px;
     }
+
+    .divPrints {
+        padding: 50px !important;
+    }
 }
 
 @media (max-width: 1081px){

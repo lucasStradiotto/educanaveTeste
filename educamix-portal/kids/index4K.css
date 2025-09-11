@@ -1,4 +1,4 @@
-@media (max-width: 2560px){
+@media (max-width: 2560px) {
 
     main {
         height: 2000px;
@@ -193,7 +193,8 @@
         content: url("./assets/4K/Icone-Nao\ Toxico.png");
     }
 
-    .ambientes, .sensorRfid {
+    .ambientes,
+    .sensorRfid {
         background: url("./assets/4K/Fundo1.png");
         background-repeat: no-repeat;
         background-size: cover;
@@ -454,7 +455,7 @@
         flex-direction: column;
         gap: 20px;
     }
-    
+
     .inputContato {
         border-radius: 20px;
         font-size: 40px;
@@ -465,7 +466,7 @@
     .inputContato:focus {
         outline: none;
     }
-    
+
     #mensagem {
         font-size: 40px;
         font-family: 'Gotham-book';
@@ -489,17 +490,17 @@
     .active {
         transform: scale(2.5);
     }
-    
+
     .planetsOffScreen {
         display: none;
     }
-    
+
     .divPlaneta {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    
+
     .planetas {
         width: 11%;
         transition: transform 0.5s;
@@ -507,25 +508,29 @@
 
     @keyframes float {
         0% {
-        transform: translateY(0);
+            transform: translateY(0);
         }
+
         50% {
-        transform: translateY(-20px);
+            transform: translateY(-20px);
         }
+
         100% {
-        transform: translateY(0);
+            transform: translateY(0);
         }
     }
 
     @keyframes floatMobile {
         0% {
-        transform: translateY(0);
+            transform: translateY(0);
         }
+
         50% {
-        transform: translateY(-10px);
+            transform: translateY(-10px);
         }
+
         100% {
-        transform: translateY(0);
+            transform: translateY(0);
         }
     }
 
@@ -533,7 +538,7 @@
         width: 50%;
         cursor: pointer;
     }
-    
+
     .resize {
         animation: resize 1s forwards;
     }
@@ -541,22 +546,24 @@
     .downsize {
         animation: downSize 1s forwards;
     }
-    
+
     @keyframes resize {
         0% {
-        transform: scale(1);
+            transform: scale(1);
         }
+
         100% {
-        transform: scale(1.3);
+            transform: scale(1.3);
         }
     }
 
     @keyframes downSize {
         0% {
-        transform: scale(1.3);
+            transform: scale(1.3);
         }
+
         100% {
-        transform: scale(1);
+            transform: scale(1);
         }
     }
 
@@ -579,9 +586,14 @@
         0% {
             transform: rotate(0deg);
         }
+
         100% {
             transform: rotate(360deg);
         }
+    }
+
+    .formacaoProfessores {
+        margin-bottom: 100px !important;
     }
 
 }
